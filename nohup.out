@@ -1,0 +1,131 @@
+ * Serving Flask app 'app'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:9012
+ * Running on https://192.168.1.86:9012
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:192.168.1.2 - - [26/Jan/2024 02:11:57] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [26/Jan/2024 02:12:15] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：买鱼买菜,费用：73.61，分类：生活日用
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [26/Jan/2024 12:56:38] "POST /webhook HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.2 - - [27/Jan/2024 16:48:33] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：潮汕小厨晚餐,费用：982.00，分类：外出就餐
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [27/Jan/2024 20:12:12] "POST /webhook HTTP/1.1" 200 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：买菜,费用：225.00，分类：生活日用
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [28/Jan/2024 01:20:00] "POST /webhook HTTP/1.1" 200 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：替婆婆给雪红孩子红包两个,费用：400.00，分类：人情世故
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [28/Jan/2024 01:20:49] "POST /webhook HTTP/1.1" 200 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：李师傅脆肚2份,费用：500.00，分类：生活日用
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [28/Jan/2024 15:09:35] "POST /webhook HTTP/1.1" 200 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：鲜乌天麻,费用：199.00，分类：生活日用
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [29/Jan/2024 14:44:33] "POST /webhook HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.2 - - [29/Jan/2024 23:32:33] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [29/Jan/2024 23:32:38] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [29/Jan/2024 23:32:41] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：余俊奇2月转入,费用：13000.00，分类：None
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [30/Jan/2024 22:42:26] "POST /webhook HTTP/1.1" 200 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：陈玲玲2月转入,费用：13000.00，分类：None
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [30/Jan/2024 22:42:39] "POST /webhook HTTP/1.1" 200 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：转1月陈玲玲垫支,费用：8864.60，分类：None
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [30/Jan/2024 22:43:24] "POST /webhook HTTP/1.1" 200 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：转1月余俊奇垫支,费用：8738.03，分类：None
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [30/Jan/2024 22:43:55] "POST /webhook HTTP/1.1" 200 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：阿兰1月工资,费用：5600.00，分类：生活服务
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [30/Jan/2024 23:51:40] "POST /webhook HTTP/1.1" 200 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：买鸡蛋,费用：37.80，分类：生活日用
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [31/Jan/2024 22:31:17] "POST /webhook HTTP/1.1" 200 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：给爷爷奶奶买衣服两件,费用：398.00，分类：生活日用
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [31/Jan/2024 22:31:58] "POST /webhook HTTP/1.1" 200 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：给熹熹买新年打底衣一件,费用：78.00，分类：生活日用
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [31/Jan/2024 22:32:28] "POST /webhook HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.2 - - [01/Feb/2024 03:39:32] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [01/Feb/2024 03:39:32] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [01/Feb/2024 03:39:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：买厨房日用品等,费用：116.00，分类：生活日用
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [01/Feb/2024 08:00:24] "POST /webhook HTTP/1.1" 200 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：给阿兰奖金红包,费用：2500.00，分类：其他
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [01/Feb/2024 08:01:36] "POST /webhook HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.2 - - [01/Feb/2024 13:27:29] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [03/Feb/2024 15:14:08] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [03/Feb/2024 15:14:54] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：购买肉菜，面包等,费用：320.00，分类：生活日用
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [03/Feb/2024 21:34:50] "POST /webhook HTTP/1.1" 200 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：多多牙齿正畸第一笔费用,费用：15000.00，分类：健康医疗
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [03/Feb/2024 21:35:56] "POST /webhook HTTP/1.1" 200 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：购买保鲜袋、蚝油、牙刷,费用：120.00，分类：生活日用
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [04/Feb/2024 00:27:43] "POST /webhook HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.2 - - [04/Feb/2024 14:46:03] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [05/Feb/2024 04:46:06] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [05/Feb/2024 04:46:10] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：购买酸奶、纯牛奶,费用：89.00，分类：生活日用
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [05/Feb/2024 10:55:49] "POST /webhook HTTP/1.1" 200 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：午餐外卖,费用：185.00，分类：生活日用
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [06/Feb/2024 11:40:32] "POST /webhook HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.2 - - [07/Feb/2024 05:36:19] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [07/Feb/2024 05:36:19] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [07/Feb/2024 05:36:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：带多多熹熹去香港,费用：3500.00，分类：外出
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [08/Feb/2024 21:42:38] "POST /webhook HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.2 - - [09/Feb/2024 00:18:08] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [09/Feb/2024 03:24:49] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [09/Feb/2024 03:25:15] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [09/Feb/2024 03:25:37] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [11/Feb/2024 18:53:59] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [11/Feb/2024 19:49:10] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [13/Feb/2024 05:21:51] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [14/Feb/2024 14:15:01] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [14/Feb/2024 17:36:39] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [15/Feb/2024 12:07:41] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：加油,费用：600.00，分类：None
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [15/Feb/2024 14:38:25] "POST /webhook HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.2 - - [15/Feb/2024 15:12:36] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：买菜、鸡,费用：91.77，分类：生活日用
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [16/Feb/2024 19:43:49] "POST /webhook HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.2 - - [17/Feb/2024 00:05:45] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [17/Feb/2024 06:23:14] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.2 - - [17/Feb/2024 09:52:02] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：请多多英语老师吃饭，买礼物,费用：2624.00，分类：教育支出
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [17/Feb/2024 15:30:22] "POST /webhook HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/home/yujq/flash/app.py", line 1, in <module>
+    from flask import Flask, request
+ModuleNotFoundError: No module named 'flask'
+ * Serving Flask app 'app'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:9012
+ * Running on https://192.168.1.86:9012
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：购买洗衣液、水,费用：211.80，分类：生活日用
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [21/Feb/2024 09:03:23] "POST /webhook HTTP/1.1" 200 -
+INFO:app:Data received from Webhook is: 您的家庭流水新增了一项交易：购买拖地机清洁液,费用：120.16，分类：生活日用
+INFO:app:Webhook response: {"errcode":0,"errmsg":"ok"}
+INFO:werkzeug:192.168.1.2 - - [21/Feb/2024 09:03:24] "POST /webhook HTTP/1.1" 200 -

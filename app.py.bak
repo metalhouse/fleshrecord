@@ -1,0 +1,179 @@
+from flask import Flask, request,abort, jsonify,current_app
+import subprocess
+import json
+import logging
+import threading
+import copy
+import hmac
+import hashlib
+import time
+import datetime
+import requests
+from pathlib import Path
+
+app = Flask(__name__)
+
+# 设置日志级别
+logging.basicConfig(level=logging.DEBUG)
+
+# 从配置文件中加载配置
+BASE_DIR = Path(__file__).parent
+app.config.from_pyfile(BASE_DIR.parent / 'flash' / 'conf' / 'config.py')
+
+# 从配置获取webhook密钥（需要在config.py中添加）
+WEBHOOK_SECRET = app.config.get('WEBHOOK_SECRET')
+if not WEBHOOK_SECRET:
+    raise ValueError("WEBHOOK_SECRET未在配置文件中设置")
+url = app.config.get('WEBHOOK_URL')
+headers = {"Content-Type": "application/json"}
+FIREFLY_ACCESS_TOKEN = app.config.get('FIREFLY_ACCESS_TOKEN')
+FIREFLY_API_URL = app.config.get('FIREFLY_API_URL')
+
+def verify_signature(payload, signature_header):
+    if not signature_header:
+        app.logger.error("缺少Signature请求头")
+        return False
+    
+    # 解析签名组件
+    signature_parts = dict(part.split('=') for part in signature_header.split(','))
+    if 'v1' not in signature_parts or 't' not in signature_parts:
+        app.logger.error("签名格式不正确，缺少必要组件")
+        return False
+    
+    received_signature = signature_parts['v1']
+    timestamp = signature_parts['t']
+    
+    # 将时间戳与请求体组合后计算签名
+    signed_payload = f'{timestamp}.'.encode('utf-8') + payload
+    computed_signature = hmac.new(
+        key=WEBHOOK_SECRET.encode('utf-8'),
+        msg=signed_payload,
+        digestmod=hashlib.sha3_256  # 修正为SHA-3 256位
+    ).hexdigest()
+     
+    return hmac.compare_digest(computed_signature, received_signature)
+
+@app.route('/webhook', methods=['POST'])
+def webhook():
+    # 获取签名头
+    signature = request.headers.get('Signature')
+    # 添加请求头日志
+    app.logger.info(f"Request headers: {dict(request.headers)}")
+
+    # 使用原始请求体进行验证
+    if not verify_signature(request.data, signature):
+        app.logger.warning("Webhook签名验证失败")
+        abort(403)
+        
+    try:
+        data = request.json
+        app.logger.info(f"Received raw data: {json.dumps(data, ensure_ascii=False)}")
+
+        content = data.get('content', {})
+        transactions = content.get('transactions', [])
+
+        if not transactions:
+            app.logger.warning("No transactions found in payload.")
+            return "No transactions found", 400
+
+        transaction = transactions[0]
+        description = transaction.get('description', '无描述')
+        amount = transaction.get('amount', '0')
+        category_name = transaction.get('category_name', '无分类')
+
+        message = f"您新增了一笔交易：{description}, 费用：{amount}，分类：{category_name}"
+        app.logger.info(f"构造消息内容: {message}")
+
+        json_data = {
+            "msgtype": "text",
+            "text": {"content": message}
+        }
+
+        call_curl(url, json_data, headers)
+        # 获取并记录预算信息
+        budgets = get_firefly_budgets()
+        app.logger.info("交易处理完成，当前预算情况:")
+        for budget in budgets:
+            app.logger.info(budget)
+        return "Webhook processed", 200
+
+    except Exception as e:
+        app.logger.error(f"Error processing webhook: {e}", exc_info=True)
+        return "Internal Server Error", 500
+
+def call_curl(url, data, headers):
+    try:
+        # 使用 requests 库发送 POST 请求
+        import requests
+        response = requests.post(url, json=data, headers=headers)
+        response.raise_for_status()  # 抛出异常如果请求不成功
+        app.logger.info(f"Webhook response: {response.text}")
+    except Exception as e:
+        app.logger.error(f"Error calling webhook: {e}")
+
+
+# 添加预算获取函数
+def get_firefly_budgets():
+    headers = {
+            'Authorization': f'Bearer {FIREFLY_ACCESS_TOKEN}',
+            'Content-Type': 'application/json'
+    }
+    # 添加API请求调试日志
+    app.logger.debug(f"Firefly API URL: {FIREFLY_API_URL}")
+    # 获取当前月份的开始和结束日期
+    today = datetime.datetime.today()
+    start_date = today.replace(day=1).strftime('%Y-%m-%d')
+    next_month = today.replace(day=28) + datetime.timedelta(days=4)
+    end_date = next_month.replace(day=1) - datetime.timedelta(days=1)
+    end_date = end_date.strftime('%Y-%m-%d')
+
+    budgets_url = f'{FIREFLY_API_URL}/budgets'
+    response = requests.get(budgets_url, headers=headers)
+    response.raise_for_status()
+    budgets = response.json()['data']
+
+    remaining_budgets = []
+
+    for budget in budgets:
+        budget_id = budget['id']
+        name = budget['attributes']['name']
+
+        limits_url = f'{FIREFLY_API_URL}/budgets/{budget_id}/limits?start_date={start_date}&end_date={end_date}'
+        limits_response = requests.get(limits_url, headers=headers)
+        limits_response.raise_for_status()
+        limits_data = limits_response.json()['data']
+
+        if limits_data:
+            limit = limits_data[0]['attributes']
+            total_budget = float(limit.get('amount', '0'))
+            spent = float(limit.get('spent', '0'))
+            remaining = float(limit.get('remaining', '0'))
+
+            remaining_budgets.append(
+                f"{name}: 总预算{total_budget:.2f}，已使用{abs(spent):.2f}，剩余{remaining:.2f}"
+            )
+        else:
+            remaining_budgets.append(f"{name}: 无预算数据")
+
+    app.logger.info("当前预算剩余情况:")
+    for budget_info in remaining_budgets:
+        app.logger.info(budget_info)
+    return remaining_budgets
+
+# 添加预算查询路由
+@app.route('/budgets', methods=['GET'])
+def get_budgets():
+    try:
+        budgets = get_firefly_budgets()
+        if not budgets:
+            return jsonify({'error': '获取预算失败'}), 500
+        return jsonify(budgets)
+    except Exception as e:
+        app.logger.error(f'Budget endpoint error: {str(e)}')
+        return jsonify({'error': '服务器内部错误'}), 500
+
+if __name__ == '__main__':
+    app.run(
+        host='0.0.0.0', 
+        port=9012,
+    )

@@ -1,0 +1,21 @@
+# config.py
+
+import logging
+
+# Flask 应用配置
+DEBUG = False
+#API地址
+FIREFLY_API_URL = 'http://192.168.1.195:9941/api/v1'
+#个人令牌
+FIREFLY_ACCESS_TOKEN = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWI3NWRlNTEyYTIwODg1ODNjNTRhMzc5ODNhZDk1YWU3NDVjYzc2ZTI0Mjk5MThjZWUwMTczNjQ1MzlmM2VkOTU1Yzk2NDQ2M2JlNWExNGIiLCJpYXQiOjE3NDk4MjI0NDQuMDc0NjM4LCJuYmYiOjE3NDk4MjI0NDQuMDc0NjM5LCJleHAiOjE3ODEzNTg0NDMuMzMyMTk5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.AzaDMmFeZ7ZoHvQ_BEqj_7lZlEJb4yLQVptHBgRhDon2_bVvlAsK5imo2ceKrDsUbTfjrn76FtAg9-kIQU70KFfQ5Na20UgN2h4xqDMuSWU4HG027eMIvk4bNbF8pEtbO2AlMZPcBzzZiMB2fZdOdnp2TlCB8bwW-v1m1Cpp7x1MppaioohyO5e6RhKbXVFA9Cb88oQKwluFncZDSwjz1KH7W61_lHbjee3TI1SikVgD-RB6mLyOJuxMzOVzYJ4YADX7KODWNkftFop4caIMetQtma315UZQkCNMsiw8zcslzq951-twHxZnczd9aqRtIoRJprM0NEdk4vtQpj9xzE2jJtTYoprshU6cPyRGrn55h0gtnm7_Bty8LjvH8LEXk6QBP7rvodQsjhbgrB2fcTIcwXhId0KUQoD8m_xNmEMXT49IjwkzirpwUDxqrnbWocUV-vuxdD__PkUv453sOpeFmjfiN3jZtp46Ryta1-ldVORoioMEPndlWkDkmmvTQ0UUWzfT3kfYNTfE4Q3GxGcZQELEssNESEDxt355-AneuxJbf8lJwBpZ0TegqSf6oSpIR2tA6YLvi1CLqvhP1VBXPeiIW6UhAo2OtIdUtWbrhjiiRLsEocln0YF7-fqbo7fvwO4u1TmKKRDCcsp-iWobfMpVoQR2VNZblkoO2P0'
+# 添加webhook密钥配置
+WEBHOOK_SECRET = 'ka0O1w3KAz8Z9anrxLBoxbY8'
+WEBHOOK_SECRET_UPDATE = 'BGuBrVQwkVLVQzJmCv4X0WSn'
+
+# Webhook URL
+WEBHOOK_URL = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c"
+
+# 日志记录配置
+LOG_LEVEL = logging.INFO
+LOG_FORMAT = '%(asctime)s [%(levelname)s] %(message)s'
+LOG_FILE = '/home/yujq/flash/log/file.log'

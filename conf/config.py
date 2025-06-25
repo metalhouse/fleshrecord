@@ -1,6 +1,8 @@
 # config.py
 
 import logging
+import os
+from pathlib import Path
 
 # Flask 应用配置
 DEBUG = False
@@ -18,4 +20,7 @@ WEBHOOK_URL = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=f4ccac27-c24
 # 日志记录配置
 LOG_LEVEL = logging.INFO
 LOG_FORMAT = '%(asctime)s [%(levelname)s] %(message)s'
-LOG_FILE = '/home/yujq/flash/log/file.log'
+
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))  # conf/ 目录
+LOG_FILE = os.path.join(BASE_DIR, '..', 'log', 'file.log')
+

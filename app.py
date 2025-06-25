@@ -9,16 +9,16 @@ import hashlib
 import time
 import datetime
 import requests
-from pathlib import Path
-
+import os
 app = Flask(__name__)
 
 # 设置日志级别
 logging.basicConfig(level=logging.DEBUG)
 
 # 从配置文件中加载配置
-BASE_DIR = Path(__file__).parent
-app.config.from_pyfile(BASE_DIR.parent / 'flash' / 'conf' / 'config.py')
+basedir = os.path.abspath(os.path.dirname(__file__))
+app.config.from_pyfile(os.path.join(basedir, 'conf/config.py'))
+
 
 # 从配置获取webhook密钥（需要在config.py中添加）
 WEBHOOK_SECRET = app.config.get('WEBHOOK_SECRET')

@@ -1,0 +1,28 @@
+# FleshRecord Project Dependencies
+# Core web framework
+Flask==2.3.3
+Werkzeug==2.3.6
+
+# Data validation and parsing
+pydantic==2.5.0
+
+# HTTP requests
+requests==2.31.0
+
+# Configuration and environment
+python-dotenv==1.0.0
+
+# Logging and monitoring
+loguru==0.7.2
+
+# Testing (development)
+pytest==7.4.3
+pytest-mock==3.12.0
+pytest-cov==4.1.0
+
+# Code quality (development)
+flake8==6.1.0
+black==23.11.0
+
+# Type hints
+typing-extensions==4.8.0

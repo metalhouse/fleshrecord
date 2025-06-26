@@ -4,6 +4,36 @@ import functools
 import requests
 from typing import Callable, Type, Tuple
 
+def track_performance(metric_name: str):
+    """
+    性能追踪装饰器
+    
+    Args:
+        metric_name: 指标名称
+    """
+    def decorator(func):
+        @functools.wraps(func)
+        def wrapper(*args, **kwargs):
+            start_time = time.time()
+            try:
+                result = func(*args, **kwargs)
+                duration = time.time() - start_time
+                
+                import logging
+                logger = logging.getLogger(__name__)
+                logger.info(f"{metric_name} 执行时间: {duration:.4f}秒")
+                
+                return result
+            except Exception as e:
+                import logging
+                logger = logging.getLogger(__name__)
+                logger.error(f"{metric_name} 执行失败: {str(e)}")
+                raise
+        
+        return wrapper
+    return decorator
+
+
 def retry_on_failure(
     max_attempts: int = 3,
     delay: float = 1.0,

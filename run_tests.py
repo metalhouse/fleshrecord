@@ -149,7 +149,7 @@ def test_response_builder():
             return False
         
         # 测试错误响应
-        error_response = APIResponseBuilder.error_response("测试错误", 400)
+        error_response = APIResponseBuilder.error_response("测试错误", code=400)
         
         if (not error_response['success'] and
             error_response['error'] == "测试错误" and

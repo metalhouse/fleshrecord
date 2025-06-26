@@ -71,7 +71,7 @@ class TestIntegration(unittest.TestCase):
     
     def test_api_response_builder_error(self):
         """测试错误响应构建"""
-        response = APIResponseBuilder.error_response("发生错误", 400)
+        response = APIResponseBuilder.error_response("发生错误", code=400)
         
         self.assertFalse(response['success'])
         self.assertEqual(response['error'], "发生错误")

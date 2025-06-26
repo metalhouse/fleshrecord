@@ -103,15 +103,57 @@ class FireflyService:
 
     
     @retry_on_failure(max_attempts=3, exceptions=(requests.RequestException,))
-    def add_transaction(self, transaction_data: dict) -> dict:
+    def add_transaction(self, transaction_data) -> dict:
         """添加新的交易记录"""
         try:
-            self.logger.info(f"添加交易记录: {transaction_data.get('description', 'N/A')}")
+            # 处理TransactionRequest对象或字典
+            if hasattr(transaction_data, 'description'):
+                description = transaction_data.description
+            else:
+                description = transaction_data.get('description', 'N/A')
+            
+            self.logger.info(f"添加交易记录: {description}")
+            
+            # 将TransactionRequest对象转换为字典
+            if hasattr(transaction_data, 'model_dump'):
+                # Pydantic v2模型
+                raw_data = transaction_data.model_dump()
+            elif hasattr(transaction_data, 'dict'):
+                # Pydantic v1模型
+                raw_data = transaction_data.dict()
+            else:
+                # 已经是字典
+                raw_data = transaction_data
+            
+            # 构建符合Firefly III API格式的请求数据
+            # 构建交易数据，包含预算、分类和标签字段
+            firefly_transaction = {
+                "type": "withdrawal",  # 默认为支出，可根据需要调整
+                "date": raw_data.get('date'),
+                "amount": str(raw_data.get('amount')),  # Firefly III通常期望字符串格式的金额
+                "description": raw_data.get('description'),
+                "source_name": raw_data.get('source_account'),
+                "destination_name": raw_data.get('destination_account'),
+                "category_name": raw_data.get('category'),
+                "budget_name": raw_data.get('budget'),
+                # 添加标签字段
+                "tags": raw_data.get('tags')
+            }
+            
+            # 移除None值
+            firefly_transaction = {k: v for k, v in firefly_transaction.items() if v is not None}
+            
+            # 包装在transactions数组中
+            json_data = {
+                "transactions": [firefly_transaction]
+            }
+            
+            self.logger.info(f"发送到Firefly III的数据: {json_data}")
             
             response = requests.post(
                 f"{self.api_url}/transactions",
                 headers=self.headers,
-                json=transaction_data,
+                json=json_data,
                 timeout=30
             )
             
@@ -123,13 +165,13 @@ class FireflyService:
             
         except requests.HTTPError as e:
             self.logger.error(f"HTTP错误 - 添加交易失败: {e}")
-            return APIResponseBuilder.error_response(f"HTTP错误: {str(e)}", e.response.status_code if e.response else 500)
+            return APIResponseBuilder.error_response(f"HTTP错误: {str(e)}", code=e.response.status_code if e.response else 500)
         except requests.RequestException as e:
             self.logger.error(f"请求异常 - 添加交易失败: {e}")
-            return APIResponseBuilder.error_response(f"网络请求失败: {str(e)}", 500)
+            return APIResponseBuilder.error_response(f"网络请求失败: {str(e)}", code=500)
         except Exception as e:
             self.logger.error(f"未知错误 - 添加交易失败: {e}", exc_info=True)
-            return APIResponseBuilder.error_response(f"添加交易时发生错误: {str(e)}", 500)
+            return APIResponseBuilder.error_response(f"添加交易时发生错误: {str(e)}", code=500)
     
     @retry_on_failure(max_attempts=3, exceptions=(requests.RequestException,))
     def get_transactions(self, query_params: dict = None) -> dict:

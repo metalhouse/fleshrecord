@@ -26,3 +26,5 @@ black==23.11.0
 
 # Type hints
 typing-extensions==4.8.0
+
+Flask-Limiter==2.8.0

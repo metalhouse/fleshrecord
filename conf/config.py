@@ -1,26 +1,92 @@
-# config.py
+# -*- coding: utf-8 -*-
+"""
+配置文件
+包含Flask应用的所有配置参数
+现在使用环境变量来管理敏感信息
+"""
 
-import logging
 import os
-from pathlib import Path
+import sys
 
-# Flask 应用配置
-DEBUG = False
-#API地址
-FIREFLY_API_URL = 'http://192.168.1.195:9941/api/v1'
-#个人令牌
-FIREFLY_ACCESS_TOKEN = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWI3NWRlNTEyYTIwODg1ODNjNTRhMzc5ODNhZDk1YWU3NDVjYzc2ZTI0Mjk5MThjZWUwMTczNjQ1MzlmM2VkOTU1Yzk2NDQ2M2JlNWExNGIiLCJpYXQiOjE3NDk4MjI0NDQuMDc0NjM4LCJuYmYiOjE3NDk4MjI0NDQuMDc0NjM5LCJleHAiOjE3ODEzNTg0NDMuMzMyMTk5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.AzaDMmFeZ7ZoHvQ_BEqj_7lZlEJb4yLQVptHBgRhDon2_bVvlAsK5imo2ceKrDsUbTfjrn76FtAg9-kIQU70KFfQ5Na20UgN2h4xqDMuSWU4HG027eMIvk4bNbF8pEtbO2AlMZPcBzzZiMB2fZdOdnp2TlCB8bwW-v1m1Cpp7x1MppaioohyO5e6RhKbXVFA9Cb88oQKwluFncZDSwjz1KH7W61_lHbjee3TI1SikVgD-RB6mLyOJuxMzOVzYJ4YADX7KODWNkftFop4caIMetQtma315UZQkCNMsiw8zcslzq951-twHxZnczd9aqRtIoRJprM0NEdk4vtQpj9xzE2jJtTYoprshU6cPyRGrn55h0gtnm7_Bty8LjvH8LEXk6QBP7rvodQsjhbgrB2fcTIcwXhId0KUQoD8m_xNmEMXT49IjwkzirpwUDxqrnbWocUV-vuxdD__PkUv453sOpeFmjfiN3jZtp46Ryta1-ldVORoioMEPndlWkDkmmvTQ0UUWzfT3kfYNTfE4Q3GxGcZQELEssNESEDxt355-AneuxJbf8lJwBpZ0TegqSf6oSpIR2tA6YLvi1CLqvhP1VBXPeiIW6UhAo2OtIdUtWbrhjiiRLsEocln0YF7-fqbo7fvwO4u1TmKKRDCcsp-iWobfMpVoQR2VNZblkoO2P0'
-# 添加webhook密钥配置
-WEBHOOK_SECRET = 'ka0O1w3KAz8Z9anrxLBoxbY8'
-WEBHOOK_SECRET_UPDATE = 'BGuBrVQwkVLVQzJmCv4X0WSn'
+# 添加 config 目录到 Python 路径
+config_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config')
+sys.path.insert(0, config_dir)
 
-# Webhook URL
-WEBHOOK_URL = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c"
+try:
+    from env_config import env_config
+except (ImportError, ValueError) as e:
+    print(f"警告: 无法导入环境配置模块 ({e})，使用默认配置")
+    env_config = None
 
-# 日志记录配置
-LOG_LEVEL = logging.INFO
-LOG_FORMAT = '%(asctime)s [%(levelname)s] %(message)s'
+class Config:
+    """Flask应用配置类 - 基于环境变量"""
+    
+    def __init__(self):
+        if env_config is None:
+            print("警告: 环境配置未加载，请检查 .env 文件和环境变量设置")
+    
+    # Flask基础配置
+    @property
+    def DEBUG(self):
+        return env_config.debug if env_config else True
+    
+    @property
+    def SECRET_KEY(self):
+        return env_config.secret_key if env_config else 'default-secret-key-change-me'
+    
+    # Firefly III API配置
+    @property
+    def FIREFLY_API_URL(self):
+        return env_config.firefly_api_url if env_config else "http://localhost/api/v1"
+    
+    @property
+    def FIREFLY_ACCESS_TOKEN(self):
+        return env_config.firefly_access_token if env_config else ""
+    
+    # Webhook配置
+    @property
+    def WEBHOOK_SECRET(self):
+        return env_config.webhook_secret if env_config else ""
+    
+    @property
+    def WEBHOOK_SECRET_UPDATE(self):
+        return env_config.webhook_secret_update if env_config else ""
+    
+    @property
+    def WEBHOOK_URL(self):
+        return env_config.webhook_url if env_config else ""
+    
+    # 速率限制配置
+    @property
+    def RATELIMIT_STORAGE_URI(self):
+        return env_config.rate_limit_storage_uri if env_config else "memory://"
+    
+    @property
+    def RATELIMIT_DEFAULT(self):
+        return env_config.rate_limit_default if env_config else "100 per hour"
+        
+    @property
+    def RATE_LIMIT_WEBHOOK(self):
+        return env_config.rate_limit_webhook if env_config else "20 per minute"
+    
+    # 日志配置
+    @property
+    def LOG_LEVEL(self):
+        return env_config.log_level if env_config else "INFO"
+    
+    @property
+    def LOG_FILE(self):
+        return env_config.log_file if env_config else "log/file.log"
+    
+    # 服务器配置
+    @property
+    def HOST(self):
+        return env_config.host if env_config else "0.0.0.0"
+    
+    @property
+    def PORT(self):
+        return env_config.port if env_config else 9012
 
-BASE_DIR = os.path.abspath(os.path.dirname(__file__))  # conf/ 目录
-LOG_FILE = os.path.join(BASE_DIR, '..', 'log', 'file.log')
+# 创建配置实例
+config = Config()
 

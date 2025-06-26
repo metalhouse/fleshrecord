@@ -10,7 +10,15 @@ import time
 import datetime
 import requests
 import os
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), 'conf'))
+
+# 导入配置
+from config import config
 from flask import Flask, request, jsonify
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 from pydantic import ValidationError
 
 # 导入新的服务层和工具类
@@ -22,12 +30,14 @@ from utils.metrics import metrics, track_performance
 app = Flask(__name__)
 # 从配置文件中加载配置
 basedir = os.path.abspath(os.path.dirname(__file__))
-app.config.from_pyfile(os.path.join(basedir, 'conf/config.py'))
+# 修改配置加载方式
+app.config.from_object('conf.config.Config')  # 使用Flask的标准配置加载方式
+app.config.from_pyfile(os.path.join(basedir, 'conf/config.py'))  # 修正配置文件路径
 
 # 设置日志配置
-LOG_FILE = app.config.get('LOG_FILE')
-LOG_LEVEL = app.config.get('LOG_LEVEL', logging.INFO)
-LOG_FORMAT = app.config.get('LOG_FORMAT', '%(asctime)s [%(levelname)s] %(message)s')
+LOG_FILE = config.LOG_FILE or 'log/file.log'  # 确保有默认值
+LOG_LEVEL = getattr(logging, config.LOG_LEVEL.upper(), logging.INFO)
+LOG_FORMAT = '%(asctime)s [%(levelname)s] %(message)s'
 
 # 确保日志目录存在
 os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
@@ -37,8 +47,8 @@ logging.basicConfig(
     level=LOG_LEVEL,
     format=LOG_FORMAT,
     handlers=[
-        logging.FileHandler(LOG_FILE, encoding='utf-8'),
-        logging.StreamHandler()  # 同时输出到控制台
+        logging.StreamHandler(sys.stdout),
+        logging.FileHandler(LOG_FILE, encoding='utf-8')
     ]
 )
 
@@ -56,13 +66,28 @@ headers = {"Content-Type": "application/json"}
 FIREFLY_ACCESS_TOKEN = app.config.get('FIREFLY_ACCESS_TOKEN')
 FIREFLY_API_URL = app.config.get('FIREFLY_API_URL')
 
-firefly_headers = {
-    'Authorization': f'Bearer {FIREFLY_ACCESS_TOKEN}',
-    'Content-Type': 'application/json'
-}
+# 确保access_token不包含重复的'Bearer'前缀
+if FIREFLY_ACCESS_TOKEN:
+    clean_token = str(FIREFLY_ACCESS_TOKEN).replace('Bearer ', '').strip()
+    firefly_headers = {
+        'Authorization': f'Bearer {clean_token}',
+        'Content-Type': 'application/json'
+    }
+else:
+    raise ValueError("FIREFLY_ACCESS_TOKEN未在配置文件中设置")
+
+# 速率限制配置
+limiter = Limiter(
+    app=app,
+    key_func=get_remote_address,
+    default_limits=[config.RATELIMIT_DEFAULT],
+    storage_uri=config.RATELIMIT_STORAGE_URI,
+    strategy='fixed-window',
+    headers_enabled=True
+)
 
 # 初始化FireflyService实例
-firefly_service = FireflyService(FIREFLY_API_URL, FIREFLY_ACCESS_TOKEN, app.logger)
+firefly_service = FireflyService(config.FIREFLY_API_URL, config.FIREFLY_ACCESS_TOKEN, app.logger)
 
 def verify_signature(payload, signature_header):
     if not signature_header:
@@ -81,12 +106,12 @@ def verify_signature(payload, signature_header):
     # 将时间戳与请求体组合后计算签名
     signed_payload = f'{timestamp}.'.encode('utf-8') + payload
     computed_signature = hmac.new(
-        key=WEBHOOK_SECRET.encode('utf-8'),
+        key=config.WEBHOOK_SECRET.encode('utf-8'),
         msg=signed_payload,
         digestmod=hashlib.sha3_256  # 修正为SHA-3 256位
     ).hexdigest()
     computed_signature_update = hmac.new(
-        key=WEBHOOK_SECRET_UPDATE.encode('utf-8'),
+        key=config.WEBHOOK_SECRET_UPDATE.encode('utf-8'),
         msg=signed_payload,
         digestmod=hashlib.sha3_256  # 修正为SHA-3 256位
     ).hexdigest()
@@ -98,11 +123,41 @@ def verify_signature(payload, signature_header):
 
 
 @app.route('/webhook', methods=['POST'])
+@limiter.limit(config.RATE_LIMIT_WEBHOOK)
 def webhook():
     # 获取签名头
     signature = request.headers.get('Signature')
-    # 添加请求头日志
-    app.logger.info(f"Request headers: {dict(request.headers)}")
+    
+    # 安全记录请求头（过滤敏感信息）
+    safe_headers = {
+        k: '[FILTERED]' if k.lower() in ['authorization', 'cookie'] else v 
+        for k, v in request.headers.items()
+    }
+    app.logger.info(f"Request headers: {safe_headers}")
+
+    # 安全记录请求体
+    if request.is_json:
+        data = request.get_json()
+        safe_data = {
+            **data,
+            'content': {
+                **data.get('content', {}),
+                'transactions': [
+                    {
+                        **t,
+                        'amount': '[FILTERED]' if 'amount' in t else None,
+                        'description': t.get('description', '')[:50] + '...' if len(t.get('description', '')) > 50 else t.get('description', '')
+                    }
+                    for t in data.get('content', {}).get('transactions', [])
+                ]
+            }
+        }
+        app.logger.info(f"Received data: {json.dumps(safe_data, ensure_ascii=False)}")
+
+    # 验证必要请求头
+    if not signature:
+        app.logger.warning("缺少Signature请求头")
+        abort(400, "Signature header is required")
 
     # 使用原始请求体进行验证
     if not verify_signature(request.data, signature):
@@ -110,6 +165,47 @@ def webhook():
         abort(403)
         
     try:
+        # 验证JSON格式
+        if not request.is_json:
+            abort(415, "Content-Type must be application/json")
+            
+        data = request.get_json()
+        
+        # 验证必要字段
+        required_fields = ['trigger', 'content']
+        for field in required_fields:
+            if field not in data:
+                abort(400, f"Missing required field: {field}")
+
+        # 验证trigger值
+        valid_triggers = ['STORE_TRANSACTION', 'UPDATE_TRANSACTION']
+        if data['trigger'] not in valid_triggers:
+            abort(400, f"Invalid trigger value. Must be one of: {valid_triggers}")
+
+        # 验证content结构
+        content = data['content']
+        if 'transactions' not in content or not isinstance(content['transactions'], list):
+            abort(400, "Content must contain 'transactions' list")
+
+        # 验证交易数据
+        transactions = content['transactions']
+        if not transactions:
+            app.logger.warning("No transactions found in payload.")
+            abort(400, "At least one transaction is required")
+
+        transaction = transactions[0]
+        
+        # 验证金额格式
+        amount = transaction.get('amount')
+        if amount and not isinstance(amount, (int, float)):
+            abort(400, "Amount must be a number")
+            
+        # 验证描述长度
+        description = transaction.get('description', '')
+        if len(description) > 255:
+            abort(400, "Description too long (max 255 characters)")
+
+        # 处理逻辑...
         data = request.json
         app.logger.info(f"Received raw data: {json.dumps(data, ensure_ascii=False)}")
         
@@ -141,26 +237,37 @@ def webhook():
         
         app.logger.info(f"构造消息内容: {message}")
 
-        json_data = {
-            "msgtype": "text",
-            "text": {"content": message}
-        }
-        call_curl(url, json_data, headers)   
+        call_curl(message)   
         return "Webhook processed", 200
 
     except Exception as e:
         app.logger.error(f"Error processing webhook: {e}", exc_info=True)
         return "Internal Server Error", 500
 
-def call_curl(url, data, headers):
+def call_curl(message):
+    """发送消息到webhook URL"""
+    headers = {
+        'Content-Type': 'application/json'
+    }
+    
+    payload = {
+        "msgtype": "text",
+        "text": {
+            "content": message
+        }
+    }
+    
     try:
-        # 使用 requests 库发送 POST 请求
-        import requests
-        response = requests.post(url, json=data, headers=headers)
-        response.raise_for_status()  # 抛出异常如果请求不成功
-        app.logger.info(f"Webhook response: {response.text}")
+        response = requests.post(config.WEBHOOK_URL, json=payload, headers=headers)
+        if response.status_code == 200:
+            app.logger.info("消息发送成功")
+            return True
+        else:
+            app.logger.error(f"消息发送失败，状态码: {response.status_code}")
+            return False
     except Exception as e:
-        app.logger.error(f"Error calling webhook: {e}")
+        app.logger.error(f"发送消息时出错: {e}")
+        return False
 
 
 # 添加预算获取函数
@@ -456,6 +563,7 @@ def dify_webhook():
 
 if __name__ == '__main__':
     app.run(
-        host='0.0.0.0', 
-        port=9012,
+        host=config.HOST, 
+        port=config.PORT,
+        debug=config.DEBUG
     )

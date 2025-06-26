@@ -6,7 +6,9 @@ from utils.response_builder import APIResponseBuilder
 class FireflyService:
     def __init__(self, api_url, access_token, logger=None):
         self.api_url = api_url
-        self.headers = {'Authorization': f'Bearer {access_token}', 'Accept': 'application/json'}
+        # 确保access_token不包含重复的'Bearer'前缀
+        clean_token = access_token.replace('Bearer ', '').strip()
+        self.headers = {'Authorization': f'Bearer {clean_token}', 'Accept': 'application/json'}
         self.logger = logger or logging.getLogger(__name__)
     
     def get_budget_limits(self, budget_id, query_params=None):
@@ -222,18 +224,18 @@ class FireflyService:
                             filtered_transactions.append(transaction)
                 
                 filtered_data = filtered_transactions
-                self.logger.info(f"类目过滤后剩余 {len(filtered_data)} 条交易记录（类目: {category_filter}）")
+                #self.logger.info(f"类目过滤后剩余 {len(filtered_data)} 条交易记录（类目: {category_filter}）")
             
             # 调试：统计类目分布
             if transactions_data and len(transactions_data) > 0:
                 first_transaction = transactions_data[0]
-                self.logger.info(f"第一条交易记录的结构: {list(first_transaction.keys()) if isinstance(first_transaction, dict) else 'UNKNOWN_TYPE'}")
+                #self.logger.info(f"第一条交易记录的结构: {list(first_transaction.keys()) if isinstance(first_transaction, dict) else 'UNKNOWN_TYPE'}")
                 if isinstance(first_transaction, dict) and 'attributes' in first_transaction:
                     attributes = first_transaction['attributes']
                     if 'transactions' in attributes and len(attributes['transactions']) > 0:
                         first_split = attributes['transactions'][0]
-                        self.logger.info(f"第一条交易分录的类目: {first_split.get('category_name', 'NO_CATEGORY')}")
-                        self.logger.info(f"第一条交易分录的类型: {first_split.get('type', 'NO_TYPE')}")
+                        #self.logger.info(f"第一条交易分录的类目: {first_split.get('category_name', 'NO_CATEGORY')}")
+                        #self.logger.info(f"第一条交易分录的类型: {first_split.get('type', 'NO_TYPE')}")
                         
                 # 统计不同类目的交易数量
                 category_counts = {}
@@ -242,7 +244,7 @@ class FireflyService:
                         for split in transaction['attributes'].get('transactions', []):
                             category = split.get('category_name', 'NO_CATEGORY')
                             category_counts[category] = category_counts.get(category, 0) + 1
-                self.logger.info(f"API返回的类目分布: {category_counts}")
+                #self.logger.info(f"API返回的类目分布: {category_counts}")
             
             return {
                 'success': True,

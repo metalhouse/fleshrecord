@@ -17,9 +17,14 @@ FleshRecord 是一个基于Python的后端服务项目，主要用于与Firefly 
 ## 项目结构
 
 ```
+## 项目结构
+
+```
 conf/             # 配置文件
   ├── config.py   # 应用配置管理
+  └── enhanced_config.py # 增强配置
 config/           # 环境配置
+  ├── __init__.py
   └── env_config.py # 环境变量配置
 models/           # 数据模型
   └── request_models.py # Pydantic请求模型
@@ -28,10 +33,41 @@ services/         # 业务逻辑
 utils/            # 工具函数
   ├── response_builder.py # API响应构建器
   ├── retry_decorator.py  # 重试装饰器
-  └── metrics.py         # 性能指标收集
+  └── sensitive_data_filter.py # 敏感数据过滤
+version.py        # 项目版本信息
 tests/            # 测试代码
+  ├── __init__.py
+  ├── test_firefly_service.py
+  └── test_integration.py
 app.py            # Flask应用入口
 .env.example      # 环境变量示例
+```
+
+## 版本管理
+
+项目使用语义化版本号管理，版本信息存储在`version.py`文件中。
+
+### 查看当前版本
+```python
+# 在Python代码中引用
+from version import __version__
+print(f"当前版本: {__version__}")
+```
+
+### 版本更新流程
+1. 修改`version.py`文件中的`__version__`变量
+2. 更新版本历史记录
+3. 提交更改到Git仓库：
+```bash
+git add version.py
+# 添加版本更新说明
+git commit -m "Bump version to x.y.z"
+git push origin main
+```
+
+### 版本历史
+- **0.2.0** - 新功能和改进
+- **0.1.0** - 初始版本，包含基本模型和核心功能
 ```
 
 ## 安装步骤

@@ -1582,3 +1582,49 @@ destination_account
 2025-06-26 23:59:27,056 [INFO] 成功获取 1 个预算
 2025-06-26 23:59:27,056 [INFO] budgets 执行时间: 0.2101秒
 2025-06-26 23:59:27,057 [INFO] 192.168.1.68 - - [26/Jun/2025 23:59:27] "GET /budgets HTTP/1.1" 200 -
+2025-06-27 00:08:04,302 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://192.168.1.68:9012
+2025-06-27 00:08:04,304 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-27 00:08:04,305 [INFO]  * Restarting with stat
+2025-06-27 00:08:05,411 [WARNING]  * Debugger is active!
+2025-06-27 00:08:05,416 [INFO]  * Debugger PIN: 696-613-603
+2025-06-27 00:08:28,651 [INFO] 开始处理交易请求 [ID: 98ca2bdb]
+2025-06-27 00:08:28,652 [INFO] [98ca2bdb] 交易数据验证成功: {'amount': '200.0', 'description': '购买书籍', 'source_account': '信用卡（交通银行）', 'destination_account': 'N/A', 'category': '生活爱好', 'budget': '周预算'}
+2025-06-27 00:08:28,652 [INFO] 添加交易记录: 购买书籍
+2025-06-27 00:08:28,653 [INFO] 发送到Firefly III的数据: {'transactions': [{'type': 'withdrawal', 'date': '2025-06-27', 'amount': '200.0', 'description': '购买书籍', 'source_name': '信用卡（交通银行）', 'destination_name': '', 'category_name': '生活爱好', 'budget_name': '周预算', 'tags': ['书籍']}]}
+2025-06-27 00:08:29,330 [INFO] 交易添加成功: 190
+2025-06-27 00:08:29,331 [INFO] [98ca2bdb] 交易创建成功: amount=200.0, description=购买书籍
+2025-06-27 00:08:29,331 [INFO] add_transaction 执行时间: 0.6799秒
+2025-06-27 00:08:29,332 [INFO] 192.168.1.68 - - [27/Jun/2025 00:08:29] "[35m[1mPOST /add_transaction HTTP/1.1[0m" 201 -
+2025-06-27 00:08:29,353 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1750954109,v1=c626ebafa2a0364c7943873ef693101c3061989e0ce1543b38e03cc5de5a2e55', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1739'}
+2025-06-27 00:08:29,354 [INFO] Received data: {"uuid": "ab500bd2-297f-4e61-83dd-abc561e60c6d", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 190, "created_at": "2025-06-27T00:08:28+08:00", "updated_at": "2025-06-27T00:08:28+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "190", "type": "withdrawal", "date": "2025-06-27T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "购买书籍", "source_id": "63", "source_name": "信用卡（交通银行）", "source_iban": null, "source_type": "Asset account", "destination_id": "18", "destination_name": "Cash account", "destination_iban": null, "destination_type": "Cash account", "budget_id": "1", "budget_name": "周预算", "category_id": "3", "category_name": "生活爱好", "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": ["书籍"], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "013755820690b9797d4db5897bf3bc06326fa291962ab0bcc297a04628dc6d7a", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/190"}]}}
+2025-06-27 00:08:29,358 [INFO] Webhook处理成功: 您新增了一笔交易：购买书籍, 费用：[FILTERED]，分类：生活爱好，预算：周预算。
+2025-06-27 00:08:29,359 [INFO] webhook 执行时间: 0.0061秒
+2025-06-27 00:08:29,363 [INFO] 192.168.1.195 - - [27/Jun/2025 00:08:29] "POST /webhook HTTP/1.1" 200 -
+2025-06-27 00:08:29,651 [INFO] 成功获取 1 个预算
+2025-06-27 00:08:29,651 [INFO] budgets 执行时间: 0.1753秒
+2025-06-27 00:08:29,652 [INFO] 192.168.1.68 - - [27/Jun/2025 00:08:29] "GET /budgets HTTP/1.1" 200 -
+2025-06-27 00:09:17,089 [INFO] Dify webhook请求: endpoint=/transactions, query_parameters={'start': '2025-06-01', 'end': '2025-06-27', 'type': 'withdrawal', 'limit': 50}
+2025-06-27 00:09:17,089 [INFO] 查询交易记录，参数: {'start': '2025-06-01', 'end': '2025-06-27', 'type': 'withdrawal', 'limit': 50}
+2025-06-27 00:09:17,090 [INFO] 请求 URL: http://192.168.1.195:9941/api/v1/transactions
+2025-06-27 00:09:17,090 [INFO] 请求参数: {'start': '2025-06-01', 'end': '2025-06-27', 'type': 'withdrawal', 'limit': 200, 'page': 1}
+2025-06-27 00:09:17,209 [INFO] 实际发送的完整 URL: http://192.168.1.195:9941/api/v1/transactions?start=2025-06-01&end=2025-06-27&type=withdrawal&limit=200&page=1
+2025-06-27 00:09:17,214 [INFO] 获取第 1 页，本页 73 条记录，总计 73 条
+2025-06-27 00:09:17,215 [INFO] 成功查询到 73 条交易记录，API总共 73 条
+2025-06-27 00:09:17,215 [INFO] 成功获取 6 条交易记录
+2025-06-27 00:09:17,216 [INFO] dify_webhook 执行时间: 0.1270秒
+2025-06-27 00:09:17,216 [INFO] 192.168.1.68 - - [27/Jun/2025 00:09:17] "POST /dify_webhook HTTP/1.1" 200 -
+2025-06-27 00:10:16,654 [INFO] Dify webhook请求: endpoint=/budgets, query_parameters={'include': 'spent', 'start': '2025-06-01', 'end': '2025-06-27'}
+2025-06-27 00:10:16,842 [INFO] 成功获取 1 个预算
+2025-06-27 00:10:16,843 [INFO] dify_webhook 执行时间: 0.1890秒
+2025-06-27 00:10:16,843 [INFO] 192.168.1.68 - - [27/Jun/2025 00:10:16] "POST /dify_webhook HTTP/1.1" 200 -
+2025-06-27 00:18:29,757 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1750954709,v1=97132c7222e43864ef1d5ef4489bdc987bcb2880dcb6509ea8f5ac89d9174d62', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1689'}
+2025-06-27 00:18:29,758 [INFO] Received data: {"uuid": "4cb544e8-46b6-47f1-9c40-182facc2f83a", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 191, "created_at": "2025-06-27T00:18:29+08:00", "updated_at": "2025-06-27T00:18:29+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "191", "type": "withdrawal", "date": "2025-06-27T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "购买数据", "source_id": "1", "source_name": "工资账户", "source_iban": "", "source_type": "Asset account", "destination_id": "18", "destination_name": "Cash account", "destination_iban": null, "destination_type": "Cash account", "budget_id": "", "budget_name": null, "category_id": "3", "category_name": "生活爱好", "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": ["数据"], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "9ade69bdb0a97c189ad8efe97bec266af150d9a22b52bdd84479b2868cd2e9f2", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/191"}]}}
+2025-06-27 00:18:29,758 [INFO] Webhook处理成功: 您新增了一笔交易：购买数据, 费用：[FILTERED]，分类：生活爱好，预算：None。
+2025-06-27 00:18:29,758 [INFO] webhook 执行时间: 0.0020秒
+2025-06-27 00:18:29,759 [INFO] 192.168.1.195 - - [27/Jun/2025 00:18:29] "POST /webhook HTTP/1.1" 200 -
+2025-06-27 00:18:30,095 [INFO] 成功获取 1 个预算
+2025-06-27 00:18:30,096 [INFO] budgets 执行时间: 0.1966秒
+2025-06-27 00:18:30,096 [INFO] 192.168.1.68 - - [27/Jun/2025 00:18:30] "GET /budgets HTTP/1.1" 200 -

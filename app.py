@@ -20,6 +20,7 @@ from handlers.transaction_handler import TransactionHandler
 from handlers.dify_handler import DifyHandler
 from utils.retry_decorator import track_performance
 
+from version import __version__
 app = Flask(__name__)
 # 从配置文件中加载配置
 basedir = os.path.abspath(os.path.dirname(__file__))
@@ -47,6 +48,7 @@ logging.basicConfig(
 
 # 设置Flask应用的日志级别
 app.logger.setLevel(LOG_LEVEL)
+    app.logger.info(f"Starting Flask application v{__version__}")
 
 
 # 获取必需的配置项并进行验证

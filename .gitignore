@@ -3,6 +3,10 @@
 .env.local
 .env.*.local
 
+# 用户配置文件(保留示例)
+data/users/*.json
+!data/users/example_user.json
+
 # Python
 __pycache__/
 *.py[cod]
@@ -26,15 +30,26 @@ wheels/
 *.egg
 PIPFILE.lock
 
-# PyInstaller
-*.manifest
-*.spec
+# 虚拟环境
+venv/
+.env
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+# 日志文件
+log/
+*.log
 
-# Unit test / coverage reports
+# IDE配置
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 测试和覆盖率报告
 htmlcov/
 .tox/
 .nox/
@@ -44,110 +59,20 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
-.hypothesis/
 .pytest_cache/
+.hypothesis/
 
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-.python-version
-
-# celery beat schedule file
-celerybeat-schedule
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
+# 类型检查缓存
 .mypy_cache/
 .dmypy.json
 dmypy.json
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# 日志文件
-*.log
-logs/
+# 文档构建
+docs/_build/
+/site
 
 # 临时文件
 *.tmp
 *.temp
-
-# 配置备份文件
 *.bak
 *.backup
-
-# 数据库文件
-*.db
-*.sqlite
-*.sqlite3
-
-# 密钥和证书
-*.pem
-*.key
-*.crt
-*.p12
-*.pfx
-
-# 本地开发配置
-local_config.py
-development.ini

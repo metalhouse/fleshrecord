@@ -44,7 +44,8 @@ class TransactionHandler:
             # 调用Firefly服务创建交易
             result = self.firefly_service.add_transaction(transaction_data)
             
-            if result:
+            # 检查是否为成功响应
+            if result and result.get('status') == 'success':
                 app.logger.info(
                     f"[{transaction_id}] 交易创建成功: amount={transaction_data.amount}, "
                     f"description={transaction_data.description}"
@@ -53,9 +54,10 @@ class TransactionHandler:
                     "交易创建成功", result
                 )), 201
             else:
-                app.logger.error(f"[{transaction_id}] 交易创建失败")
+                error_msg = result.get('message', '未知错误') if result else '交易服务未返回结果'
+                app.logger.error(f"[{transaction_id}] 交易创建失败: {error_msg}")
                 return jsonify(APIResponseBuilder.error_response(
-                    "交易创建失败", 500
+                    f"交易创建失败: {error_msg}", 500
                 )), 500
                 
         except Exception as e:

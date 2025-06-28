@@ -2,6 +2,7 @@ import requests
 import logging
 from utils.retry_decorator import retry_on_failure
 from utils.response_builder import APIResponseBuilder
+from utils.sensitive_data_filter import SensitiveDataFilter
 
 class FireflyService:
     def __init__(self, api_url, access_token, logger=None):
@@ -148,7 +149,9 @@ class FireflyService:
                 "transactions": [firefly_transaction]
             }
             
-            self.logger.info(f"发送到Firefly III的数据: {json_data}")
+            # 过滤敏感信息后记录
+            safe_json_data = SensitiveDataFilter.filter_dict(json_data)
+            self.logger.info(f"发送到Firefly III的数据: {safe_json_data}")
             
             response = requests.post(
                 f"{self.api_url}/transactions",

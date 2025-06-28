@@ -64,14 +64,14 @@ class WebhookHandler:
         
         # 使用主要密钥计算签名
         computed_signature = hmac.new(
-            key=self.config.WEBHOOK_SECRET.encode('utf-8'),
+            key=self.config.get('webhook_secret', '').encode('utf-8'),
             msg=signed_payload,
             digestmod=hashlib.sha3_256
         ).hexdigest()
         
         # 使用更新密钥计算签名
         computed_signature_update = hmac.new(
-            key=self.config.WEBHOOK_SECRET_UPDATE.encode('utf-8'),
+            key=self.config.get('webhook_secret_update', '').encode('utf-8'),
             msg=signed_payload,
             digestmod=hashlib.sha3_256
         ).hexdigest()
@@ -245,26 +245,46 @@ class WebhookHandler:
     
     @track_performance('webhook_request')
     def handle_webhook_request(self) -> Tuple[Union[str, Dict[str, Any]], int]:
-        """处理Webhook请求的主要方法
+        """处理需要X-User-ID验证的Webhook请求（如Dify等第三方服务）
         
         Returns:
             Tuple[Union[str, Dict[str, Any]], int]: (响应内容, 状态码)
         """
-        try:
-            # 验证请求头
-            signature = self.validate_request_headers()
+        return self.process_webhook_event()
+    
+    def handle_firefly_webhook_request(self) -> Tuple[Union[str, Dict[str, Any]], int]:
+        """处理FireFly III的Webhook请求（跳过署名验证，使用token验证）
+        
+        Returns:
+            Tuple[Union[str, Dict[str, Any]], int]: (响应内容, 状态码)
+        """
+        return self.process_webhook_event(skip_signature=True)
+    
+    def process_webhook_event(self, skip_signature: bool = False) -> Tuple[Union[str, Dict[str, Any]], int]:
+        """处理Webhook请求的核心逻辑
+        
+        Args:
+            skip_signature: 是否跳过签名验证
             
+        Returns:
+            Tuple[Union[str, Dict[str, Any]], int]: (响应内容, 状态码)
+        """
+        try:
             # 获取请求数据
             raw_payload = request.get_data()
             data = request.get_json()
             
-            # 验证签名
-            if not self.verify_signature(raw_payload, signature):
-                app.logger.error("Webhook签名验证失败")
-                return APIResponseBuilder.error_response(
-                "Invalid signature", 
-                code=401
-            )
+            if not skip_signature:
+                # 验证请求头
+                signature = self.validate_request_headers()
+                
+                # 验证签名
+                if not self.verify_signature(raw_payload, signature):
+                    app.logger.error("Webhook签名验证失败")
+                    return APIResponseBuilder.error_response(
+                    "Invalid signature", 
+                    code=401
+                )
             
             # 验证载荷数据
             self.validate_webhook_payload(data)

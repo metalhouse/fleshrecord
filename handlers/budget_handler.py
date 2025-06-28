@@ -2,6 +2,7 @@ from typing import Dict, Any, List, Optional
 from flask import request, jsonify, current_app as app
 import datetime
 import requests
+from typing import Dict, Any
 from pydantic import ValidationError
 
 from utils.response_builder import APIResponseBuilder
@@ -13,18 +14,20 @@ from models.request_models import BudgetQueryParams
 class BudgetHandler:
     """处理预算相关请求的专用处理器"""
     
-    def __init__(self, firefly_service: FireflyService, config: Any):
-        self.firefly_service = firefly_service
+    def __init__(self, config, firefly_service: FireflyService, user_config: Dict[str, Any]):
         self.config = config
+        self.firefly_service = firefly_service
+        self.user_config = user_config
         self.firefly_headers = self._build_firefly_headers()
     
     def _build_firefly_headers(self) -> Dict[str, str]:
         """构建Firefly API请求头"""
-        if not self.config.FIREFLY_ACCESS_TOKEN:
-            raise ValueError("FIREFLY_ACCESS_TOKEN未在配置文件中设置")
+        access_token = self.user_config.get('firefly_access_token')
+        if not access_token:
+            raise ValueError("firefly_access_token未在用户配置文件中设置")
         
         # 确保access_token不包含重复的'Bearer'前缀
-        clean_token = str(self.config.FIREFLY_ACCESS_TOKEN).replace('Bearer ', '').strip()
+        clean_token = str(access_token).replace('Bearer ', '').strip()
         return {
             'Authorization': f'Bearer {clean_token}',
             'Content-Type': 'application/json'
@@ -104,7 +107,7 @@ class BudgetHandler:
         start_date, end_date = self._get_current_month_range(today)
         
         # 获取所有预算
-        budgets_url = f'{self.config.FIREFLY_API_URL}/budgets'
+        budgets_url = f'{self.firefly_service.api_url}/budgets'
         response = requests.get(budgets_url, headers=self.firefly_headers)
         response.raise_for_status()
         budgets = response.json()['data']

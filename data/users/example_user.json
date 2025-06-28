@@ -1,0 +1,9 @@
+{
+    "firefly_access_token": "test_token_for_example",
+    "webhook_url": "https://your_webhook_url_here",
+    "webhook_secret": "your_webhook_secret_here",
+    "webhook_secret_update": "your_webhook_secret_update_here",
+    "firefly_api_url": "http://192.168.1.195:9941/api/v1",
+    "notification_enabled": true,
+    "language": "zh"
+}

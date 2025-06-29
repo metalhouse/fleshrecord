@@ -196,7 +196,7 @@ def get_user_services(user_id: str):
     # 创建用户特定的处理器
     notification_handler = NotificationHandler(user_config)
     webhook_handler = WebhookHandler(firefly_service, user_config)
-    transaction_handler = TransactionHandler(firefly_service)
+    transaction_handler = TransactionHandler(firefly_service, notification_handler)
 
     return firefly_service, notification_handler, webhook_handler, transaction_handler
 
@@ -204,44 +204,46 @@ def get_user_services(user_id: str):
 @limiter.limit(config.RATE_LIMIT_WEBHOOK)
 @track_performance('webhook')
 def webhook() -> Tuple[Union[str, Dict[str, Any]], int]:
-    """处理webhook请求，支持FireflyIII（Authorization Bearer token）和第三方服务（X-User-ID）
+    """处理webhook请求，支持FireflyIII（Signature签名验证）和第三方服务（X-User-ID）
     
     Returns:
         Tuple[Union[str, Dict[str, Any]], int]: (响应内容, 状态码)
     """
-    # 检查是否为FireflyIII webhook请求（通过Authorization Bearer token验证）
-    auth_header = request.headers.get('Authorization')
-    if auth_header and auth_header.startswith('Bearer '):
-        token = auth_header[7:]  # 移除 'Bearer ' 前缀
-        
-        # 根据token查找对应的用户
+    # 检查是否为FireflyIII webhook请求（通过Signature头判断）
+    signature_header = request.headers.get('Signature')
+    if signature_header:
+        # 这是一个带有签名的请求，很可能是FireflyIII webhook
+        # 需要找到匹配的用户配置来验证签名
         user_id = None
+        
+        # 遍历所有用户配置，找到能够验证此签名的用户
         for user_file in os.listdir('data/users'):
             if user_file.endswith('.json'):
                 try:
-                    with open(f'data/users/{user_file}', 'r', encoding='utf-8') as f:
-                        user_data = json.load(f)
-                        if user_data.get('firefly_access_token') == token:
-                            user_id = user_file[:-5]  # 移除 .json 后缀
+                    potential_user_id = user_file[:-5]  # 移除 .json 后缀
+                    _, _, webhook_handler, _ = get_user_services(potential_user_id)
+                    
+                    if webhook_handler:
+                        # 尝试验证签名
+                        raw_payload = request.get_data()
+                        if webhook_handler.verify_signature(raw_payload, signature_header):
+                            user_id = potential_user_id
                             break
                 except Exception as e:
-                    app.logger.error(f"读取用户配置文件 {user_file} 失败: {e}")
+                    app.logger.error(f"尝试验证用户 {user_file} 的签名时失败: {e}")
                     continue
         
         if not user_id:
-            app.logger.warning("无效的FireFly access token")
-            return jsonify(APIResponseBuilder.error_response("Invalid token", 403)), 403
+            app.logger.warning("无法验证Webhook签名")
+            return jsonify(APIResponseBuilder.error_response("Invalid signature", 403)), 403
         
-        # 获取用户特定服务
+        # 获取已验证的用户服务
         _, _, webhook_handler, _ = get_user_services(user_id)
-        if not webhook_handler:
-            app.logger.error(f"用户配置不存在或无效: {user_id}")
-            return jsonify(APIResponseBuilder.error_response("User configuration not found", 404)), 404
         
-        # 调用firefly webhook处理器（跳过签名验证）
-        return webhook_handler.handle_firefly_webhook_request()
+        # 处理FireflyIII webhook请求（已经验证过签名）
+        return webhook_handler.process_webhook_event(skip_signature=True)
     
-    # 非FireflyIII请求，使用X-User-ID验证
+    # 非签名验证请求，使用X-User-ID验证
     user_id = request.headers.get('X-User-ID')
     if not user_id:
         app.logger.warning("缺少X-User-ID请求头")

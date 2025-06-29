@@ -1,6 +1,10 @@
 from typing import Dict, Any, Optional
-from flask import current_app as app
 import requests
+import logging
+from typing import Dict, Any
+
+# 设置日志记录器
+logger = logging.getLogger(__name__)
 
 
 class NotificationHandler:
@@ -18,12 +22,13 @@ class NotificationHandler:
         Returns:
             bool: 发送是否成功
         """
-        if not self.config.WEBHOOK_URL:
-            app.logger.error("WEBHOOK_URL未配置")
+        webhook_url = getattr(self.config, 'webhook_url', None)
+        if not webhook_url:
+            logger.error("webhook_url未配置")
             return False
         
         if not message.strip():
-            app.logger.warning("消息内容为空，跳过发送")
+            logger.warning("消息内容为空，跳过发送")
             return False
         
         headers = self._build_headers()
@@ -31,7 +36,7 @@ class NotificationHandler:
         
         try:
             response = requests.post(
-                self.config.WEBHOOK_URL, 
+                webhook_url, 
                 json=payload, 
                 headers=headers,
                 timeout=30  # 添加超时设置
@@ -40,16 +45,16 @@ class NotificationHandler:
             return self._handle_response(response, message)
             
         except requests.exceptions.Timeout:
-            app.logger.error("发送消息超时")
+            logger.error("发送消息超时")
             return False
         except requests.exceptions.ConnectionError:
-            app.logger.error("连接Webhook URL失败")
+            logger.error("连接Webhook URL失败")
             return False
         except requests.exceptions.RequestException as e:
-            app.logger.error(f"发送消息时出错: {e}")
+            logger.error(f"发送消息时出错: {e}")
             return False
         except Exception as e:
-            app.logger.error(f"发送消息时发生未知错误: {e}")
+            logger.error(f"发送消息时发生未知错误: {e}")
             return False
     
     def _build_headers(self) -> Dict[str, str]:
@@ -86,11 +91,11 @@ class NotificationHandler:
             bool: 处理是否成功
         """
         if response.status_code == 200:
-            app.logger.info("消息发送成功")
-            app.logger.debug(f"发送的消息内容: {message[:100]}..." if len(message) > 100 else f"发送的消息内容: {message}")
+            logger.info("消息发送成功")
+            logger.debug(f"发送的消息内容: {message[:100]}..." if len(message) > 100 else f"发送的消息内容: {message}")
             return True
         else:
-            app.logger.error(
+            logger.error(
                 f"消息发送失败，状态码: {response.status_code}, "
                 f"响应内容: {response.text[:200]}..."
             )
@@ -113,7 +118,7 @@ class NotificationHandler:
         # 组合完整消息
         full_message = base_message + budget_message
         
-        app.logger.info(f"构造消息内容: {full_message}")
+        logger.info(f"构造消息内容: {full_message}")
         
         return self.send_webhook_message(full_message)
     

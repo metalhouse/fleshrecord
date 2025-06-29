@@ -12,8 +12,9 @@ from models.request_models import TransactionRequest
 class TransactionHandler:
     """处理交易相关请求的专用处理器"""
     
-    def __init__(self, firefly_service: FireflyService):
+    def __init__(self, firefly_service: FireflyService, notification_handler=None):
         self.firefly_service = firefly_service
+        self.notification_handler = notification_handler
     
     @track_performance('add_transaction')
     def add_transaction_endpoint(self) -> Tuple[Dict[str, Any], int]:
@@ -50,6 +51,24 @@ class TransactionHandler:
                     f"[{transaction_id}] 交易创建成功: amount={transaction_data.amount}, "
                     f"description={transaction_data.description}"
                 )
+                
+                # 发送通知
+                if self.notification_handler:
+                    try:
+                        # 构建交易信息用于通知
+                        transaction_info = {
+                            'trigger': 'CREATED',
+                            'description': transaction_data.description,
+                            'amount': str(transaction_data.amount),
+                            'category_name': getattr(transaction_data, 'category', '无分类'),
+                            'budget_name': getattr(transaction_data, 'budget', '无预算')
+                        }
+                        self.notification_handler.send_transaction_notification(transaction_info, request_body=None)
+                        app.logger.info(f"[{transaction_id}] 通知发送成功")
+                    except Exception as e:
+                        app.logger.error(f"[{transaction_id}] 发送通知失败: {e}")
+                        # 通知失败不影响交易创建结果
+                
                 return jsonify(APIResponseBuilder.success_response(
                     "交易创建成功", result
                 )), 201

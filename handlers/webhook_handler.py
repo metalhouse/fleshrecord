@@ -64,14 +64,14 @@ class WebhookHandler:
         
         # 使用主要密钥计算签名
         computed_signature = hmac.new(
-            key=self.config.get('webhook_secret', '').encode('utf-8'),
+            key=getattr(self.config, 'webhook_secret', '').encode('utf-8'),
             msg=signed_payload,
             digestmod=hashlib.sha3_256
         ).hexdigest()
         
         # 使用更新密钥计算签名
         computed_signature_update = hmac.new(
-            key=self.config.get('webhook_secret_update', '').encode('utf-8'),
+            key=getattr(self.config, 'webhook_secret_update', '').encode('utf-8'),
             msg=signed_payload,
             digestmod=hashlib.sha3_256
         ).hexdigest()

@@ -2754,3 +2754,264 @@ date
 2025-06-28 23:55:21,696 [WARNING] 缺少X-User-ID请求头
 2025-06-28 23:55:21,702 [INFO] webhook 执行时间: 0.0066秒
 2025-06-28 23:55:21,706 [INFO] 192.168.1.195 - - [28/Jun/2025 23:55:21] "[31m[1mPOST /webhook HTTP/1.1[0m" 400 -
+2025-06-29 10:16:36,987 [INFO] Starting Flask application v0.2.0
+2025-06-29 10:16:38,529 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-29 10:16:38,529 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-29 10:16:38,532 [INFO]  * Restarting with stat
+2025-06-29 10:16:39,558 [INFO] Starting Flask application v0.2.0
+2025-06-29 10:16:39,580 [WARNING]  * Debugger is active!
+2025-06-29 10:16:39,586 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 10:16:43,285 [INFO] 开始处理交易请求 [ID: 6eca73cc]
+2025-06-29 10:16:43,285 [INFO] [6eca73cc] 交易数据验证成功: {'amount': '35.0', 'description': '午饭', 'source_account': '工资账户', 'destination_account': '餐饮', 'category': 'N/A', 'budget': 'N/A'}
+2025-06-29 10:16:43,286 [INFO] 添加交易记录: 午饭
+2025-06-29 10:16:43,286 [INFO] 发送到Firefly III的数据: {'transactions': [{'type': 'withdrawal', 'date': '2025-06-28', 'amount': '[FILTERED]', 'description': '午饭', 'source_name': '工资账户', 'destination_name': '餐饮'}]}
+2025-06-29 10:16:45,889 [INFO] 交易添加成功: 212
+2025-06-29 10:16:45,890 [INFO] [6eca73cc] 交易创建成功: amount=35.0, description=午饭
+2025-06-29 10:16:45,890 [INFO] add_transaction 执行时间: 2.6153秒
+2025-06-29 10:16:45,891 [INFO] 192.168.1.68 - - [29/Jun/2025 10:16:45] "POST /add_transaction?Authorization[FILTERED] HTTP/1.1" 201 -
+2025-06-29 10:16:46,028 [ERROR] 签名验证过程中发生错误: 'UserConfig' object has no attribute 'get'
+2025-06-29 10:16:46,031 [ERROR] 签名验证过程中发生错误: 'UserConfig' object has no attribute 'get'
+2025-06-29 10:16:46,031 [ERROR] 签名验证过程中发生错误: 'UserConfig' object has no attribute 'get'
+2025-06-29 10:16:46,031 [WARNING] 无法验证Webhook签名
+2025-06-29 10:16:46,032 [INFO] webhook 执行时间: 0.0164秒
+2025-06-29 10:16:46,032 [INFO] 192.168.1.195 - - [29/Jun/2025 10:16:46] "[31m[1mPOST /webhook HTTP/1.1[0m" 403 -
+2025-06-29 10:16:46,051 [ERROR] 签名验证过程中发生错误: 'UserConfig' object has no attribute 'get'
+2025-06-29 10:16:46,052 [ERROR] 签名验证过程中发生错误: 'UserConfig' object has no attribute 'get'
+2025-06-29 10:16:46,052 [ERROR] 签名验证过程中发生错误: 'UserConfig' object has no attribute 'get'
+2025-06-29 10:16:46,054 [WARNING] 无法验证Webhook签名
+2025-06-29 10:16:46,055 [INFO] webhook 执行时间: 0.0047秒
+2025-06-29 10:16:46,056 [INFO] 192.168.1.195 - - [29/Jun/2025 10:16:46] "[31m[1mPOST /webhook HTTP/1.1[0m" 403 -
+2025-06-29 10:16:46,084 [ERROR] 签名验证过程中发生错误: 'UserConfig' object has no attribute 'get'
+2025-06-29 10:16:46,096 [ERROR] 签名验证过程中发生错误: 'UserConfig' object has no attribute 'get'
+2025-06-29 10:16:46,100 [ERROR] 签名验证过程中发生错误: 'UserConfig' object has no attribute 'get'
+2025-06-29 10:16:46,100 [WARNING] 无法验证Webhook签名
+2025-06-29 10:16:46,101 [INFO] webhook 执行时间: 0.0180秒
+2025-06-29 10:16:46,111 [INFO] 192.168.1.195 - - [29/Jun/2025 10:16:46] "[31m[1mPOST /webhook HTTP/1.1[0m" 403 -
+2025-06-29 10:17:27,098 [INFO]  * Detected change in 'D:\\fleshrecord\\handlers\\webhook_handler.py', reloading
+2025-06-29 10:17:27,135 [INFO]  * Restarting with stat
+2025-06-29 10:17:28,085 [INFO] Starting Flask application v0.2.0
+2025-06-29 10:17:28,111 [WARNING]  * Debugger is active!
+2025-06-29 10:17:28,120 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 10:17:30,423 [INFO]  * Detected change in 'D:\\fleshrecord\\handlers\\webhook_handler.py', reloading
+2025-06-29 10:17:30,494 [INFO]  * Restarting with stat
+2025-06-29 10:17:31,729 [INFO] Starting Flask application v0.2.0
+2025-06-29 10:17:31,759 [WARNING]  * Debugger is active!
+2025-06-29 10:17:31,766 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 10:17:48,707 [INFO] 开始处理交易请求 [ID: b9f25008]
+2025-06-29 10:17:48,707 [INFO] [b9f25008] 交易数据验证成功: {'amount': '35.0', 'description': '午饭', 'source_account': '工资账户', 'destination_account': '餐饮', 'category': 'N/A', 'budget': 'N/A'}
+2025-06-29 10:17:48,708 [INFO] 添加交易记录: 午饭
+2025-06-29 10:17:48,708 [INFO] 发送到Firefly III的数据: {'transactions': [{'type': 'withdrawal', 'date': '2025-06-28', 'amount': '[FILTERED]', 'description': '午饭', 'source_name': '工资账户', 'destination_name': '餐饮'}]}
+2025-06-29 10:17:49,022 [INFO] 交易添加成功: 213
+2025-06-29 10:17:49,023 [INFO] [b9f25008] 交易创建成功: amount=35.0, description=午饭
+2025-06-29 10:17:49,024 [INFO] add_transaction 执行时间: 0.3185秒
+2025-06-29 10:17:49,025 [INFO] 192.168.1.68 - - [29/Jun/2025 10:17:49] "POST /add_transaction?Authorization[FILTERED] HTTP/1.1" 201 -
+2025-06-29 10:17:49,028 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1751163470,v1=1baa95376af1eb7c8aaaefd33e576dc643239ac96b7ff042eb017cb860d93ebf', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1642'}
+2025-06-29 10:17:49,029 [INFO] Received data: {"uuid": "efaeb3b8-a6e7-44d8-be45-498a6e5a181f", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 211, "created_at": "2025-06-28T23:55:22+08:00", "updated_at": "2025-06-28T23:55:22+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "211", "type": "withdrawal", "date": "2025-06-28T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "午饭", "source_id": "1", "source_name": "工资账户", "source_iban": "", "source_type": "Asset account", "destination_id": "77", "destination_name": "餐饮", "destination_iban": null, "destination_type": "Expense account", "budget_id": "", "budget_name": null, "category_id": "", "category_name": null, "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": [], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "20e6c91dbe3881b356d474cee24a020b73585f52447f3cb59d0c8742d4d3ea8a", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/211"}]}}
+2025-06-29 10:17:49,030 [INFO] Webhook处理成功: 您新增了一笔交易：午饭, 费用：[FILTERED]，分类：None，预算：None。
+2025-06-29 10:17:49,030 [INFO] webhook 执行时间: 0.0034秒
+2025-06-29 10:17:49,031 [INFO] 192.168.1.195 - - [29/Jun/2025 10:17:49] "POST /webhook HTTP/1.1" 200 -
+2025-06-29 10:17:49,081 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1751163470,v1=dc380a3100f3cdac03b14744fe76574750debd89e55f919281afff64f763faa8', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1642'}
+2025-06-29 10:17:49,082 [INFO] Received data: {"uuid": "b0ccb19f-4136-42c7-a3f0-9e5d8e826002", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 212, "created_at": "2025-06-29T10:16:46+08:00", "updated_at": "2025-06-29T10:16:46+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "212", "type": "withdrawal", "date": "2025-06-28T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "午饭", "source_id": "1", "source_name": "工资账户", "source_iban": "", "source_type": "Asset account", "destination_id": "77", "destination_name": "餐饮", "destination_iban": null, "destination_type": "Expense account", "budget_id": "", "budget_name": null, "category_id": "", "category_name": null, "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": [], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "20e6c91dbe3881b356d474cee24a020b73585f52447f3cb59d0c8742d4d3ea8a", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/212"}]}}
+2025-06-29 10:17:49,082 [INFO] Webhook处理成功: 您新增了一笔交易：午饭, 费用：[FILTERED]，分类：None，预算：None。
+2025-06-29 10:17:49,083 [INFO] webhook 执行时间: 0.0061秒
+2025-06-29 10:17:49,083 [INFO] 192.168.1.195 - - [29/Jun/2025 10:17:49] "POST /webhook HTTP/1.1" 200 -
+2025-06-29 10:17:49,100 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1751163470,v1=f0665f004ae9029dda7191feb280828c94c2e63817292788dc6886bf466a236e', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1642'}
+2025-06-29 10:17:49,101 [INFO] Received data: {"uuid": "57f1c505-c725-4feb-942a-2552ade89da6", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 213, "created_at": "2025-06-29T10:17:49+08:00", "updated_at": "2025-06-29T10:17:49+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "213", "type": "withdrawal", "date": "2025-06-28T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "午饭", "source_id": "1", "source_name": "工资账户", "source_iban": "", "source_type": "Asset account", "destination_id": "77", "destination_name": "餐饮", "destination_iban": null, "destination_type": "Expense account", "budget_id": "", "budget_name": null, "category_id": "", "category_name": null, "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": [], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "20e6c91dbe3881b356d474cee24a020b73585f52447f3cb59d0c8742d4d3ea8a", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/213"}]}}
+2025-06-29 10:17:49,127 [INFO] Webhook处理成功: 您新增了一笔交易：午饭, 费用：[FILTERED]，分类：None，预算：None。
+2025-06-29 10:17:49,157 [INFO] webhook 执行时间: 0.0593秒
+2025-06-29 10:17:49,163 [INFO] 192.168.1.195 - - [29/Jun/2025 10:17:49] "POST /webhook HTTP/1.1" 200 -
+2025-06-29 10:55:58,107 [INFO]  * Detected change in 'D:\\fleshrecord\\handlers\\notification_handler.py', reloading
+2025-06-29 10:55:58,155 [INFO]  * Restarting with stat
+2025-06-29 10:55:59,341 [INFO] Starting Flask application v0.2.0
+2025-06-29 10:55:59,363 [WARNING]  * Debugger is active!
+2025-06-29 10:55:59,370 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 10:56:07,090 [INFO]  * Detected change in 'D:\\fleshrecord\\handlers\\notification_handler.py', reloading
+2025-06-29 10:56:07,172 [INFO]  * Restarting with stat
+2025-06-29 10:56:08,924 [INFO] Starting Flask application v0.2.0
+2025-06-29 10:56:08,948 [WARNING]  * Debugger is active!
+2025-06-29 10:56:08,954 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 10:56:20,894 [INFO]  * Detected change in 'D:\\fleshrecord\\handlers\\notification_handler.py', reloading
+2025-06-29 10:56:20,964 [INFO]  * Restarting with stat
+2025-06-29 10:56:22,094 [INFO] Starting Flask application v0.2.0
+2025-06-29 10:56:22,117 [WARNING]  * Debugger is active!
+2025-06-29 10:56:22,125 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 10:57:08,909 [INFO] 开始处理交易请求 [ID: 9d9b7cae]
+2025-06-29 10:57:08,910 [INFO] [9d9b7cae] 交易数据验证成功: {'amount': '35.0', 'description': '午饭', 'source_account': '工资账户', 'destination_account': '餐饮', 'category': 'N/A', 'budget': 'N/A'}
+2025-06-29 10:57:08,910 [INFO] 添加交易记录: 午饭
+2025-06-29 10:57:08,911 [INFO] 发送到Firefly III的数据: {'transactions': [{'type': 'withdrawal', 'date': '2025-06-28', 'amount': '[FILTERED]', 'description': '午饭', 'source_name': '工资账户', 'destination_name': '餐饮'}]}
+2025-06-29 10:57:09,213 [INFO] 交易添加成功: 214
+2025-06-29 10:57:09,213 [INFO] [9d9b7cae] 交易创建成功: amount=35.0, description=午饭
+2025-06-29 10:57:09,214 [INFO] add_transaction 执行时间: 0.3058秒
+2025-06-29 10:57:09,215 [INFO] 192.168.1.68 - - [29/Jun/2025 10:57:09] "POST /add_transaction?Authorization[FILTERED] HTTP/1.1" 201 -
+2025-06-29 10:57:09,223 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1751165830,v1=1c050b883327671e6ec55643c699f6b118cb7bf10db7a761b71432d9a21508df', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1642'}
+2025-06-29 10:57:09,224 [INFO] Received data: {"uuid": "089d7858-5725-49a9-846b-2a407a62c133", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 214, "created_at": "2025-06-29T10:57:10+08:00", "updated_at": "2025-06-29T10:57:10+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "214", "type": "withdrawal", "date": "2025-06-28T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "午饭", "source_id": "1", "source_name": "工资账户", "source_iban": "", "source_type": "Asset account", "destination_id": "77", "destination_name": "餐饮", "destination_iban": null, "destination_type": "Expense account", "budget_id": "", "budget_name": null, "category_id": "", "category_name": null, "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": [], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "20e6c91dbe3881b356d474cee24a020b73585f52447f3cb59d0c8742d4d3ea8a", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/214"}]}}
+2025-06-29 10:57:09,225 [INFO] Webhook处理成功: 您新增了一笔交易：午饭, 费用：[FILTERED]，分类：None，预算：None。
+2025-06-29 10:57:09,225 [INFO] webhook 执行时间: 0.0051秒
+2025-06-29 10:57:09,226 [INFO] 192.168.1.195 - - [29/Jun/2025 10:57:09] "POST /webhook HTTP/1.1" 200 -
+2025-06-29 11:03:41,053 [INFO]  * Detected change in 'D:\\fleshrecord\\handlers\\transaction_handler.py', reloading
+2025-06-29 11:03:41,102 [INFO]  * Restarting with stat
+2025-06-29 11:03:42,158 [INFO] Starting Flask application v0.2.0
+2025-06-29 11:03:42,184 [WARNING]  * Debugger is active!
+2025-06-29 11:03:42,193 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 11:03:43,475 [INFO]  * Detected change in 'D:\\fleshrecord\\handlers\\transaction_handler.py', reloading
+2025-06-29 11:03:43,612 [INFO]  * Restarting with stat
+2025-06-29 11:03:44,907 [INFO] Starting Flask application v0.2.0
+2025-06-29 11:03:44,935 [WARNING]  * Debugger is active!
+2025-06-29 11:03:44,987 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 11:03:55,892 [INFO]  * Detected change in 'D:\\fleshrecord\\handlers\\transaction_handler.py', reloading
+2025-06-29 11:03:55,926 [INFO]  * Restarting with stat
+2025-06-29 11:03:56,854 [INFO] Starting Flask application v0.2.0
+2025-06-29 11:03:56,875 [WARNING]  * Debugger is active!
+2025-06-29 11:03:56,881 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 11:03:59,141 [INFO]  * Detected change in 'D:\\fleshrecord\\handlers\\transaction_handler.py', reloading
+2025-06-29 11:03:59,181 [INFO]  * Restarting with stat
+2025-06-29 11:04:00,195 [INFO] Starting Flask application v0.2.0
+2025-06-29 11:04:00,221 [WARNING]  * Debugger is active!
+2025-06-29 11:04:00,227 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 11:04:10,021 [INFO]  * Detected change in 'D:\\fleshrecord\\app.py', reloading
+2025-06-29 11:04:10,066 [INFO]  * Restarting with stat
+2025-06-29 11:04:10,959 [INFO] Starting Flask application v0.2.0
+2025-06-29 11:04:10,980 [WARNING]  * Debugger is active!
+2025-06-29 11:04:10,987 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 11:04:14,316 [INFO]  * Detected change in 'D:\\fleshrecord\\app.py', reloading
+2025-06-29 11:04:14,382 [INFO]  * Restarting with stat
+2025-06-29 11:04:15,328 [INFO] Starting Flask application v0.2.0
+2025-06-29 11:04:15,357 [WARNING]  * Debugger is active!
+2025-06-29 11:04:15,365 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 11:04:32,710 [INFO] 开始处理交易请求 [ID: 2df7778e]
+2025-06-29 11:04:32,711 [INFO] [2df7778e] 交易数据验证成功: {'amount': '35.0', 'description': '午饭', 'source_account': '工资账户', 'destination_account': '餐饮', 'category': 'N/A', 'budget': 'N/A'}
+2025-06-29 11:04:32,711 [INFO] 添加交易记录: 午饭
+2025-06-29 11:04:32,712 [INFO] 发送到Firefly III的数据: {'transactions': [{'type': 'withdrawal', 'date': '2025-06-28', 'amount': '[FILTERED]', 'description': '午饭', 'source_name': '工资账户', 'destination_name': '餐饮'}]}
+2025-06-29 11:04:32,990 [INFO] 交易添加成功: 215
+2025-06-29 11:04:32,991 [INFO] [2df7778e] 交易创建成功: amount=35.0, description=午饭
+2025-06-29 11:04:32,991 [ERROR] [2df7778e] 发送通知失败: NotificationHandler.send_transaction_notification() got an unexpected keyword argument 'request_body'
+2025-06-29 11:04:32,992 [INFO] add_transaction 执行时间: 0.2816秒
+2025-06-29 11:04:32,994 [INFO] 192.168.1.68 - - [29/Jun/2025 11:04:32] "POST /add_transaction?Authorization[FILTERED] HTTP/1.1" 201 -
+2025-06-29 11:04:33,004 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1751166274,v1=9ddc5604da13a30d4b1c5839788543a8fd3cbee3fd4a01b2158a4fa392e6c4bf', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1642'}
+2025-06-29 11:04:33,005 [INFO] Received data: {"uuid": "be78af79-84da-423f-b8ee-c51f14e16b2e", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 215, "created_at": "2025-06-29T11:04:33+08:00", "updated_at": "2025-06-29T11:04:33+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "215", "type": "withdrawal", "date": "2025-06-28T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "午饭", "source_id": "1", "source_name": "工资账户", "source_iban": "", "source_type": "Asset account", "destination_id": "77", "destination_name": "餐饮", "destination_iban": null, "destination_type": "Expense account", "budget_id": "", "budget_name": null, "category_id": "", "category_name": null, "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": [], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "20e6c91dbe3881b356d474cee24a020b73585f52447f3cb59d0c8742d4d3ea8a", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/215"}]}}
+2025-06-29 11:04:33,007 [INFO] Webhook处理成功: 您新增了一笔交易：午饭, 费用：[FILTERED]，分类：None，预算：None。
+2025-06-29 11:04:33,008 [INFO] webhook 执行时间: 0.0052秒
+2025-06-29 11:04:33,011 [INFO] 192.168.1.195 - - [29/Jun/2025 11:04:33] "POST /webhook HTTP/1.1" 200 -
+2025-06-29 11:04:43,791 [INFO] Starting Flask application v0.2.0
+2025-06-29 11:04:45,118 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-29 11:04:45,118 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-29 11:04:45,122 [INFO]  * Restarting with stat
+2025-06-29 11:04:46,115 [INFO] Starting Flask application v0.2.0
+2025-06-29 11:04:46,140 [WARNING]  * Debugger is active!
+2025-06-29 11:04:46,146 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 11:04:47,475 [INFO] 开始处理交易请求 [ID: 3dfb0ef6]
+2025-06-29 11:04:47,476 [INFO] [3dfb0ef6] 交易数据验证成功: {'amount': '35.0', 'description': '午饭', 'source_account': '工资账户', 'destination_account': '餐饮', 'category': 'N/A', 'budget': 'N/A'}
+2025-06-29 11:04:47,476 [INFO] 添加交易记录: 午饭
+2025-06-29 11:04:47,477 [INFO] 发送到Firefly III的数据: {'transactions': [{'type': 'withdrawal', 'date': '2025-06-28', 'amount': '[FILTERED]', 'description': '午饭', 'source_name': '工资账户', 'destination_name': '餐饮'}]}
+2025-06-29 11:04:47,772 [INFO] 交易添加成功: 216
+2025-06-29 11:04:47,773 [INFO] [3dfb0ef6] 交易创建成功: amount=35.0, description=午饭
+2025-06-29 11:04:47,773 [ERROR] [3dfb0ef6] 发送通知失败: NotificationHandler.send_transaction_notification() got an unexpected keyword argument 'request_body'
+2025-06-29 11:04:47,774 [INFO] add_transaction 执行时间: 0.2993秒
+2025-06-29 11:04:47,775 [INFO] 192.168.1.68 - - [29/Jun/2025 11:04:47] "POST /add_transaction?Authorization[FILTERED] HTTP/1.1" 201 -
+2025-06-29 11:04:47,785 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1751166288,v1=cad7ac0b9a493c615ea0167a5fb676c03a00acbc76e4a05c5691b60cff5d27ca', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1642'}
+2025-06-29 11:04:47,785 [INFO] Received data: {"uuid": "7a28a80b-01ec-44f5-9951-6f997cb37d92", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 216, "created_at": "2025-06-29T11:04:48+08:00", "updated_at": "2025-06-29T11:04:48+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "216", "type": "withdrawal", "date": "2025-06-28T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "午饭", "source_id": "1", "source_name": "工资账户", "source_iban": "", "source_type": "Asset account", "destination_id": "77", "destination_name": "餐饮", "destination_iban": null, "destination_type": "Expense account", "budget_id": "", "budget_name": null, "category_id": "", "category_name": null, "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": [], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "20e6c91dbe3881b356d474cee24a020b73585f52447f3cb59d0c8742d4d3ea8a", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/216"}]}}
+2025-06-29 11:04:47,786 [INFO] Webhook处理成功: 您新增了一笔交易：午饭, 费用：[FILTERED]，分类：None，预算：None。
+2025-06-29 11:04:47,788 [INFO] webhook 执行时间: 0.0040秒
+2025-06-29 11:04:47,791 [INFO] 192.168.1.195 - - [29/Jun/2025 11:04:47] "POST /webhook HTTP/1.1" 200 -
+2025-06-29 13:32:09,917 [INFO] 开始处理交易请求 [ID: 44145646]
+2025-06-29 13:32:09,919 [INFO] [44145646] 交易数据验证成功: {'amount': '35.0', 'description': '午饭', 'source_account': '工资账户', 'destination_account': '餐饮', 'category': 'N/A', 'budget': 'N/A'}
+2025-06-29 13:32:09,920 [INFO] 添加交易记录: 午饭
+2025-06-29 13:32:09,920 [INFO] 发送到Firefly III的数据: {'transactions': [{'type': 'withdrawal', 'date': '2025-06-28', 'amount': '[FILTERED]', 'description': '午饭', 'source_name': '工资账户', 'destination_name': '餐饮'}]}
+2025-06-29 13:32:10,224 [INFO] 交易添加成功: 217
+2025-06-29 13:32:10,225 [INFO] [44145646] 交易创建成功: amount=35.0, description=午饭
+2025-06-29 13:32:10,225 [ERROR] [44145646] 发送通知失败: NotificationHandler.send_transaction_notification() got an unexpected keyword argument 'request_body'
+2025-06-29 13:32:10,226 [INFO] add_transaction 执行时间: 0.3196秒
+2025-06-29 13:32:10,227 [INFO] 192.168.1.68 - - [29/Jun/2025 13:32:10] "POST /add_transaction?Authorization[FILTERED] HTTP/1.1" 201 -
+2025-06-29 13:32:10,284 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1751175131,v1=f239ed6df846afae3f436dfee640638b9706cee946077efdab372450939c0dfa', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1642'}
+2025-06-29 13:32:10,285 [INFO] Received data: {"uuid": "f9cb8143-c660-47d8-b6e5-ab91c9e12e37", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 217, "created_at": "2025-06-29T13:32:11+08:00", "updated_at": "2025-06-29T13:32:11+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "217", "type": "withdrawal", "date": "2025-06-28T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "午饭", "source_id": "1", "source_name": "工资账户", "source_iban": "", "source_type": "Asset account", "destination_id": "77", "destination_name": "餐饮", "destination_iban": null, "destination_type": "Expense account", "budget_id": "", "budget_name": null, "category_id": "", "category_name": null, "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": [], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "20e6c91dbe3881b356d474cee24a020b73585f52447f3cb59d0c8742d4d3ea8a", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/217"}]}}
+2025-06-29 13:32:10,286 [INFO] Webhook处理成功: 您新增了一笔交易：午饭, 费用：[FILTERED]，分类：None，预算：None。
+2025-06-29 13:32:10,286 [INFO] webhook 执行时间: 0.0546秒
+2025-06-29 13:32:10,287 [INFO] 192.168.1.195 - - [29/Jun/2025 13:32:10] "POST /webhook HTTP/1.1" 200 -
+2025-06-29 13:41:21,470 [INFO]  * Detected change in 'D:\\fleshrecord\\test_notification_fix.py', reloading
+2025-06-29 13:41:21,527 [INFO]  * Restarting with stat
+2025-06-29 13:41:22,957 [INFO] Starting Flask application v0.2.0
+2025-06-29 13:41:22,980 [WARNING]  * Debugger is active!
+2025-06-29 13:41:22,986 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 13:41:47,934 [INFO]  * Detected change in 'D:\\fleshrecord\\handlers\\notification_handler.py', reloading
+2025-06-29 13:41:48,025 [INFO]  * Restarting with stat
+2025-06-29 13:41:49,010 [INFO] Starting Flask application v0.2.0
+2025-06-29 13:41:49,038 [WARNING]  * Debugger is active!
+2025-06-29 13:41:49,044 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 13:41:57,807 [INFO]  * Detected change in 'D:\\fleshrecord\\handlers\\notification_handler.py', reloading
+2025-06-29 13:41:57,848 [INFO]  * Restarting with stat
+2025-06-29 13:41:59,018 [INFO] Starting Flask application v0.2.0
+2025-06-29 13:41:59,044 [WARNING]  * Debugger is active!
+2025-06-29 13:41:59,049 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 13:42:20,635 [INFO]  * Detected change in 'D:\\fleshrecord\\handlers\\notification_handler.py', reloading
+2025-06-29 13:42:20,680 [INFO]  * Restarting with stat
+2025-06-29 13:42:21,921 [INFO] Starting Flask application v0.2.0
+2025-06-29 13:42:21,956 [WARNING]  * Debugger is active!
+2025-06-29 13:42:21,968 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 13:42:30,730 [INFO]  * Detected change in 'D:\\fleshrecord\\test_notification_fix.py', reloading
+2025-06-29 13:42:30,777 [INFO]  * Restarting with stat
+2025-06-29 13:42:32,036 [INFO] Starting Flask application v0.2.0
+2025-06-29 13:42:32,058 [WARNING]  * Debugger is active!
+2025-06-29 13:42:32,064 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 13:43:17,952 [INFO] 开始处理交易请求 [ID: df82c1e5]
+2025-06-29 13:43:17,953 [INFO] [df82c1e5] 交易数据验证成功: {'amount': '35.0', 'description': '午饭', 'source_account': '工资账户', 'destination_account': '餐饮', 'category': 'N/A', 'budget': 'N/A'}
+2025-06-29 13:43:17,953 [INFO] 添加交易记录: 午饭
+2025-06-29 13:43:17,954 [INFO] 发送到Firefly III的数据: {'transactions': [{'type': 'withdrawal', 'date': '2025-06-28', 'amount': '[FILTERED]', 'description': '午饭', 'source_name': '工资账户', 'destination_name': '餐饮'}]}
+2025-06-29 13:43:18,216 [INFO] 交易添加成功: 218
+2025-06-29 13:43:18,217 [INFO] [df82c1e5] 交易创建成功: amount=35.0, description=午饭
+2025-06-29 13:43:18,218 [ERROR] [df82c1e5] 发送通知失败: NotificationHandler.send_transaction_notification() got an unexpected keyword argument 'request_body'
+2025-06-29 13:43:18,218 [INFO] add_transaction 执行时间: 0.2660秒
+2025-06-29 13:43:18,218 [INFO] 192.168.1.68 - - [29/Jun/2025 13:43:18] "POST /add_transaction?Authorization=[FILTERED] HTTP/1.1" 201 -
+2025-06-29 13:43:18,227 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1751175799,v1=d9e8a17d60baaa502b3cbbfa0e60a8347d2c9d23fe61fe032a49ecfc87443c9f', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1642'}
+2025-06-29 13:43:18,227 [INFO] Received data: {"uuid": "0d1f1a37-9957-4cdf-b757-f95b1321fbea", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 218, "created_at": "2025-06-29T13:43:19+08:00", "updated_at": "2025-06-29T13:43:19+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "218", "type": "withdrawal", "date": "2025-06-28T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "午饭", "source_id": "1", "source_name": "工资账户", "source_iban": "", "source_type": "Asset account", "destination_id": "77", "destination_name": "餐饮", "destination_iban": null, "destination_type": "Expense account", "budget_id": "", "budget_name": null, "category_id": "", "category_name": null, "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": [], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "20e6c91dbe3881b356d474cee24a020b73585f52447f3cb59d0c8742d4d3ea8a", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/218"}]}}
+2025-06-29 13:43:18,228 [INFO] Webhook处理成功: 您新增了一笔交易：午饭, 费用：[FILTERED]，分类：None，预算：None。
+2025-06-29 13:43:18,228 [INFO] webhook 执行时间: 0.0047秒
+2025-06-29 13:43:18,229 [INFO] 192.168.1.195 - - [29/Jun/2025 13:43:18] "POST /webhook HTTP/1.1" 200 -
+2025-06-29 13:44:02,297 [INFO]  * Detected change in 'D:\\fleshrecord\\test_notification_fix.py', reloading
+2025-06-29 13:44:02,340 [INFO]  * Restarting with stat
+2025-06-29 13:44:03,363 [INFO] Starting Flask application v0.2.0
+2025-06-29 13:44:03,395 [WARNING]  * Debugger is active!
+2025-06-29 13:44:03,403 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 13:44:04,623 [INFO]  * Detected change in 'D:\\fleshrecord\\test_notification_fix.py', reloading
+2025-06-29 13:44:04,710 [INFO]  * Restarting with stat
+2025-06-29 13:44:05,791 [INFO] Starting Flask application v0.2.0
+2025-06-29 13:44:05,816 [WARNING]  * Debugger is active!
+2025-06-29 13:44:05,821 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 13:44:12,558 [INFO]  * Detected change in 'D:\\fleshrecord\\handlers\\notification_handler.py', reloading
+2025-06-29 13:44:12,625 [INFO]  * Restarting with stat
+2025-06-29 13:44:14,041 [INFO] Starting Flask application v0.2.0
+2025-06-29 13:44:14,064 [WARNING]  * Debugger is active!
+2025-06-29 13:44:14,069 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 13:45:18,878 [INFO] 开始处理交易请求 [ID: 5dca6822]
+2025-06-29 13:45:18,879 [INFO] [5dca6822] 交易数据验证成功: {'amount': '35.0', 'description': '午饭', 'source_account': '工资账户', 'destination_account': '餐饮', 'category': 'N/A', 'budget': 'N/A'}
+2025-06-29 13:45:18,879 [INFO] 添加交易记录: 午饭
+2025-06-29 13:45:18,880 [INFO] 发送到Firefly III的数据: {'transactions': [{'type': 'withdrawal', 'date': '2025-06-28', 'amount': '[FILTERED]', 'description': '午饭', 'source_name': '工资账户', 'destination_name': '餐饮'}]}
+2025-06-29 13:45:19,163 [INFO] 交易添加成功: 219
+2025-06-29 13:45:19,164 [INFO] [5dca6822] 交易创建成功: amount=35.0, description=午饭
+2025-06-29 13:45:19,164 [ERROR] [5dca6822] 发送通知失败: NotificationHandler.send_transaction_notification() got an unexpected keyword argument 'request_body'
+2025-06-29 13:45:19,164 [INFO] add_transaction 执行时间: 0.2862秒
+2025-06-29 13:45:19,165 [INFO] 192.168.1.68 - - [29/Jun/2025 13:45:19] "POST /add_transaction?Authorization[FILTERED] HTTP/1.1" 201 -
+2025-06-29 13:45:19,174 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1751175920,v1=48383823302d33408954237ab1befbeff37347644115882b1625a0a94d29cf22', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1642'}
+2025-06-29 13:45:19,174 [INFO] Received data: {"uuid": "f2b6360d-08a0-4fba-9b77-7cbdc148d799", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 219, "created_at": "2025-06-29T13:45:20+08:00", "updated_at": "2025-06-29T13:45:20+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "219", "type": "withdrawal", "date": "2025-06-28T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "午饭", "source_id": "1", "source_name": "工资账户", "source_iban": "", "source_type": "Asset account", "destination_id": "77", "destination_name": "餐饮", "destination_iban": null, "destination_type": "Expense account", "budget_id": "", "budget_name": null, "category_id": "", "category_name": null, "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": [], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "20e6c91dbe3881b356d474cee24a020b73585f52447f3cb59d0c8742d4d3ea8a", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/219"}]}}
+2025-06-29 13:45:19,174 [INFO] Webhook处理成功: 您新增了一笔交易：午饭, 费用：[FILTERED]，分类：None，预算：None。
+2025-06-29 13:45:19,175 [INFO] webhook 执行时间: 0.0041秒
+2025-06-29 13:45:19,176 [INFO] 192.168.1.195 - - [29/Jun/2025 13:45:19] "POST /webhook HTTP/1.1" 200 -
+2025-06-29 13:47:23,652 [INFO] 开始处理交易请求 [ID: b3a30779]
+2025-06-29 13:47:23,653 [INFO] [b3a30779] 交易数据验证成功: {'amount': '35.0', 'description': '午饭', 'source_account': '工资账户', 'destination_account': '餐饮', 'category': 'N/A', 'budget': 'N/A'}
+2025-06-29 13:47:23,654 [INFO] 添加交易记录: 午饭
+2025-06-29 13:47:23,654 [INFO] 发送到Firefly III的数据: {'transactions': [{'type': 'withdrawal', 'date': '2025-06-28', 'amount': '[FILTERED]', 'description': '午饭', 'source_name': '工资账户', 'destination_name': '餐饮'}]}
+2025-06-29 13:47:23,950 [INFO] 交易添加成功: 220
+2025-06-29 13:47:23,964 [INFO] [b3a30779] 交易创建成功: amount=35.0, description=午饭
+2025-06-29 13:47:23,964 [ERROR] [b3a30779] 发送通知失败: NotificationHandler.send_transaction_notification() got an unexpected keyword argument 'request_body'
+2025-06-29 13:47:23,965 [INFO] add_transaction 执行时间: 0.3125秒
+2025-06-29 13:47:23,965 [INFO] 192.168.1.68 - - [29/Jun/2025 13:47:23] "POST /add_transaction?Authorization[FILTERED] HTTP/1.1" 201 -
+2025-06-29 13:47:23,970 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1751176045,v1=c0e8b290167edc1f0b258deb8aa0e4eee31da4a0e95452488cb56626a3946078', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1642'}
+2025-06-29 13:47:23,971 [INFO] Received data: {"uuid": "85d107f3-1fda-4429-a5ac-4743eda0794e", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 220, "created_at": "2025-06-29T13:47:24+08:00", "updated_at": "2025-06-29T13:47:24+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "220", "type": "withdrawal", "date": "2025-06-28T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "午饭", "source_id": "1", "source_name": "工资账户", "source_iban": "", "source_type": "Asset account", "destination_id": "77", "destination_name": "餐饮", "destination_iban": null, "destination_type": "Expense account", "budget_id": "", "budget_name": null, "category_id": "", "category_name": null, "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": [], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "20e6c91dbe3881b356d474cee24a020b73585f52447f3cb59d0c8742d4d3ea8a", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/220"}]}}
+2025-06-29 13:47:23,972 [INFO] Webhook处理成功: 您新增了一笔交易：午饭, 费用：[FILTERED]，分类：None，预算：None。
+2025-06-29 13:47:23,972 [INFO] webhook 执行时间: 0.0044秒
+2025-06-29 13:47:23,973 [INFO] 192.168.1.195 - - [29/Jun/2025 13:47:23] "POST /webhook HTTP/1.1" 200 -

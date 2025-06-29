@@ -3569,3 +3569,17 @@ date
 2025-06-29 16:43:19,643 [INFO] 成功获取 1 个预算
 2025-06-29 16:43:19,643 [INFO] dify_webhook 执行时间: 0.1908秒
 2025-06-29 16:43:19,644 [INFO] 192.168.1.68 - - [29/Jun/2025 16:43:19] "POST /dify_webhook HTTP/1.1" 200 -
+2025-06-29 17:00:23,642 [INFO] Starting Flask application v0.2.0
+2025-06-29 17:00:23,646 [INFO] 定时任务调度器已启动
+2025-06-29 17:00:23,647 [INFO] 定时报告服务已启动
+2025-06-29 17:00:24,985 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-29 17:00:24,985 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-29 17:00:24,988 [INFO]  * Restarting with stat
+2025-06-29 17:00:26,065 [INFO] Starting Flask application v0.2.0
+2025-06-29 17:00:26,069 [INFO] 定时任务调度器已启动
+2025-06-29 17:00:26,069 [INFO] 定时报告服务已启动
+2025-06-29 17:00:26,086 [WARNING]  * Debugger is active!
+2025-06-29 17:00:26,093 [INFO]  * Debugger PIN: 122-422-975

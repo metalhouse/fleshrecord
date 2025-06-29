@@ -101,7 +101,60 @@ class FireflyService:
         
         return None
     
-
+    def get_transactions_summary(self, query_params: dict = None) -> dict:
+        """获取交易汇总信息"""
+        try:
+            # 调用get_transactions获取交易数据
+            transactions_result = self.get_transactions(query_params)
+            
+            if not transactions_result.get('success', False):
+                return transactions_result
+            
+            transactions_data = transactions_result.get('data', [])
+            
+            # 统计汇总信息
+            total_count = len(transactions_data)
+            total_amount = 0.0
+            categories = {}
+            
+            for transaction in transactions_data:
+                if isinstance(transaction, dict) and 'attributes' in transaction:
+                    for split in transaction['attributes'].get('transactions', []):
+                        amount_str = split.get('amount', '0')
+                        try:
+                            amount = float(amount_str)
+                            total_amount += abs(amount)  # 使用绝对值计算总金额
+                        except (ValueError, TypeError):
+                            continue
+                        
+                        category = split.get('category_name', '未分类')
+                        if category not in categories:
+                            categories[category] = {'count': 0, 'amount': 0.0}
+                        categories[category]['count'] += 1
+                        categories[category]['amount'] += abs(amount)
+            
+            summary = {
+                'total_transactions': total_count,
+                'total_amount': round(total_amount, 2),
+                'categories': categories,
+                'has_data': total_count > 0
+            }
+            
+            self.logger.info(f"交易汇总: {total_count}笔交易，总金额{total_amount}")
+            
+            return {
+                'success': True,
+                'data': summary,
+                'message': f"汇总成功，共{total_count}笔交易"
+            }
+            
+        except Exception as e:
+            self.logger.error(f"获取交易汇总失败: {e}", exc_info=True)
+            return {
+                'success': False,
+                'error': f"获取交易汇总时发生错误: {str(e)}",
+                'status_code': 500
+            }
     
     @retry_on_failure(max_attempts=3, exceptions=(requests.RequestException,))
     def add_transaction(self, transaction_data) -> dict:

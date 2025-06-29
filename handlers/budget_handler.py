@@ -157,7 +157,7 @@ class BudgetHandler:
         
         # 获取该预算的全部限额（limits）
         limits_url = (
-            f'{self.config.FIREFLY_API_URL}/budgets/{budget_id}/limits'
+            f'{self.firefly_service.api_url}/budgets/{budget_id}/limits'
             f'?start_date={start_date}&end_date={end_date}'
         )
         

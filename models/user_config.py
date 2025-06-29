@@ -9,6 +9,40 @@ import os
 from typing import Dict, Optional, Any
 from pydantic import BaseModel, field_validator, ValidationError
 from pathlib import Path
+import logging
+
+# 设置日志记录器
+logger = logging.getLogger(__name__)
+
+class DifyConfig(BaseModel):
+    """Dify API 配置模型"""
+    api_key: str
+    workflow_id: str
+    enabled: bool = True
+
+
+class ReportConfig(BaseModel):
+    """报告配置模型"""
+    daily_enabled: bool = True
+    daily_time: str = "09:00"  # 每日报告时间 HH:MM
+    daily_prompt: str = "请生成今日财务日报，包括支出收入情况和预算执行情况"
+    
+    weekly_enabled: bool = True
+    weekly_day: int = 1  # 周一=1, 周日=7
+    weekly_time: str = "10:00"
+    weekly_prompt: str = "请生成本周财务周报，分析一周的支出趋势和预算达成情况"
+    
+    monthly_enabled: bool = True
+    monthly_day: int = 1  # 每月第几天
+    monthly_time: str = "09:30"
+    monthly_prompt: str = "请生成本月财务月报，包括详细的支出分析、预算对比和财务健康评价"
+    
+    yearly_enabled: bool = True
+    yearly_month: int = 1  # 每年第几月
+    yearly_day: int = 1    # 每月第几天
+    yearly_time: str = "10:00"
+    yearly_prompt: str = "请生成本年财务年报，包含全年财务概览、趋势分析和下年度建议"
+
 
 class UserConfig(BaseModel):
     """用户配置模型"""
@@ -21,6 +55,12 @@ class UserConfig(BaseModel):
     firefly_api_url: Optional[str] = None  # 默认为全局配置
     notification_enabled: bool = True
     language: str = "zh"
+    
+    # Dify 配置
+    dify_config: Optional[DifyConfig] = None
+    
+    # 报告配置
+    report_config: Optional[ReportConfig] = None
 
     @field_validator('firefly_access_token')
     def validate_token(cls, v):
@@ -50,8 +90,7 @@ class UserConfigManager:
             config_data['user_id'] = user_id
             return UserConfig(**config_data)
         except (json.JSONDecodeError, ValidationError, KeyError) as e:
-            from flask import current_app as app
-            app.logger.error(f"加载用户配置失败 (user_id={user_id}): {str(e)}")
+            logger.error(f"加载用户配置失败 (user_id={user_id}): {str(e)}")
             return None
 
     def save_user_config(self, config: UserConfig) -> bool:
@@ -64,8 +103,7 @@ class UserConfigManager:
                 json.dump(config_dict, f, ensure_ascii=False, indent=2)
             return True
         except Exception as e:
-            from flask import current_app as app
-            app.logger.error(f"保存用户配置失败 (user_id={config.user_id}): {str(e)}")
+            logger.error(f"保存用户配置失败 (user_id={config.user_id}): {str(e)}")
             return False
 
     def list_users(self) -> Dict[str, str]:
@@ -84,8 +122,7 @@ class UserConfigManager:
                 config_file.unlink()
                 return True
             except Exception as e:
-                from flask import current_app as app
-                app.logger.error(f"删除用户配置失败 (user_id={user_id}): {str(e)}")
+                logger.error(f"删除用户配置失败 (user_id={user_id}): {str(e)}")
         return False
 
 

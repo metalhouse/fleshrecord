@@ -5,5 +5,28 @@
     "webhook_secret_update": "your_webhook_secret_update_here",
     "firefly_api_url": "http://192.168.1.195:9941/api/v1",
     "notification_enabled": true,
-    "language": "zh"
+    "language": "zh",
+    "dify_config": {
+        "api_key": "app-wpqEbSpSCR5FPmVsDJuhg3yU",
+        "workflow_id": "0396ea7b-9133-4236-9c0f-6c1eeba82e98",
+        "enabled": true
+    },
+    "report_config": {
+        "daily_enabled": true,
+        "daily_time": "09:00",
+        "daily_prompt": "请生成今日财务日报，包括支出收入情况和预算执行情况",
+        "weekly_enabled": true,
+        "weekly_day": 1,
+        "weekly_time": "10:00",
+        "weekly_prompt": "请生成本周财务周报，分析一周的支出趋势和预算达成情况",
+        "monthly_enabled": true,
+        "monthly_day": 1,
+        "monthly_time": "09:30",
+        "monthly_prompt": "请生成本月财务月报，包括详细的支出分析、预算对比和财务健康评价",
+        "yearly_enabled": true,
+        "yearly_month": 1,
+        "yearly_day": 1,
+        "yearly_time": "10:00",
+        "yearly_prompt": "请生成本年财务年报，包含全年财务概览、趋势分析和下年度建议"
+    }
 }

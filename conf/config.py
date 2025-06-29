@@ -42,6 +42,9 @@ class Config:
     LOG_LEVEL = env_config.log_level if env_config else "INFO"
     LOG_FILE = env_config.log_file if env_config else "log/file.log"
     
+    # Dify API配置
+    DIFY_API_URL = env_config.dify_api_url if env_config else "http://192.168.1.68/v1"
+    
     # 服务器配置
     HOST = env_config.host if env_config else "0.0.0.0"
     PORT = env_config.port if env_config else 9012

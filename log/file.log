@@ -3015,3 +3015,557 @@ date
 2025-06-29 13:47:23,972 [INFO] Webhook处理成功: 您新增了一笔交易：午饭, 费用：[FILTERED]，分类：None，预算：None。
 2025-06-29 13:47:23,972 [INFO] webhook 执行时间: 0.0044秒
 2025-06-29 13:47:23,973 [INFO] 192.168.1.195 - - [29/Jun/2025 13:47:23] "POST /webhook HTTP/1.1" 200 -
+2025-06-29 13:58:37,835 [INFO]  * Detected change in 'D:\\fleshrecord\\models\\user_config.py', reloading
+2025-06-29 13:58:37,903 [INFO]  * Restarting with stat
+2025-06-29 13:58:39,195 [INFO] Starting Flask application v0.2.0
+2025-06-29 13:58:39,222 [WARNING]  * Debugger is active!
+2025-06-29 13:58:39,229 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:00:26,513 [INFO]  * Detected change in 'D:\\fleshrecord\\app.py', reloading
+2025-06-29 14:00:26,551 [INFO]  * Restarting with stat
+2025-06-29 14:00:27,450 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:00:27,468 [WARNING]  * Debugger is active!
+2025-06-29 14:00:27,474 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:00:30,813 [INFO]  * Detected change in 'D:\\fleshrecord\\app.py', reloading
+2025-06-29 14:00:30,866 [INFO]  * Restarting with stat
+2025-06-29 14:00:31,791 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:00:31,817 [WARNING]  * Debugger is active!
+2025-06-29 14:00:31,850 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:00:42,701 [INFO]  * Detected change in 'D:\\fleshrecord\\app.py', reloading
+2025-06-29 14:00:42,740 [INFO]  * Restarting with stat
+2025-06-29 14:00:43,641 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:00:43,644 [INFO] 定时任务调度器已启动
+2025-06-29 14:00:43,646 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:00:43,646 [INFO] 定时报告服务已启动
+2025-06-29 14:00:43,646 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:00:43,647 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:00:43,664 [WARNING]  * Debugger is active!
+2025-06-29 14:00:43,671 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:00:47,068 [INFO]  * Detected change in 'D:\\fleshrecord\\app.py', reloading
+2025-06-29 14:00:47,116 [INFO]  * Restarting with stat
+2025-06-29 14:00:48,986 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:00:48,990 [INFO] 定时任务调度器已启动
+2025-06-29 14:00:48,991 [INFO] 定时报告服务已启动
+2025-06-29 14:00:48,991 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:00:48,992 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:00:48,993 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:00:49,009 [WARNING]  * Debugger is active!
+2025-06-29 14:00:49,015 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:01:48,995 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:01:48,995 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:01:48,995 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:02:21,749 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\report_service.py', reloading
+2025-06-29 14:02:21,789 [INFO]  * Restarting with stat
+2025-06-29 14:02:22,987 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:02:22,992 [INFO] 定时任务调度器已启动
+2025-06-29 14:02:22,993 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:02:22,993 [INFO] 定时报告服务已启动
+2025-06-29 14:02:22,993 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:02:22,994 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:02:23,009 [WARNING]  * Debugger is active!
+2025-06-29 14:02:23,014 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:03:22,995 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:03:22,995 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:03:22,996 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:03:34,040 [INFO]  * Detected change in 'D:\\fleshrecord\\test_report_system.py', reloading
+2025-06-29 14:03:34,078 [INFO]  * Restarting with stat
+2025-06-29 14:03:34,964 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:03:34,969 [INFO] 定时任务调度器已启动
+2025-06-29 14:03:34,969 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:03:34,969 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:03:34,969 [INFO] 定时报告服务已启动
+2025-06-29 14:03:34,970 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:03:34,987 [WARNING]  * Debugger is active!
+2025-06-29 14:03:34,993 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:03:36,192 [INFO]  * Detected change in 'D:\\fleshrecord\\test_report_system.py', reloading
+2025-06-29 14:03:36,237 [INFO]  * Restarting with stat
+2025-06-29 14:03:37,156 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:03:37,159 [INFO] 定时任务调度器已启动
+2025-06-29 14:03:37,159 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:03:37,159 [INFO] 定时报告服务已启动
+2025-06-29 14:03:37,160 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:03:37,160 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:03:37,174 [WARNING]  * Debugger is active!
+2025-06-29 14:03:37,180 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:04:05,126 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\report_service.py', reloading
+2025-06-29 14:04:05,166 [INFO]  * Restarting with stat
+2025-06-29 14:21:12,726 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:21:12,730 [INFO] 定时任务调度器已启动
+2025-06-29 14:21:12,730 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:21:12,730 [INFO] 定时报告服务已启动
+2025-06-29 14:21:12,731 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:21:12,731 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:21:14,549 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-29 14:21:14,549 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-29 14:21:14,551 [INFO]  * Restarting with stat
+2025-06-29 14:21:15,482 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:21:15,486 [INFO] 定时任务调度器已启动
+2025-06-29 14:21:15,486 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:21:15,486 [INFO] 定时报告服务已启动
+2025-06-29 14:21:15,487 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:21:15,487 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:21:15,517 [WARNING]  * Debugger is active!
+2025-06-29 14:21:15,523 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:22:12,732 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:22:12,733 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:22:12,733 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:22:15,488 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:22:15,488 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:22:15,488 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:22:28,466 [INFO]  * Detected change in 'D:\\fleshrecord\\test_report_system.py', reloading
+2025-06-29 14:22:28,504 [INFO]  * Restarting with stat
+2025-06-29 14:22:29,404 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:22:29,408 [INFO] 定时任务调度器已启动
+2025-06-29 14:22:29,408 [INFO] 定时报告服务已启动
+2025-06-29 14:22:29,408 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:22:29,409 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:22:29,409 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:22:29,426 [WARNING]  * Debugger is active!
+2025-06-29 14:22:29,432 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:22:30,635 [INFO]  * Detected change in 'D:\\fleshrecord\\test_report_system.py', reloading
+2025-06-29 14:22:30,674 [INFO]  * Restarting with stat
+2025-06-29 14:22:31,687 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:22:31,691 [INFO] 定时任务调度器已启动
+2025-06-29 14:22:31,691 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:22:31,695 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:22:31,695 [INFO] 定时报告服务已启动
+2025-06-29 14:22:31,695 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:22:31,711 [WARNING]  * Debugger is active!
+2025-06-29 14:22:31,717 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:22:57,577 [INFO]  * Detected change in 'D:\\fleshrecord\\test_report_system.py', reloading
+2025-06-29 14:22:57,620 [INFO]  * Restarting with stat
+2025-06-29 14:22:58,664 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:22:58,669 [INFO] 定时任务调度器已启动
+2025-06-29 14:22:58,669 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:22:58,669 [INFO] 定时报告服务已启动
+2025-06-29 14:22:58,670 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:22:58,670 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:22:58,687 [WARNING]  * Debugger is active!
+2025-06-29 14:22:58,693 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:22:58,914 [INFO]  * Detected change in 'D:\\fleshrecord\\test_report_system.py', reloading
+2025-06-29 14:22:59,046 [INFO]  * Restarting with stat
+2025-06-29 14:23:00,072 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:23:00,076 [INFO] 定时任务调度器已启动
+2025-06-29 14:23:00,076 [INFO] 定时报告服务已启动
+2025-06-29 14:23:00,076 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:23:00,077 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:23:00,077 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:23:00,097 [WARNING]  * Debugger is active!
+2025-06-29 14:23:00,112 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:23:12,734 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:23:12,734 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:23:12,734 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:23:30,305 [INFO]  * Detected change in 'D:\\fleshrecord\\test_report_system.py', reloading
+2025-06-29 14:23:30,352 [INFO]  * Restarting with stat
+2025-06-29 14:23:31,325 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:23:31,329 [INFO] 定时任务调度器已启动
+2025-06-29 14:23:31,329 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:23:31,329 [INFO] 定时报告服务已启动
+2025-06-29 14:23:31,329 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:23:31,330 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:23:31,345 [WARNING]  * Debugger is active!
+2025-06-29 14:23:31,351 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:23:32,533 [INFO]  * Detected change in 'D:\\fleshrecord\\test_report_system.py', reloading
+2025-06-29 14:23:32,571 [INFO]  * Restarting with stat
+2025-06-29 14:23:33,505 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:23:33,509 [INFO] 定时任务调度器已启动
+2025-06-29 14:23:33,510 [INFO] 定时报告服务已启动
+2025-06-29 14:23:33,510 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:23:33,510 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:23:33,511 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:23:33,526 [WARNING]  * Debugger is active!
+2025-06-29 14:23:33,532 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:24:12,736 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:24:12,737 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:24:12,737 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:24:33,513 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:24:33,513 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:24:33,513 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:25:12,738 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:25:12,739 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:25:12,739 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:25:33,515 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:25:33,515 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:25:33,516 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:26:12,741 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:26:12,742 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:26:12,742 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:26:18,635 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\scheduler_service.py', reloading
+2025-06-29 14:26:18,672 [INFO]  * Restarting with stat
+2025-06-29 14:26:19,625 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:26:19,631 [INFO] 定时任务调度器已启动
+2025-06-29 14:26:19,631 [INFO] 定时报告服务已启动
+2025-06-29 14:26:19,649 [WARNING]  * Debugger is active!
+2025-06-29 14:26:19,655 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:26:19,861 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\scheduler_service.py', reloading
+2025-06-29 14:26:19,974 [INFO]  * Restarting with stat
+2025-06-29 14:26:20,971 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:26:20,976 [INFO] 定时任务调度器已启动
+2025-06-29 14:26:20,976 [INFO] 定时报告服务已启动
+2025-06-29 14:26:20,999 [WARNING]  * Debugger is active!
+2025-06-29 14:26:21,010 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:27:12,743 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:27:12,743 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:27:12,743 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:28:12,745 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:28:12,745 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:28:12,746 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:28:20,066 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\dify_service.py', reloading
+2025-06-29 14:28:20,131 [INFO]  * Restarting with stat
+2025-06-29 14:28:21,097 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:28:21,101 [INFO] 定时任务调度器已启动
+2025-06-29 14:28:21,102 [INFO] 定时报告服务已启动
+2025-06-29 14:28:21,125 [WARNING]  * Debugger is active!
+2025-06-29 14:28:21,133 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:28:43,851 [INFO]  * Detected change in 'D:\\fleshrecord\\test_report_system.py', reloading
+2025-06-29 14:28:43,888 [INFO]  * Restarting with stat
+2025-06-29 14:28:44,826 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:28:44,830 [INFO] 定时任务调度器已启动
+2025-06-29 14:28:44,830 [INFO] 定时报告服务已启动
+2025-06-29 14:28:44,846 [WARNING]  * Debugger is active!
+2025-06-29 14:28:44,858 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:28:46,043 [INFO]  * Detected change in 'D:\\fleshrecord\\test_report_system.py', reloading
+2025-06-29 14:28:46,093 [INFO]  * Restarting with stat
+2025-06-29 14:28:47,049 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:28:47,053 [INFO] 定时任务调度器已启动
+2025-06-29 14:28:47,053 [INFO] 定时报告服务已启动
+2025-06-29 14:28:47,074 [WARNING]  * Debugger is active!
+2025-06-29 14:28:47,082 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:29:12,747 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:29:12,747 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:29:12,748 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:29:57,866 [INFO]  * Detected change in 'D:\\fleshrecord\\test_report_system.py', reloading
+2025-06-29 14:29:57,903 [INFO]  * Restarting with stat
+2025-06-29 14:29:58,792 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:29:58,797 [INFO] 定时任务调度器已启动
+2025-06-29 14:29:58,797 [INFO] 定时报告服务已启动
+2025-06-29 14:29:58,816 [WARNING]  * Debugger is active!
+2025-06-29 14:29:58,823 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:30:00,063 [INFO]  * Detected change in 'D:\\fleshrecord\\test_report_system.py', reloading
+2025-06-29 14:30:00,118 [INFO]  * Restarting with stat
+2025-06-29 14:30:01,053 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:30:01,056 [INFO] 定时任务调度器已启动
+2025-06-29 14:30:01,057 [INFO] 定时报告服务已启动
+2025-06-29 14:30:01,071 [WARNING]  * Debugger is active!
+2025-06-29 14:30:01,077 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:30:12,748 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:30:12,749 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:30:12,750 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:30:30,136 [INFO]  * Detected change in 'D:\\fleshrecord\\test_report_system.py', reloading
+2025-06-29 14:30:30,204 [INFO]  * Restarting with stat
+2025-06-29 14:30:31,155 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:30:31,159 [INFO] 定时任务调度器已启动
+2025-06-29 14:30:31,159 [INFO] 定时报告服务已启动
+2025-06-29 14:30:31,176 [WARNING]  * Debugger is active!
+2025-06-29 14:30:31,182 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:30:32,392 [INFO]  * Detected change in 'D:\\fleshrecord\\test_report_system.py', reloading
+2025-06-29 14:30:32,436 [INFO]  * Restarting with stat
+2025-06-29 14:30:33,665 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:30:33,668 [INFO] 定时任务调度器已启动
+2025-06-29 14:30:33,669 [INFO] 定时报告服务已启动
+2025-06-29 14:30:33,685 [WARNING]  * Debugger is active!
+2025-06-29 14:30:33,691 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:31:12,751 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:31:12,751 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:31:12,751 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:32:12,518 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\dify_service.py', reloading
+2025-06-29 14:32:12,559 [INFO]  * Restarting with stat
+2025-06-29 14:32:12,753 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:32:12,754 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:32:12,754 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:32:13,635 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:32:13,639 [INFO] 定时任务调度器已启动
+2025-06-29 14:32:13,640 [INFO] 定时报告服务已启动
+2025-06-29 14:32:13,659 [WARNING]  * Debugger is active!
+2025-06-29 14:32:13,666 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:32:14,902 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\dify_service.py', reloading
+2025-06-29 14:32:14,949 [INFO]  * Restarting with stat
+2025-06-29 14:32:16,224 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:32:16,229 [INFO] 定时任务调度器已启动
+2025-06-29 14:32:16,230 [INFO] 定时报告服务已启动
+2025-06-29 14:32:16,259 [WARNING]  * Debugger is active!
+2025-06-29 14:32:16,268 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:33:12,755 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:33:12,755 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:33:12,756 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:34:12,757 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:34:12,757 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:34:12,758 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:35:12,759 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:35:12,760 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:35:12,760 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:36:12,761 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:36:12,761 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:36:12,762 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:37:12,763 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:37:12,763 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:37:12,763 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:38:12,766 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:38:12,766 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:38:12,766 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:39:12,767 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:39:12,767 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:39:12,768 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:40:12,769 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:40:12,769 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:40:12,769 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:41:12,773 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:41:12,773 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:41:12,773 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:42:12,775 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:42:12,775 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:42:12,776 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:42:57,816 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\dify_service.py', reloading
+2025-06-29 14:42:57,854 [INFO]  * Restarting with stat
+2025-06-29 14:42:59,048 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:42:59,053 [INFO] 定时任务调度器已启动
+2025-06-29 14:42:59,053 [INFO] 定时报告服务已启动
+2025-06-29 14:42:59,069 [WARNING]  * Debugger is active!
+2025-06-29 14:42:59,074 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:43:00,298 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\dify_service.py', reloading
+2025-06-29 14:43:00,340 [INFO]  * Restarting with stat
+2025-06-29 14:43:01,304 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:43:01,308 [INFO] 定时任务调度器已启动
+2025-06-29 14:43:01,309 [INFO] 定时报告服务已启动
+2025-06-29 14:43:01,329 [WARNING]  * Debugger is active!
+2025-06-29 14:43:01,336 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:43:12,777 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:43:12,777 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:43:12,777 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:43:36,832 [INFO]  * Detected change in 'D:\\fleshrecord\\conf\\config.py', reloading
+2025-06-29 14:43:36,886 [INFO]  * Restarting with stat
+2025-06-29 14:43:37,775 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:43:37,779 [INFO] 定时任务调度器已启动
+2025-06-29 14:43:37,779 [INFO] 定时报告服务已启动
+2025-06-29 14:43:37,797 [WARNING]  * Debugger is active!
+2025-06-29 14:43:37,802 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:44:12,779 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:44:12,779 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:44:12,779 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:44:57,156 [INFO]  * Detected change in 'D:\\fleshrecord\\test_report_system.py', reloading
+2025-06-29 14:44:57,194 [INFO]  * Restarting with stat
+2025-06-29 14:44:58,104 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:44:58,107 [INFO] 定时任务调度器已启动
+2025-06-29 14:44:58,108 [INFO] 定时报告服务已启动
+2025-06-29 14:44:58,124 [WARNING]  * Debugger is active!
+2025-06-29 14:44:58,130 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:44:59,321 [INFO]  * Detected change in 'D:\\fleshrecord\\test_report_system.py', reloading
+2025-06-29 14:44:59,364 [INFO]  * Restarting with stat
+2025-06-29 14:45:00,264 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:45:00,268 [INFO] 定时任务调度器已启动
+2025-06-29 14:45:00,268 [INFO] 定时报告服务已启动
+2025-06-29 14:45:00,284 [WARNING]  * Debugger is active!
+2025-06-29 14:45:00,289 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:45:12,781 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:45:12,781 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:45:12,781 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:46:12,782 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:46:12,782 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:46:12,783 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:47:12,785 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:47:12,785 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:47:12,786 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:48:12,787 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:48:12,787 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:48:12,788 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:49:12,789 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:49:12,789 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:49:12,790 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:49:15,084 [INFO]  * Detected change in 'D:\\fleshrecord\\utils\\config_manager.py', reloading
+2025-06-29 14:49:15,127 [INFO]  * Restarting with stat
+2025-06-29 14:49:16,048 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:49:16,053 [INFO] 定时任务调度器已启动
+2025-06-29 14:49:16,053 [INFO] 定时报告服务已启动
+2025-06-29 14:49:16,072 [WARNING]  * Debugger is active!
+2025-06-29 14:49:16,078 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:49:17,279 [INFO]  * Detected change in 'D:\\fleshrecord\\utils\\config_manager.py', reloading
+2025-06-29 14:49:17,344 [INFO]  * Restarting with stat
+2025-06-29 14:49:18,353 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:49:18,356 [INFO] 定时任务调度器已启动
+2025-06-29 14:49:18,357 [INFO] 定时报告服务已启动
+2025-06-29 14:49:18,374 [WARNING]  * Debugger is active!
+2025-06-29 14:49:18,381 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:49:24,944 [INFO]  * Detected change in 'D:\\fleshrecord\\utils\\config_manager.py', reloading
+2025-06-29 14:49:24,983 [INFO]  * Restarting with stat
+2025-06-29 14:49:25,882 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:49:25,886 [INFO] 定时任务调度器已启动
+2025-06-29 14:49:25,886 [INFO] 定时报告服务已启动
+2025-06-29 14:49:25,904 [WARNING]  * Debugger is active!
+2025-06-29 14:49:25,910 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:49:27,133 [INFO]  * Detected change in 'D:\\fleshrecord\\utils\\config_manager.py', reloading
+2025-06-29 14:49:27,173 [INFO]  * Restarting with stat
+2025-06-29 14:49:28,084 [INFO] Starting Flask application v0.2.0
+2025-06-29 14:49:28,088 [INFO] 定时任务调度器已启动
+2025-06-29 14:49:28,088 [INFO] 定时报告服务已启动
+2025-06-29 14:49:28,104 [WARNING]  * Debugger is active!
+2025-06-29 14:49:28,109 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 14:50:12,791 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:50:12,791 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:50:12,791 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:51:12,793 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:51:12,793 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:51:12,794 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:52:12,795 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:52:12,795 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:52:12,796 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:53:12,797 [ERROR] 处理用户 chen00 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:53:12,797 [ERROR] 处理用户 example_user 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:53:12,797 [ERROR] 处理用户 metalhouse 的报告任务时出错: 'UserConfigManager' object has no attribute 'load_user_config'
+2025-06-29 14:53:14,473 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\report_service.py', reloading
+2025-06-29 14:53:14,511 [INFO]  * Restarting with stat
+2025-06-29 16:28:07,875 [INFO] Starting Flask application v0.2.0
+2025-06-29 16:28:07,878 [INFO] 定时任务调度器已启动
+2025-06-29 16:28:07,879 [INFO] 定时报告服务已启动
+2025-06-29 16:28:09,434 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-29 16:28:09,434 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-29 16:28:09,437 [INFO]  * Restarting with stat
+2025-06-29 16:28:10,365 [INFO] Starting Flask application v0.2.0
+2025-06-29 16:28:10,369 [INFO] 定时任务调度器已启动
+2025-06-29 16:28:10,369 [INFO] 定时报告服务已启动
+2025-06-29 16:28:10,385 [WARNING]  * Debugger is active!
+2025-06-29 16:28:10,391 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 16:28:28,598 [INFO] 开始处理交易请求 [ID: 56cff869]
+2025-06-29 16:28:28,598 [INFO] [56cff869] 交易数据验证成功: {'amount': '35.0', 'description': '午饭', 'source_account': '工资账户', 'destination_account': '餐饮', 'category': 'N/A', 'budget': 'N/A'}
+2025-06-29 16:28:28,599 [INFO] 添加交易记录: 午饭
+2025-06-29 16:28:28,599 [INFO] 发送到Firefly III的数据: {'transactions': [{'type': 'withdrawal', 'date': '2025-06-28', 'amount': '[FILTERED]', 'description': '午饭', 'source_name': '工资账户', 'destination_name': '餐饮'}]}
+2025-06-29 16:28:28,947 [INFO] 交易添加成功: 222
+2025-06-29 16:28:28,948 [INFO] [56cff869] 交易创建成功: amount=35.0, description=午饭
+2025-06-29 16:28:28,948 [ERROR] [56cff869] 发送通知失败: NotificationHandler.send_transaction_notification() got an unexpected keyword argument 'request_body'
+2025-06-29 16:28:28,949 [INFO] add_transaction 执行时间: 0.3519秒
+2025-06-29 16:28:28,950 [INFO] 192.168.1.68 - - [29/Jun/2025 16:28:28] "POST /add_transaction?Authorization[FILTERED] HTTP/1.1" 201 -
+2025-06-29 16:28:28,952 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1751185710,v1=7583e90fbcf55535b8f3df0bdbd91b5e44afa0fd6bbae36671f6fc58befb0fe4', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1688'}
+2025-06-29 16:28:28,952 [INFO] Received data: {"uuid": "8571d609-77b8-4c41-a652-0eb3e5de028a", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 221, "created_at": "2025-06-29T15:14:31+08:00", "updated_at": "2025-06-29T15:14:31+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "221", "type": "withdrawal", "date": "2025-06-29T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "消费日报", "source_id": "1", "source_name": "工资账户", "source_iban": "", "source_type": "Asset account", "destination_id": "18", "destination_name": "Cash account", "destination_iban": null, "destination_type": "Cash account", "budget_id": "", "budget_name": null, "category_id": "1", "category_name": "生活饮食", "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": ["日常"], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "155a86f64d6a1d5e582d8273218336e6a8d57684da0569b1a18122fbd0e56db6", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/221"}]}}
+2025-06-29 16:28:28,953 [INFO] Webhook处理成功: 您新增了一笔交易：消费日报, 费用：[FILTERED]，分类：生活饮食，预算：None。
+2025-06-29 16:28:28,954 [INFO] webhook 执行时间: 0.0059秒
+2025-06-29 16:28:28,955 [INFO] 192.168.1.195 - - [29/Jun/2025 16:28:28] "POST /webhook HTTP/1.1" 200 -
+2025-06-29 16:28:29,001 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1751185710,v1=30ed11e4eab917cff7d7cb0f4d84825b6a19159fb9b6d6db87d85326e5aa987b', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1642'}
+2025-06-29 16:28:29,004 [INFO] Received data: {"uuid": "3110560d-1168-4396-bde7-79dd6bd15524", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 222, "created_at": "2025-06-29T16:28:29+08:00", "updated_at": "2025-06-29T16:28:29+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "222", "type": "withdrawal", "date": "2025-06-28T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "午饭", "source_id": "1", "source_name": "工资账户", "source_iban": "", "source_type": "Asset account", "destination_id": "77", "destination_name": "餐饮", "destination_iban": null, "destination_type": "Expense account", "budget_id": "", "budget_name": null, "category_id": "", "category_name": null, "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": [], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "20e6c91dbe3881b356d474cee24a020b73585f52447f3cb59d0c8742d4d3ea8a", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/222"}]}}
+2025-06-29 16:28:29,004 [INFO] Webhook处理成功: 您新增了一笔交易：午饭, 费用：[FILTERED]，分类：None，预算：None。
+2025-06-29 16:28:29,004 [INFO] webhook 执行时间: 0.0113秒
+2025-06-29 16:28:29,005 [INFO] 192.168.1.195 - - [29/Jun/2025 16:28:29] "POST /webhook HTTP/1.1" 200 -
+2025-06-29 16:28:33,681 [ERROR] 获取预算限制失败 (budget_id: 1): 502 Server Error: Bad Gateway for url: http://localhost/api/v1/budgets/1/limits?start_date=2025-06-01&end_date=2025-06-30
+2025-06-29 16:28:33,681 [INFO] 成功获取 1 个预算
+2025-06-29 16:28:33,682 [INFO] budgets 执行时间: 0.2854秒
+2025-06-29 16:28:33,683 [INFO] 192.168.1.68 - - [29/Jun/2025 16:28:33] "GET /budgets?Authorization[FILTERED]&Content-Type=application%2Fjson HTTP/1.1" 200 -
+2025-06-29 16:28:40,618 [WARNING] 缺少X-User-ID请求头
+2025-06-29 16:28:40,619 [INFO] dify_webhook 执行时间: 0.0011秒
+2025-06-29 16:28:40,620 [INFO] 192.168.1.68 - - [29/Jun/2025 16:28:40] "[31m[1mPOST /dify_webhook HTTP/1.1[0m" 400 -
+2025-06-29 16:28:57,588 [INFO] Dify webhook请求: endpoint=/budgets, query_parameters={'include': 'spent', 'start': '2025-06-01', 'end': '2025-06-26'}
+2025-06-29 16:28:57,893 [ERROR] 获取预算限制失败 (budget_id: 1): 502 Server Error: Bad Gateway for url: http://localhost/api/v1/budgets/1/limits?start_date=2025-06-01&end_date=2025-06-30
+2025-06-29 16:28:57,894 [INFO] 成功获取 1 个预算
+2025-06-29 16:28:57,894 [INFO] dify_webhook 执行时间: 0.3095秒
+2025-06-29 16:28:57,895 [INFO] 192.168.1.68 - - [29/Jun/2025 16:28:57] "POST /dify_webhook HTTP/1.1" 200 -
+2025-06-29 16:30:40,730 [INFO] Starting Flask application v0.2.0
+2025-06-29 16:30:40,734 [INFO] 定时任务调度器已启动
+2025-06-29 16:30:40,735 [INFO] 定时报告服务已启动
+2025-06-29 16:30:42,028 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-29 16:30:42,028 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-29 16:30:42,032 [INFO]  * Restarting with stat
+2025-06-29 16:30:43,057 [INFO] Starting Flask application v0.2.0
+2025-06-29 16:30:43,063 [INFO] 定时任务调度器已启动
+2025-06-29 16:30:43,063 [INFO] 定时报告服务已启动
+2025-06-29 16:30:43,084 [WARNING]  * Debugger is active!
+2025-06-29 16:30:43,097 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 16:31:58,926 [INFO] 开始处理交易请求 [ID: c14a10c2]
+2025-06-29 16:31:58,926 [INFO] [c14a10c2] 交易数据验证成功: {'amount': '35.0', 'description': '午饭', 'source_account': '工资账户', 'destination_account': '餐饮', 'category': 'N/A', 'budget': 'N/A'}
+2025-06-29 16:31:58,928 [INFO] 添加交易记录: 午饭
+2025-06-29 16:31:58,928 [INFO] 发送到Firefly III的数据: {'transactions': [{'type': 'withdrawal', 'date': '2025-06-28', 'amount': '[FILTERED]', 'description': '午饭', 'source_name': '工资账户', 'destination_name': '餐饮'}]}
+2025-06-29 16:31:59,217 [INFO] 交易添加成功: 223
+2025-06-29 16:31:59,218 [INFO] [c14a10c2] 交易创建成功: amount=35.0, description=午饭
+2025-06-29 16:31:59,219 [ERROR] [c14a10c2] 发送通知失败: NotificationHandler.send_transaction_notification() got an unexpected keyword argument 'request_body'
+2025-06-29 16:31:59,219 [INFO] add_transaction 执行时间: 0.2933秒
+2025-06-29 16:31:59,219 [INFO] 192.168.1.68 - - [29/Jun/2025 16:31:59] "POST /add_transaction?Authorization=[FILTERED] HTTP/1.1" 201 -
+2025-06-29 16:31:59,229 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1751185920,v1=1445e830891ff2f90b49ddd5fb293225589f26c5d846ec4d6ea2f48cc411467f', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1642'}
+2025-06-29 16:31:59,229 [INFO] Received data: {"uuid": "feed47ea-c151-476c-824c-f1c469493589", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 223, "created_at": "2025-06-29T16:32:00+08:00", "updated_at": "2025-06-29T16:32:00+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "223", "type": "withdrawal", "date": "2025-06-28T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "午饭", "source_id": "1", "source_name": "工资账户", "source_iban": "", "source_type": "Asset account", "destination_id": "77", "destination_name": "餐饮", "destination_iban": null, "destination_type": "Expense account", "budget_id": "", "budget_name": null, "category_id": "", "category_name": null, "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": [], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "20e6c91dbe3881b356d474cee24a020b73585f52447f3cb59d0c8742d4d3ea8a", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/223"}]}}
+2025-06-29 16:31:59,230 [INFO] Webhook处理成功: 您新增了一笔交易：午饭, 费用：[FILTERED]，分类：None，预算：None。
+2025-06-29 16:31:59,230 [INFO] webhook 执行时间: 0.0040秒
+2025-06-29 16:31:59,231 [INFO] 192.168.1.195 - - [29/Jun/2025 16:31:59] "POST /webhook HTTP/1.1" 200 -
+2025-06-29 16:32:15,331 [ERROR] 获取预算限制失败 (budget_id: 1): 502 Server Error: Bad Gateway for url: http://localhost/api/v1/budgets/1/limits?start_date=2025-06-01&end_date=2025-06-30
+2025-06-29 16:32:15,331 [INFO] 成功获取 1 个预算
+2025-06-29 16:32:15,332 [INFO] budgets 执行时间: 0.5772秒
+2025-06-29 16:32:15,332 [INFO] 192.168.1.68 - - [29/Jun/2025 16:32:15] "GET /budgets?Authorization=[FILTERED]&Content-Type=application%2Fjson HTTP/1.1" 200 -
+2025-06-29 16:32:19,279 [INFO] Dify webhook请求: endpoint=/budgets, query_parameters={'include': 'spent', 'start': '2025-06-01', 'end': '2025-06-26'}
+2025-06-29 16:32:19,984 [ERROR] 获取预算限制失败 (budget_id: 1): 502 Server Error: Bad Gateway for url: http://localhost/api/v1/budgets/1/limits?start_date=2025-06-01&end_date=2025-06-30
+2025-06-29 16:32:19,985 [INFO] 成功获取 1 个预算
+2025-06-29 16:32:19,985 [INFO] dify_webhook 执行时间: 0.7079秒
+2025-06-29 16:32:19,986 [INFO] 192.168.1.68 - - [29/Jun/2025 16:32:19] "POST /dify_webhook HTTP/1.1" 200 -
+2025-06-29 16:39:48,505 [INFO] Starting Flask application v0.2.0
+2025-06-29 16:39:48,508 [INFO] 定时任务调度器已启动
+2025-06-29 16:39:48,510 [INFO] 定时报告服务已启动
+2025-06-29 16:39:49,814 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-29 16:39:49,815 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-29 16:39:49,818 [INFO]  * Restarting with stat
+2025-06-29 16:39:51,154 [INFO] Starting Flask application v0.2.0
+2025-06-29 16:39:51,160 [INFO] 定时任务调度器已启动
+2025-06-29 16:39:51,160 [INFO] 定时报告服务已启动
+2025-06-29 16:39:51,178 [WARNING]  * Debugger is active!
+2025-06-29 16:39:51,184 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 16:40:26,659 [INFO] Starting Flask application v0.2.0
+2025-06-29 16:40:26,662 [INFO] 定时任务调度器已启动
+2025-06-29 16:40:26,663 [INFO] 定时报告服务已启动
+2025-06-29 16:40:27,960 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-29 16:40:27,962 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-29 16:40:27,965 [INFO]  * Restarting with stat
+2025-06-29 16:40:28,913 [INFO] Starting Flask application v0.2.0
+2025-06-29 16:40:28,917 [INFO] 定时任务调度器已启动
+2025-06-29 16:40:28,918 [INFO] 定时报告服务已启动
+2025-06-29 16:40:28,934 [WARNING]  * Debugger is active!
+2025-06-29 16:40:28,940 [INFO]  * Debugger PIN: 122-422-975
+2025-06-29 16:40:48,113 [WARNING] 缺少X-User-ID请求头
+2025-06-29 16:40:48,113 [INFO] budgets 执行时间: 0.0000秒
+2025-06-29 16:40:48,114 [INFO] 127.0.0.1 - - [29/Jun/2025 16:40:48] "[31m[1mGET /budgets HTTP/1.1[0m" 400 -
+2025-06-29 16:40:57,974 [INFO] 成功获取 1 个预算
+2025-06-29 16:40:57,974 [INFO] budgets 执行时间: 0.2064秒
+2025-06-29 16:40:57,976 [INFO] 127.0.0.1 - - [29/Jun/2025 16:40:57] "GET /budgets HTTP/1.1" 200 -
+2025-06-29 16:41:09,885 [INFO] 开始处理交易请求 [ID: baf3f9df]
+2025-06-29 16:41:09,887 [WARNING] [baf3f9df] 交易数据验证失败: 1 validation error for TransactionRequest
+date
+  Field required [type=missing, input_value={'source_account': '????'...0.0', 'category': 'N/A'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.5/v/missing
+2025-06-29 16:41:09,890 [INFO] add_transaction 执行时间: 0.0040秒
+2025-06-29 16:41:09,895 [INFO] 127.0.0.1 - - [29/Jun/2025 16:41:09] "[31m[1mPOST /add_transaction HTTP/1.1[0m" 400 -
+2025-06-29 16:41:21,588 [INFO] 开始处理交易请求 [ID: 5fbdec23]
+2025-06-29 16:41:21,590 [INFO] [5fbdec23] 交易数据验证成功: {'amount': '10.0', 'description': '????', 'source_account': '????', 'destination_account': '??', 'category': 'N/A', 'budget': 'N/A'}
+2025-06-29 16:41:21,592 [INFO] 添加交易记录: ????
+2025-06-29 16:41:21,592 [INFO] 发送到Firefly III的数据: {'transactions': [{'type': 'withdrawal', 'date': '2025-06-29', 'amount': '[FILTERED]', 'description': '????', 'source_name': '????', 'destination_name': '??', 'category_name': 'N/A', 'budget_name': 'N/A'}]}
+2025-06-29 16:41:21,684 [ERROR] HTTP错误 - 添加交易失败: 422 Client Error: Unprocessable Content for url: http://192.168.1.195:9941/api/v1/transactions
+2025-06-29 16:41:21,685 [ERROR] [5fbdec23] 交易创建失败: 未知错误
+2025-06-29 16:41:21,687 [INFO] add_transaction 执行时间: 0.0994秒
+2025-06-29 16:41:21,688 [INFO] 127.0.0.1 - - [29/Jun/2025 16:41:21] "POST /add_transaction HTTP/1.1" 500 -
+2025-06-29 16:42:58,548 [INFO] 开始处理交易请求 [ID: bc97d068]
+2025-06-29 16:42:58,549 [INFO] [bc97d068] 交易数据验证成功: {'amount': '35.0', 'description': '午饭', 'source_account': '工资账户', 'destination_account': '餐饮', 'category': 'N/A', 'budget': 'N/A'}
+2025-06-29 16:42:58,550 [INFO] 添加交易记录: 午饭
+2025-06-29 16:42:58,550 [INFO] 发送到Firefly III的数据: {'transactions': [{'type': 'withdrawal', 'date': '2025-06-28', 'amount': '[FILTERED]', 'description': '午饭', 'source_name': '工资账户', 'destination_name': '餐饮'}]}
+2025-06-29 16:42:58,819 [INFO] 交易添加成功: 224
+2025-06-29 16:42:58,819 [INFO] [bc97d068] 交易创建成功: amount=35.0, description=午饭
+2025-06-29 16:42:58,819 [INFO] 构造消息内容: 交易操作：午饭, 费用：35.0，分类：None，预算：None。
+2025-06-29 16:42:58,830 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1751186579,v1=4ccdd6fd510a77919d71075ead1f4731fe5a3ba011c178dc9db1be0573cad003', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1642'}
+2025-06-29 16:42:58,837 [INFO] Received data: {"uuid": "60009360-35c4-4bfb-af6e-53d7da4e4b4b", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 224, "created_at": "2025-06-29T16:42:59+08:00", "updated_at": "2025-06-29T16:42:59+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "224", "type": "withdrawal", "date": "2025-06-28T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "午饭", "source_id": "1", "source_name": "工资账户", "source_iban": "", "source_type": "Asset account", "destination_id": "77", "destination_name": "餐饮", "destination_iban": null, "destination_type": "Expense account", "budget_id": "", "budget_name": null, "category_id": "", "category_name": null, "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": [], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "20e6c91dbe3881b356d474cee24a020b73585f52447f3cb59d0c8742d4d3ea8a", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/224"}]}}
+2025-06-29 16:42:58,838 [INFO] Webhook处理成功: 您新增了一笔交易：午饭, 费用：[FILTERED]，分类：None，预算：None。
+2025-06-29 16:42:58,838 [INFO] webhook 执行时间: 0.0098秒
+2025-06-29 16:42:58,839 [INFO] 192.168.1.195 - - [29/Jun/2025 16:42:58] "POST /webhook HTTP/1.1" 200 -
+2025-06-29 16:42:59,381 [INFO] 消息发送成功
+2025-06-29 16:42:59,382 [INFO] [bc97d068] 通知发送成功
+2025-06-29 16:42:59,383 [INFO] add_transaction 执行时间: 0.8349秒
+2025-06-29 16:42:59,383 [INFO] 192.168.1.68 - - [29/Jun/2025 16:42:59] "POST /add_transaction?Authorization[FILTERED] HTTP/1.1" 201 -
+2025-06-29 16:43:15,843 [INFO] 成功获取 1 个预算
+2025-06-29 16:43:15,844 [INFO] budgets 执行时间: 0.1837秒
+2025-06-29 16:43:15,844 [INFO] 192.168.1.68 - - [29/Jun/2025 16:43:15] "GET /budgets?Authorization[FILTERED]&Content-Type=application%2Fjson HTTP/1.1" 200 -
+2025-06-29 16:43:19,455 [INFO] Dify webhook请求: endpoint=/budgets, query_parameters={'include': 'spent', 'start': '2025-06-01', 'end': '2025-06-26'}
+2025-06-29 16:43:19,643 [INFO] 成功获取 1 个预算
+2025-06-29 16:43:19,643 [INFO] dify_webhook 执行时间: 0.1908秒
+2025-06-29 16:43:19,644 [INFO] 192.168.1.68 - - [29/Jun/2025 16:43:19] "POST /dify_webhook HTTP/1.1" 200 -

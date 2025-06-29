@@ -18,6 +18,7 @@ from handlers.notification_handler import NotificationHandler
 from handlers.webhook_handler import WebhookHandler
 from handlers.transaction_handler import TransactionHandler
 from handlers.dify_handler import DifyHandler
+from services.scheduler_service import scheduler_service
 from utils.retry_decorator import track_performance
 from utils.response_builder import APIResponseBuilder
 
@@ -391,8 +392,17 @@ def dify_webhook() -> Tuple[Dict[str, Any], int]:
     return user_dify_handler.handle_dify_webhook()
 
 if __name__ == '__main__':
-    app.run(
-        host=config.HOST, 
-        port=config.PORT,
-        debug=config.DEBUG
-    )
+    # 启动定时任务调度器
+    scheduler_service.start()
+    app.logger.info("定时报告服务已启动")
+    
+    try:
+        app.run(
+            host=config.HOST, 
+            port=config.PORT,
+            debug=config.DEBUG
+        )
+    except KeyboardInterrupt:
+        app.logger.info("正在停止应用...")
+        scheduler_service.stop()
+        app.logger.info("应用已停止")

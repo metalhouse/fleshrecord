@@ -63,7 +63,7 @@ class TransactionHandler:
                             'category_name': getattr(transaction_data, 'category', '无分类'),
                             'budget_name': getattr(transaction_data, 'budget', '无预算')
                         }
-                        self.notification_handler.send_transaction_notification(transaction_info, request_body=None)
+                        self.notification_handler.send_transaction_notification(transaction_info)
                         app.logger.info(f"[{transaction_id}] 通知发送成功")
                     except Exception as e:
                         app.logger.error(f"[{transaction_id}] 发送通知失败: {e}")

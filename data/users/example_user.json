@@ -3,12 +3,12 @@
     "webhook_url": "https://your_webhook_url_here",
     "webhook_secret": "your_webhook_secret_here",
     "webhook_secret_update": "your_webhook_secret_update_here",
-    "firefly_api_url": "http://192.168.1.195:9941/api/v1",
+    "firefly_api_url": "http://localhost/api/v1",
     "notification_enabled": true,
     "language": "zh",
     "dify_config": {
-        "api_key": "app-wpqEbSpSCR5FPmVsDJuhg3yU",
-        "workflow_id": "0396ea7b-9133-4236-9c0f-6c1eeba82e98",
+        "api_key": "app-key",
+        "workflow_id": "your_workflow_id",
         "enabled": true
     },
     "report_config": {

@@ -43,7 +43,7 @@ class TransactionRequest(BaseModel):
     description: str
     date: str
     source_account: str
-    destination_account: str
+    destination_account: Optional[str] = None
     category: Optional[str] = None
     budget: Optional[str] = None
     tags: Optional[List[str]] = None

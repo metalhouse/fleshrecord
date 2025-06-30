@@ -18,8 +18,8 @@ class EnvironmentConfig:
     """
     
     def __init__(self):
-        """初始化配置并验证必需的环境变量"""
-        self.validate_required_vars()
+        # 不再强制校验 FIREFLY_ACCESS_TOKEN/WEBHOOK_SECRET
+        pass
     
     # Firefly III 配置
     @property
@@ -86,6 +86,11 @@ class EnvironmentConfig:
     @property
     def port(self) -> int:
         return int(os.getenv('PORT', '9012'))
+    
+    # Dify API配置
+    @property
+    def dify_api_url(self) -> str:
+        return os.getenv('DIFY_API_URL', 'http://192.168.1.68/v1')
     
     def get_required_vars(self) -> List[str]:
         """返回必需的环境变量列表"""

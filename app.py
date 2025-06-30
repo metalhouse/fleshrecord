@@ -7,6 +7,9 @@ import sys
 from pathlib import Path
 from typing import Dict, Any, Tuple, Union
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from flask import Flask, request, jsonify
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
@@ -406,3 +409,6 @@ if __name__ == '__main__':
         app.logger.info("正在停止应用...")
         scheduler_service.stop()
         app.logger.info("应用已停止")
+
+# 调试输出，显示config.DEBUG的值和类型
+print(f"[调试] config.DEBUG = {config.DEBUG} (type: {type(config.DEBUG)})")

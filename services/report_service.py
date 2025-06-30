@@ -19,123 +19,47 @@ class ReportService:
         """生成日报"""
         if not user_config.report_config or not user_config.report_config.daily_enabled:
             return None
-            
-        # 获取今日交易数据
-        today = datetime.now().date()
-        data = self.firefly_service.get_transactions_summary(
-            user_config.firefly_api_url,
-            user_config.firefly_access_token,
-            start_date=today,
-            end_date=today
-        )
-        
-        if data:
-            # 调用Dify生成报告
-            prompt = "请生成今日财务报告"
-            return self._call_dify_api(user_config, prompt, data, 'daily')
-        
-        return None
+        prompt = user_config.report_config.daily_prompt
+        return self._call_dify_api(user_config, prompt, report_type='daily')
     
     def generate_weekly_report(self, user_config: UserConfig) -> Optional[str]:
         """生成周报"""
         if not user_config.report_config or not user_config.report_config.weekly_enabled:
             return None
-            
-        # 获取本周交易数据
-        today = datetime.now().date()
-        start_of_week = today - timedelta(days=today.weekday())
-        data = self.firefly_service.get_transactions_summary(
-            user_config.firefly_api_url,
-            user_config.firefly_access_token,
-            start_date=start_of_week,
-            end_date=today
-        )
-        
-        if data:
-            # 调用Dify生成报告
-            prompt = "请生成本周财务报告"
-            return self._call_dify_api(user_config, prompt, data, 'weekly')
-        
-        return None
+        prompt = user_config.report_config.weekly_prompt
+        return self._call_dify_api(user_config, prompt, report_type='weekly')
     
     def generate_monthly_report(self, user_config: UserConfig) -> Optional[str]:
         """生成月报"""
         if not user_config.report_config or not user_config.report_config.monthly_enabled:
             return None
-            
-        # 获取本月交易数据
-        today = datetime.now().date()
-        start_of_month = today.replace(day=1)
-        data = self.firefly_service.get_transactions_summary(
-            user_config.firefly_api_url,
-            user_config.firefly_access_token,
-            start_date=start_of_month,
-            end_date=today
-        )
-        
-        if data:
-            # 调用Dify生成报告
-            prompt = "请生成本月财务报告"
-            return self._call_dify_api(user_config, prompt, data, 'monthly')
-        
-        return None
+        prompt = user_config.report_config.monthly_prompt
+        return self._call_dify_api(user_config, prompt, report_type='monthly')
     
     def generate_yearly_report(self, user_config: UserConfig) -> Optional[str]:
         """生成年报"""
         if not user_config.report_config or not user_config.report_config.yearly_enabled:
             return None
-            
-        # 获取本年交易数据
-        today = datetime.now().date()
-        start_of_year = today.replace(month=1, day=1)
-        data = self.firefly_service.get_transactions_summary(
-            user_config.firefly_api_url,
-            user_config.firefly_access_token,
-            start_date=start_of_year,
-            end_date=today
-        )
-        
-        if data:
-            # 调用Dify生成报告
-            prompt = "请生成本年度财务报告"
-            return self._call_dify_api(user_config, prompt, data, 'yearly')
-        
-        return None
+        prompt = user_config.report_config.yearly_prompt
+        return self._call_dify_api(user_config, prompt, report_type='yearly')
     
-    def _call_dify_api(self, user_config: UserConfig, prompt: str, context_data: Dict[str, Any], report_type: str) -> Optional[str]:
-        """调用 Dify API 生成报告"""
+    def _call_dify_api(self, user_config: UserConfig, prompt: str, report_type: str) -> Optional[str]:
+        """调用 Dify API 生成报告，只发送 prompt，不附加交易数据"""
         try:
             if not user_config.dify_config or not user_config.dify_config.enabled:
                 logger.warning(f"用户 {user_config.user_id} 未配置或未启用 Dify")
-                return self._generate_fallback_report(context_data, report_type)
-
-            # 使用 DifyService
+                return None
             dify_service = DifyService(user_config.dify_config.api_key)
-
-            # 生成报告
             result = dify_service.generate_financial_report(
                 workflow_id=user_config.dify_config.workflow_id,
                 report_type=report_type,
-                transaction_data=context_data,
+                transaction_data=None,
                 report_query=prompt
             )
-
-            if result['success']:
-                message = result['message']
-                # 检查返回的内容是否是有效的财务报告
-                if self._is_valid_financial_report(message):
-                    logger.info(f"成功生成用户 {user_config.user_id} 的 {report_type} 报告")
-                    return message
-                else:
-                    logger.warning(f"Dify返回的内容不是有效的财务报告，使用后备报告")
-                    return self._generate_fallback_report(context_data, report_type)
-            else:
-                logger.error(f"生成报告失败: {result.get('error')}，使用后备报告")
-                return self._generate_fallback_report(context_data, report_type)
-                
+            return result
         except Exception as e:
-            logger.error(f"生成报告时发生错误: {e}，使用后备报告")
-            return self._generate_fallback_report(context_data, report_type)
+            logger.error(f"调用 Dify API 生成报告失败: {e}")
+            return None
     
     def _is_valid_financial_report(self, content: str) -> bool:
         """检查内容是否是有效的财务报告"""

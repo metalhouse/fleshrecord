@@ -133,31 +133,34 @@ class DifyService:
             Dict[str, Any]: 生成的报告
         """
         try:
-            # 构造工作流输入参数
-            transaction_summary = self._format_transaction_data(transaction_data)
-            
-            inputs = {
-                'report_type': report_type,
-                'report_query': report_query,
-                'transaction_data': transaction_summary,
-                'query': f"""{report_query}
+            # 如果不需要交易数据，直接只发prompt
+            if transaction_data is None:
+                inputs = {
+                    'report_type': report_type,
+                    'report_query': report_query,
+                    'transaction_data': '',
+                    'query': report_query
+                }
+            else:
+                transaction_summary = self._format_transaction_data(transaction_data)
+                inputs = {
+                    'report_type': report_type,
+                    'report_query': report_query,
+                    'transaction_data': transaction_summary,
+                    'query': f"""{report_query}
 
 交易数据:
 {transaction_summary}
 
 请根据以上数据生成 {report_type} 报告。"""
-            }
-            
+                }
             # 调用工作流API
             result = self.run_workflow(workflow_id, inputs)
-            
             if result['success']:
                 logger.info(f"成功生成 {report_type} 报告")
             else:
                 logger.error(f"生成 {report_type} 报告失败: {result.get('error')}")
-            
             return result
-            
         except Exception as e:
             logger.error(f"生成财务报告时出错: {e}")
             return {

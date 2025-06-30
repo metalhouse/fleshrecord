@@ -3735,3 +3735,276 @@ destination_account
 2025-06-29 21:19:32,733 [INFO] [784b9a1f] 通知发送成功
 2025-06-29 21:19:32,734 [INFO] add_transaction 执行时间: 0.8259秒
 2025-06-29 21:19:32,734 [INFO] 192.168.1.68 - - [29/Jun/2025 21:19:32] "POST /add_transaction HTTP/1.1" 201 -
+2025-06-30 09:37:11,384 [INFO] Starting Flask application v0.2.0
+2025-06-30 09:37:11,388 [INFO] 定时任务调度器已启动
+2025-06-30 09:37:11,389 [INFO] 定时报告服务已启动
+2025-06-30 09:37:12,930 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 09:37:12,930 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 09:37:12,933 [INFO]  * Restarting with stat
+2025-06-30 09:37:14,342 [INFO] Starting Flask application v0.2.0
+2025-06-30 09:37:14,347 [INFO] 定时任务调度器已启动
+2025-06-30 09:37:14,347 [INFO] 定时报告服务已启动
+2025-06-30 09:37:14,376 [WARNING]  * Debugger is active!
+2025-06-30 09:37:14,382 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 09:39:11,402 [INFO] 查询交易记录，参数: {'start': datetime.date(2025, 6, 30), 'end': datetime.date(2025, 6, 30)}
+2025-06-30 09:39:11,403 [INFO] 请求 URL: http://192.168.1.195:9941/api/v1/transactions
+2025-06-30 09:39:11,403 [INFO] 请求参数: {'start': datetime.date(2025, 6, 30), 'end': datetime.date(2025, 6, 30), 'page': 1, 'limit': 200}
+2025-06-30 09:39:12,936 [INFO] 实际发送的完整 URL: http://192.168.1.195:9941/api/v1/transactions?start=2025-06-30&end=2025-06-30&page=1&limit=200
+2025-06-30 09:39:12,940 [INFO] 获取第 1 页，本页 0 条记录，总计 0 条
+2025-06-30 09:39:12,940 [INFO] 成功查询到 0 条交易记录，API总共 0 条
+2025-06-30 09:39:12,940 [INFO] 交易汇总: 0笔交易，总金额0.0
+2025-06-30 09:39:14,353 [INFO] 查询交易记录，参数: {'start': datetime.date(2025, 6, 30), 'end': datetime.date(2025, 6, 30)}
+2025-06-30 09:39:14,353 [INFO] 请求 URL: http://192.168.1.195:9941/api/v1/transactions
+2025-06-30 09:39:14,353 [INFO] 请求参数: {'start': datetime.date(2025, 6, 30), 'end': datetime.date(2025, 6, 30), 'page': 1, 'limit': 200}
+2025-06-30 09:39:14,425 [INFO] 实际发送的完整 URL: http://192.168.1.195:9941/api/v1/transactions?start=2025-06-30&end=2025-06-30&page=1&limit=200
+2025-06-30 09:39:14,428 [INFO] 获取第 1 页，本页 0 条记录，总计 0 条
+2025-06-30 09:39:14,429 [INFO] 成功查询到 0 条交易记录，API总共 0 条
+2025-06-30 09:39:14,429 [INFO] 交易汇总: 0笔交易，总金额0.0
+2025-06-30 09:39:39,977 [INFO] Dify 工作流执行成功，工作流ID: 0396ea7b-9133-4236-9c0f-6c1eeba82e98
+2025-06-30 09:39:39,977 [INFO] 成功生成 daily 报告
+2025-06-30 09:39:39,977 [INFO] 成功生成用户 metalhouse 的 daily 报告
+2025-06-30 09:39:40,524 [INFO] 消息发送成功
+2025-06-30 09:39:40,526 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 09:39:41,255 [INFO] Dify 工作流执行成功，工作流ID: 0396ea7b-9133-4236-9c0f-6c1eeba82e98
+2025-06-30 09:39:41,255 [INFO] 成功生成 daily 报告
+2025-06-30 09:39:41,255 [INFO] 成功生成用户 metalhouse 的 daily 报告
+2025-06-30 09:39:41,782 [INFO] 消息发送成功
+2025-06-30 09:39:41,783 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 09:46:52,674 [INFO] Starting Flask application v0.2.0
+2025-06-30 09:46:52,678 [INFO] 定时任务调度器已启动
+2025-06-30 09:46:52,679 [INFO] 定时报告服务已启动
+2025-06-30 09:46:53,980 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 09:46:53,981 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 09:46:53,984 [INFO]  * Restarting with stat
+2025-06-30 09:46:55,248 [INFO] Starting Flask application v0.2.0
+2025-06-30 09:46:55,251 [INFO] 定时任务调度器已启动
+2025-06-30 09:46:55,252 [INFO] 定时报告服务已启动
+2025-06-30 09:46:55,272 [WARNING]  * Debugger is active!
+2025-06-30 09:46:55,284 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 09:47:52,684 [ERROR] 格式化交易数据失败: argument of type 'NoneType' is not iterable
+2025-06-30 09:47:55,256 [ERROR] 格式化交易数据失败: argument of type 'NoneType' is not iterable
+2025-06-30 09:47:59,707 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 09:47:59,707 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 09:48:00,266 [INFO] 消息发送成功
+2025-06-30 09:48:00,268 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 09:48:16,416 [INFO] Dify 工作流执行成功，工作流ID: 0396ea7b-9133-4236-9c0f-6c1eeba82e98
+2025-06-30 09:48:16,416 [INFO] 成功生成 daily 报告
+2025-06-30 09:48:16,955 [INFO] 消息发送成功
+2025-06-30 09:48:16,956 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 09:50:32,302 [INFO] Starting Flask application v0.2.0
+2025-06-30 09:50:32,305 [INFO] 定时任务调度器已启动
+2025-06-30 09:50:32,306 [INFO] 定时报告服务已启动
+2025-06-30 09:50:33,633 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 09:50:33,633 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 09:50:33,638 [INFO]  * Restarting with stat
+2025-06-30 09:50:34,958 [INFO] Starting Flask application v0.2.0
+2025-06-30 09:50:34,962 [INFO] 定时任务调度器已启动
+2025-06-30 09:50:34,963 [INFO] 定时报告服务已启动
+2025-06-30 09:50:34,980 [WARNING]  * Debugger is active!
+2025-06-30 09:50:34,987 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 09:50:48,306 [INFO] Starting Flask application v0.2.0
+2025-06-30 09:50:48,308 [INFO] 定时任务调度器已启动
+2025-06-30 09:50:48,309 [INFO] 定时报告服务已启动
+2025-06-30 09:50:49,611 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 09:50:49,611 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 09:50:49,615 [INFO]  * Restarting with stat
+2025-06-30 09:50:50,518 [INFO] Starting Flask application v0.2.0
+2025-06-30 09:50:50,522 [INFO] 定时任务调度器已启动
+2025-06-30 09:50:50,522 [INFO] 定时报告服务已启动
+2025-06-30 09:50:50,550 [WARNING]  * Debugger is active!
+2025-06-30 09:50:50,556 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 09:51:42,440 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 09:51:42,440 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 09:51:43,011 [INFO] 消息发送成功
+2025-06-30 09:51:43,015 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 09:51:52,412 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 09:51:52,412 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 09:51:53,018 [INFO] 消息发送成功
+2025-06-30 09:51:53,020 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 09:51:54,577 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 09:51:54,578 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 09:51:55,180 [INFO] 消息发送成功
+2025-06-30 09:51:55,182 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 09:58:16,113 [INFO]  * Detected change in 'D:\\fleshrecord\\app.py', reloading
+2025-06-30 09:58:16,166 [INFO]  * Restarting with stat
+2025-06-30 09:58:16,438 [INFO]  * Detected change in 'D:\\fleshrecord\\app.py', reloading
+2025-06-30 09:58:17,176 [INFO] Starting Flask application v0.2.0
+2025-06-30 09:58:17,181 [INFO] 定时任务调度器已启动
+2025-06-30 09:58:17,181 [INFO] 定时报告服务已启动
+2025-06-30 09:58:17,199 [WARNING]  * Debugger is active!
+2025-06-30 09:58:17,206 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 09:59:42,765 [INFO]  * Detected change in 'D:\\fleshrecord\\app.py', reloading
+2025-06-30 09:59:42,818 [INFO]  * Restarting with stat
+2025-06-30 09:59:43,744 [INFO] Starting Flask application v0.2.0
+2025-06-30 09:59:43,747 [INFO] 定时任务调度器已启动
+2025-06-30 09:59:43,748 [INFO] 定时报告服务已启动
+2025-06-30 09:59:43,763 [WARNING]  * Debugger is active!
+2025-06-30 09:59:43,769 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 10:00:43,810 [ERROR] Dify API 请求失败: 401 Client Error: UNAUTHORIZED for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:00:43,810 [ERROR] 生成 weekly 报告失败: 401 Client Error: UNAUTHORIZED for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:00:44,430 [ERROR] 连接Webhook URL失败
+2025-06-30 10:00:44,431 [ERROR] 发送 weekly 报告失败，用户: example_user
+2025-06-30 10:00:53,078 [ERROR] Dify API 请求失败: 401 Client Error: UNAUTHORIZED for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:00:53,078 [ERROR] 生成 weekly 报告失败: 401 Client Error: UNAUTHORIZED for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:00:53,719 [ERROR] 连接Webhook URL失败
+2025-06-30 10:00:53,720 [ERROR] 发送 weekly 报告失败，用户: example_user
+2025-06-30 10:01:20,657 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:01:20,662 [INFO] 定时任务调度器已启动
+2025-06-30 10:01:20,662 [INFO] 定时报告服务已启动
+2025-06-30 10:01:20,722 [ERROR] Dify API 请求失败: 401 Client Error: UNAUTHORIZED for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:01:20,723 [ERROR] 生成 weekly 报告失败: 401 Client Error: UNAUTHORIZED for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:01:21,330 [ERROR] 连接Webhook URL失败
+2025-06-30 10:01:21,330 [ERROR] 发送 weekly 报告失败，用户: example_user
+2025-06-30 10:01:22,005 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 10:01:22,006 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 10:01:22,010 [INFO]  * Restarting with stat
+2025-06-30 10:01:22,986 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:01:22,991 [INFO] 定时任务调度器已启动
+2025-06-30 10:01:22,991 [INFO] 定时报告服务已启动
+2025-06-30 10:01:23,015 [WARNING]  * Debugger is active!
+2025-06-30 10:01:23,046 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 10:01:23,091 [ERROR] Dify API 请求失败: 401 Client Error: UNAUTHORIZED for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:01:23,094 [ERROR] 生成 weekly 报告失败: 401 Client Error: UNAUTHORIZED for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:01:23,709 [ERROR] 连接Webhook URL失败
+2025-06-30 10:01:23,710 [ERROR] 发送 weekly 报告失败，用户: example_user
+2025-06-30 10:01:44,482 [ERROR] Dify API 请求失败: 401 Client Error: UNAUTHORIZED for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:01:44,482 [ERROR] 生成 weekly 报告失败: 401 Client Error: UNAUTHORIZED for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:01:45,119 [ERROR] 连接Webhook URL失败
+2025-06-30 10:01:45,119 [ERROR] 发送 weekly 报告失败，用户: example_user
+2025-06-30 10:01:53,772 [ERROR] Dify API 请求失败: 401 Client Error: UNAUTHORIZED for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:01:53,772 [ERROR] 生成 weekly 报告失败: 401 Client Error: UNAUTHORIZED for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:01:54,394 [ERROR] 连接Webhook URL失败
+2025-06-30 10:01:54,394 [ERROR] 发送 weekly 报告失败，用户: example_user
+2025-06-30 10:15:19,693 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:15:19,697 [INFO] 定时任务调度器已启动
+2025-06-30 10:15:19,698 [INFO] 定时报告服务已启动
+2025-06-30 10:15:21,035 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 10:15:21,035 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 10:15:21,038 [INFO]  * Restarting with stat
+2025-06-30 10:15:21,967 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:15:21,971 [INFO] 定时任务调度器已启动
+2025-06-30 10:15:21,971 [INFO] 定时报告服务已启动
+2025-06-30 10:15:22,008 [WARNING]  * Debugger is active!
+2025-06-30 10:15:22,016 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 10:15:51,414 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:15:51,418 [INFO] 定时任务调度器已启动
+2025-06-30 10:15:51,418 [INFO] 定时报告服务已启动
+2025-06-30 10:15:52,735 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 10:15:52,735 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 10:15:52,740 [INFO]  * Restarting with stat
+2025-06-30 10:15:53,740 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:15:53,744 [INFO] 定时任务调度器已启动
+2025-06-30 10:15:53,744 [INFO] 定时报告服务已启动
+2025-06-30 10:15:53,768 [WARNING]  * Debugger is active!
+2025-06-30 10:15:53,777 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 10:24:51,949 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:24:51,955 [INFO] 定时任务调度器已启动
+2025-06-30 10:24:51,955 [INFO] 定时报告服务已启动
+2025-06-30 10:24:53,261 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 10:24:53,261 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 10:24:53,264 [INFO]  * Restarting with stat
+2025-06-30 10:24:54,350 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:24:54,355 [INFO] 定时任务调度器已启动
+2025-06-30 10:24:54,356 [INFO] 定时报告服务已启动
+2025-06-30 10:24:54,398 [WARNING]  * Debugger is active!
+2025-06-30 10:24:54,408 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 10:26:55,546 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:26:55,550 [INFO] 定时任务调度器已启动
+2025-06-30 10:26:55,550 [INFO] 定时报告服务已启动
+2025-06-30 10:26:56,845 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 10:26:56,845 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 10:26:56,848 [INFO]  * Restarting with stat
+2025-06-30 10:26:57,860 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:26:57,865 [INFO] 定时任务调度器已启动
+2025-06-30 10:26:57,866 [INFO] 定时报告服务已启动
+2025-06-30 10:26:57,913 [WARNING]  * Debugger is active!
+2025-06-30 10:26:57,921 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 10:28:54,461 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:28:54,465 [INFO] 定时任务调度器已启动
+2025-06-30 10:28:54,465 [INFO] 定时报告服务已启动
+2025-06-30 10:28:55,751 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 10:28:55,751 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 10:28:55,753 [INFO]  * Restarting with stat
+2025-06-30 10:28:56,674 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:28:56,677 [INFO] 定时任务调度器已启动
+2025-06-30 10:28:56,678 [INFO] 定时报告服务已启动
+2025-06-30 10:28:56,704 [WARNING]  * Debugger is active!
+2025-06-30 10:28:56,711 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 10:33:46,362 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:33:46,368 [INFO] 定时任务调度器已启动
+2025-06-30 10:33:46,368 [INFO] 定时报告服务已启动
+2025-06-30 10:33:47,660 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 10:33:47,660 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 10:34:25,878 [INFO] 成功获取 1 个预算
+2025-06-30 10:34:25,879 [INFO] budgets 执行时间: 0.2610秒
+2025-06-30 10:34:25,881 [INFO] 192.168.1.68 - - [30/Jun/2025 10:34:25] "GET /budgets HTTP/1.1" 200 -
+2025-06-30 10:34:37,653 [INFO] Dify webhook请求: endpoint=/budgets, query_parameters={'include': 'spent', 'start': '2025-06-01', 'end': '2025-06-26'}
+2025-06-30 10:34:37,819 [INFO] 成功获取 1 个预算
+2025-06-30 10:34:37,820 [INFO] dify_webhook 执行时间: 0.1676秒
+2025-06-30 10:34:37,820 [INFO] 192.168.1.68 - - [30/Jun/2025 10:34:37] "POST /dify_webhook HTTP/1.1" 200 -
+2025-06-30 10:34:54,338 [INFO] 开始处理交易请求 [ID: da8534c9]
+2025-06-30 10:34:54,339 [INFO] [da8534c9] 交易数据验证成功: {'amount': '35.0', 'description': '午饭', 'source_account': '工资账户', 'destination_account': '餐饮', 'category': 'N/A', 'budget': 'N/A'}
+2025-06-30 10:34:54,339 [INFO] 添加交易记录: 午饭
+2025-06-30 10:34:54,339 [INFO] 发送到Firefly III的数据: {'transactions': [{'type': 'withdrawal', 'date': '2025-06-30', 'amount': '[FILTERED]', 'description': '午饭', 'source_name': '工资账户', 'destination_name': '餐饮'}]}
+2025-06-30 10:34:55,967 [INFO] 交易添加成功: 235
+2025-06-30 10:34:55,968 [INFO] [da8534c9] 交易创建成功: amount=35.0, description=午饭
+2025-06-30 10:34:55,969 [INFO] 构造消息内容: 交易操作：午饭, 费用：35.0，分类：None，预算：None。
+2025-06-30 10:34:56,069 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1751250897,v1=04d31bc36c00da9dba01dd878ea0bcabec34c92b448d226222be242b40b77122', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1748'}
+2025-06-30 10:34:56,069 [INFO] Received data: {"uuid": "e4f05a83-4ac1-4df0-b787-e39fce127dfe", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 233, "created_at": "2025-06-29T21:49:14+08:00", "updated_at": "2025-06-29T21:49:14+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "233", "type": "withdrawal", "date": "2025-06-28T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "刷京东白条购买美孚一号机油1L", "source_id": "71", "source_name": "京东白条", "source_iban": null, "source_type": "Asset account", "destination_id": "18", "destination_name": "Cash account", "destination_iban": null, "destination_type": "Cash account", "budget_id": "", "budget_name": null, "category_id": "10", "category_name": "购物支出", "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": ["车护"], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "df8a7aafb1be128b3894e5d26972ff06fe7a73f760340aa0e10fa08fe6787592", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/233"}]}}
+2025-06-30 10:34:56,070 [INFO] Webhook处理成功: 您新增了一笔交易：刷京东白条购买美孚一号机油1L, 费用：[FILTERED]，分类：购物支出，预算：None。
+2025-06-30 10:34:56,070 [INFO] webhook 执行时间: 0.0031秒
+2025-06-30 10:34:56,071 [INFO] 192.168.1.195 - - [30/Jun/2025 10:34:56] "POST /webhook HTTP/1.1" 200 -
+2025-06-30 10:34:56,092 [INFO] Request headers: {'Host': '192.168.1.68:9012', 'Content-Type': 'application/json', 'Accept': 'application/json', 'Signature': 't=1751250897,v1=46e5731ba4b2f687d825dc0e339195237c282b28bc08e17b01e384ad2f5b1b96', 'User-Agent': 'FireflyIII/6.2.16', 'Timeout': '10', 'Content-Length': '1719'}
+2025-06-30 10:34:56,092 [INFO] Received data: {"uuid": "d5564cdf-8ac9-44f5-b01f-0c83dcd8cd3c", "user_id": 1, "trigger": "STORE_TRANSACTION", "response": "TRANSACTIONS", "url": "http://192.168.1.68:9012/webhook", "version": "v0", "content": {"id": 234, "created_at": "2025-06-29T21:53:12+08:00", "updated_at": "2025-06-29T21:53:12+08:00", "user": 1, "group_title": null, "transactions": [{"user": 1, "transaction_journal_id": "234", "type": "withdrawal", "date": "2025-06-28T00:00:00+08:00", "order": 0, "currency_id": "19", "currency_code": "CNY", "currency_symbol": "¥", "currency_decimal_places": 2, "foreign_currency_id": "", "foreign_currency_code": null, "foreign_currency_symbol": null, "foreign_currency_decimal_places": null, "amount": "[FILTERED]", "foreign_amount": "[FILTERED]", "description": "朴朴买菜", "source_id": "61", "source_name": "信用卡（中信银行）", "source_iban": "", "source_type": "Asset account", "destination_id": "18", "destination_name": "Cash account", "destination_iban": null, "destination_type": "Cash account", "budget_id": "", "budget_name": null, "category_id": "1", "category_name": "生活饮食", "bill_id": "", "bill_name": null, "reconciled": false, "notes": null, "tags": ["食材"], "internal_reference": null, "external_id": null, "original_source": "ff3-v6.2.16", "recurrence_id": null, "bunq_payment_id": null, "import_hash_v2": "b6b430eca9adba0c04b4102795c5ca5c609e84a8b263557937316df2cc82ffbc", "sepa_cc": null, "sepa_ct_op": null, "sepa_ct_id": null, "sepa_db": null, "sepa_country": null, "sepa_ep": null, "sepa_ci": null, "sepa_batch_id": null, "interest_date": null, "book_date": null, "process_date": null, "due_date": null, "payment_date": null, "invoice_date": null, "longitude": null, "latitude": null, "zoom_level": null}], "links": [{"rel": "self", "uri": "/transactions/234"}]}}
+2025-06-30 10:34:56,093 [INFO] Webhook处理成功: 您新增了一笔交易：朴朴买菜, 费用：[FILTERED]，分类：生活饮食，预算：None。
+2025-06-30 10:34:56,093 [INFO] webhook 执行时间: 0.0030秒
+2025-06-30 10:34:56,094 [INFO] 192.168.1.195 - - [30/Jun/2025 10:34:56] "POST /webhook HTTP/1.1" 200 -
+2025-06-30 10:34:56,490 [INFO] 消息发送成功
+2025-06-30 10:34:56,492 [INFO] [da8534c9] 通知发送成功
+2025-06-30 10:34:56,493 [INFO] add_transaction 执行时间: 2.1561秒
+2025-06-30 10:34:56,493 [INFO] 192.168.1.68 - - [30/Jun/2025 10:34:56] "POST /add_transaction?Authorization[FILTERED] HTTP/1.1" 201 -
+2025-06-30 10:35:26,578 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:35:26,581 [INFO] 定时任务调度器已启动
+2025-06-30 10:35:26,581 [INFO] 定时报告服务已启动
+2025-06-30 10:35:27,884 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 10:35:27,885 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 10:36:34,342 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:36:34,342 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:36:34,888 [INFO] 消息发送成功
+2025-06-30 10:36:34,889 [INFO] 成功发送 daily 报告给用户 metalhouse

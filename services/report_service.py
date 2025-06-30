@@ -54,7 +54,8 @@ class ReportService:
                 workflow_id=user_config.dify_config.workflow_id,
                 report_type=report_type,
                 transaction_data=None,
-                report_query=prompt
+                report_query=prompt,
+                user_id=user_config.user_id
             )
             return result
         except Exception as e:

@@ -29,55 +29,31 @@ class DifyService:
         # 设置请求头
         self.headers = {
             'Authorization': f'Bearer {api_key}',
-            'Content-Type': 'application/json; charset=utf-8',
-            'User-Agent': 'FleshRecord/1.0'
+            'Content-Type': 'application/json; charset=utf-8'
         }
     
-    def run_workflow(self, workflow_id: str, inputs: Dict[str, Any], user: str = "fleshrecord-system") -> Dict[str, Any]:
+    def run_workflow(self, workflow_id: str, request_data: Dict[str, Any]) -> Dict[str, Any]:
         """
         执行 Dify 对话型应用
         
         Args:
             workflow_id: 应用ID（对话型应用）
-            inputs: 应用输入参数
-            user: 用户标识
+            request_data: 请求数据，包含输入参数等信息
         
         Returns:
             Dict[str, Any]: Dify 的响应
         """
         try:
-            # 构造查询内容
-            query = inputs.get('query', '') or inputs.get('report_data', '') or str(inputs)
-            
-            # 构造请求数据（对话型应用格式）
-            request_data = {
-                'inputs': inputs,
-                'query': query,
-                'response_mode': 'blocking',
-                'user': user,
-                'conversation_id': '',  # 空字符串表示新对话
-                'auto_generate_name': False
-            }
-            
-            # 发送请求到对话API
             response = requests.post(
                 f"{self.api_url}/chat-messages",
                 json=request_data,
                 headers=self.headers,
                 timeout=self.timeout
             )
-            
-            # 检查响应状态
             response.raise_for_status()
-            
-            # 设置响应编码为UTF-8
             response.encoding = 'utf-8'
-            
-            # 解析响应
             response_data = response.json()
-            
             logger.info(f"Dify 工作流执行成功，工作流ID: {workflow_id}")
-            logger.debug(f"Dify API 响应: {response_data}")
             
             # 从对话型应用响应中提取消息
             message = ''
@@ -118,8 +94,7 @@ class DifyService:
                 'message': '处理 Dify 响应时发生错误'
             }
     
-    def generate_financial_report(self, workflow_id: str, report_type: str, transaction_data: Dict[str, Any], 
-                                report_query: str) -> Dict[str, Any]:
+    def generate_financial_report(self, workflow_id: str, report_type: str, transaction_data: Dict[str, Any], report_query: str, user_id: str) -> Dict[str, Any]:
         """
         生成财务报告
         
@@ -133,29 +108,14 @@ class DifyService:
             Dict[str, Any]: 生成的报告
         """
         try:
-            # 如果不需要交易数据，直接只发prompt
-            if transaction_data is None:
-                inputs = {
-                    'report_type': report_type,
-                    'report_query': report_query,
-                    'transaction_data': '',
-                    'query': report_query
-                }
-            else:
-                transaction_summary = self._format_transaction_data(transaction_data)
-                inputs = {
-                    'report_type': report_type,
-                    'report_query': report_query,
-                    'transaction_data': transaction_summary,
-                    'query': f"""{report_query}
-
-交易数据:
-{transaction_summary}
-
-请根据以上数据生成 {report_type} 报告。"""
-                }
-            # 调用工作流API
-            result = self.run_workflow(workflow_id, inputs)
+            request_data = {
+                'inputs': {},
+                'query': report_query,
+                'response_mode': 'blocking',
+                'conversation_id': '',
+                'user': user_id
+            }
+            result = self.run_workflow(workflow_id, request_data)
             if result['success']:
                 logger.info(f"成功生成 {report_type} 报告")
             else:

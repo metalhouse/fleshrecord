@@ -4008,3 +4008,994 @@ destination_account
 2025-06-30 10:36:34,342 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
 2025-06-30 10:36:34,888 [INFO] 消息发送成功
 2025-06-30 10:36:34,889 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 10:48:02,878 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:48:02,881 [INFO] 定时任务调度器已启动
+2025-06-30 10:48:02,882 [INFO] 定时报告服务已启动
+2025-06-30 10:48:04,443 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 10:48:04,447 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 10:48:04,450 [INFO]  * Restarting with stat
+2025-06-30 10:48:05,651 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:48:05,654 [INFO] 定时任务调度器已启动
+2025-06-30 10:48:05,655 [INFO] 定时报告服务已启动
+2025-06-30 10:48:05,691 [WARNING]  * Debugger is active!
+2025-06-30 10:48:05,708 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 10:48:14,372 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:48:14,373 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:48:14,373 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:48:14,374 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:48:15,001 [INFO] 消息发送成功
+2025-06-30 10:48:15,002 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 10:48:15,023 [INFO] 消息发送成功
+2025-06-30 10:48:15,025 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 10:54:11,324 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\dify_service.py', reloading
+2025-06-30 10:54:11,406 [INFO]  * Restarting with stat
+2025-06-30 10:54:12,407 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:54:12,413 [INFO] 定时任务调度器已启动
+2025-06-30 10:54:12,413 [INFO] 定时报告服务已启动
+2025-06-30 10:54:12,431 [WARNING]  * Debugger is active!
+2025-06-30 10:54:12,467 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 10:54:19,060 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\dify_service.py', reloading
+2025-06-30 10:54:19,122 [INFO]  * Restarting with stat
+2025-06-30 10:54:20,171 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:54:20,177 [INFO] 定时任务调度器已启动
+2025-06-30 10:54:20,177 [INFO] 定时报告服务已启动
+2025-06-30 10:54:20,224 [WARNING]  * Debugger is active!
+2025-06-30 10:54:20,235 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 10:55:00,483 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:55:00,488 [INFO] 定时任务调度器已启动
+2025-06-30 10:55:00,488 [INFO] 定时报告服务已启动
+2025-06-30 10:55:01,803 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 10:55:01,803 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 10:55:01,806 [INFO]  * Restarting with stat
+2025-06-30 10:55:34,634 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:55:34,637 [INFO] 定时任务调度器已启动
+2025-06-30 10:55:34,638 [INFO] 定时报告服务已启动
+2025-06-30 10:55:35,987 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 10:55:35,987 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 10:55:35,990 [INFO]  * Restarting with stat
+2025-06-30 10:55:36,994 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:55:36,998 [INFO] 定时任务调度器已启动
+2025-06-30 10:55:36,998 [INFO] 定时报告服务已启动
+2025-06-30 10:55:37,028 [WARNING]  * Debugger is active!
+2025-06-30 10:55:37,047 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 10:55:42,455 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:55:42,456 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:55:42,472 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:55:42,472 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 10:55:43,070 [INFO] 消息发送成功
+2025-06-30 10:55:43,072 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 10:55:43,080 [INFO] 消息发送成功
+2025-06-30 10:55:43,083 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 10:59:15,455 [INFO]  * Detected change in 'D:\\fleshrecord\\app.py', reloading
+2025-06-30 10:59:15,513 [INFO]  * Restarting with stat
+2025-06-30 10:59:16,601 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:59:16,607 [INFO] 定时任务调度器已启动
+2025-06-30 10:59:16,607 [INFO] 定时报告服务已启动
+2025-06-30 10:59:16,626 [WARNING]  * Debugger is active!
+2025-06-30 10:59:16,635 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 10:59:31,777 [INFO]  * Detected change in 'D:\\fleshrecord\\app.py', reloading
+2025-06-30 10:59:31,843 [INFO]  * Restarting with stat
+2025-06-30 10:59:32,861 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:59:32,865 [INFO] 定时任务调度器已启动
+2025-06-30 10:59:32,866 [INFO] 定时报告服务已启动
+2025-06-30 10:59:32,884 [WARNING]  * Debugger is active!
+2025-06-30 10:59:32,890 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 10:59:36,503 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:59:36,507 [INFO] 定时任务调度器已启动
+2025-06-30 10:59:36,507 [INFO] 定时报告服务已启动
+2025-06-30 10:59:37,799 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 10:59:37,799 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 10:59:37,802 [INFO]  * Restarting with stat
+2025-06-30 10:59:38,753 [INFO] Starting Flask application v0.2.0
+2025-06-30 10:59:38,757 [INFO] 定时任务调度器已启动
+2025-06-30 10:59:38,757 [INFO] 定时报告服务已启动
+2025-06-30 10:59:38,773 [WARNING]  * Debugger is active!
+2025-06-30 10:59:38,779 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:00:05,198 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:00:05,201 [INFO] 定时任务调度器已启动
+2025-06-30 11:00:05,202 [INFO] 定时报告服务已启动
+2025-06-30 11:00:06,507 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 11:00:06,507 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 11:00:06,510 [INFO]  * Restarting with stat
+2025-06-30 11:00:07,430 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:00:07,434 [INFO] 定时任务调度器已启动
+2025-06-30 11:00:07,435 [INFO] 定时报告服务已启动
+2025-06-30 11:00:07,463 [WARNING]  * Debugger is active!
+2025-06-30 11:00:07,472 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:00:20,544 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:00:20,547 [INFO] 定时任务调度器已启动
+2025-06-30 11:00:20,548 [INFO] 定时报告服务已启动
+2025-06-30 11:00:20,549 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:00:20,550 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'FleshRecord/1.0'}
+2025-06-30 11:00:20,550 [DEBUG] [Dify调试] 请求Body: {'inputs': {'report_type': 'daily', 'report_query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'transaction_data': '', 'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。'}, 'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'user': 'fleshrecord-system', 'conversation_id': '', 'auto_generate_name': False}
+2025-06-30 11:00:20,556 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:00:21,873 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 11:00:21,873 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 11:00:21,876 [INFO]  * Restarting with stat
+2025-06-30 11:00:23,139 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:00:23,142 [INFO] 定时任务调度器已启动
+2025-06-30 11:00:23,143 [INFO] 定时报告服务已启动
+2025-06-30 11:00:23,145 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:00:23,146 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'FleshRecord/1.0'}
+2025-06-30 11:00:23,146 [DEBUG] [Dify调试] 请求Body: {'inputs': {'report_type': 'daily', 'report_query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'transaction_data': '', 'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。'}, 'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'user': 'fleshrecord-system', 'conversation_id': '', 'auto_generate_name': False}
+2025-06-30 11:00:23,154 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:00:23,165 [WARNING]  * Debugger is active!
+2025-06-30 11:00:23,172 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:00:28,387 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 114
+2025-06-30 11:00:28,388 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:00:28,388 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:00:28,390 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 114
+2025-06-30 11:00:28,390 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:00:28,391 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:00:28,392 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:00:28,394 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:00:29,041 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:00:29,042 [INFO] 消息发送成功
+2025-06-30 11:00:29,042 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:00:29,043 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:00:29,052 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:00:29,053 [INFO] 消息发送成功
+2025-06-30 11:00:29,053 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:00:29,055 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:03:57,585 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\dify_service.py', reloading
+2025-06-30 11:03:57,649 [INFO]  * Restarting with stat
+2025-06-30 11:03:58,774 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:03:58,777 [INFO] 定时任务调度器已启动
+2025-06-30 11:03:58,778 [INFO] 定时报告服务已启动
+2025-06-30 11:03:58,797 [WARNING]  * Debugger is active!
+2025-06-30 11:03:58,804 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:04:16,050 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\dify_service.py', reloading
+2025-06-30 11:04:16,101 [INFO]  * Restarting with stat
+2025-06-30 11:04:17,051 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:04:17,056 [INFO] 定时任务调度器已启动
+2025-06-30 11:04:17,057 [INFO] 定时报告服务已启动
+2025-06-30 11:04:17,076 [WARNING]  * Debugger is active!
+2025-06-30 11:04:17,081 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:04:31,100 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:04:31,104 [INFO] 定时任务调度器已启动
+2025-06-30 11:04:31,104 [INFO] 定时报告服务已启动
+2025-06-30 11:04:31,105 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:04:31,106 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'FleshRecord/1.0'}
+2025-06-30 11:04:31,106 [DEBUG] [Dify调试] 请求Body: {'inputs': {'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。'}}
+2025-06-30 11:04:31,112 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:04:31,205 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 82
+2025-06-30 11:04:31,205 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:04:31,206 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:04:31,208 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:04:31,765 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:04:31,766 [INFO] 消息发送成功
+2025-06-30 11:04:31,766 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:04:31,768 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:04:32,430 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 11:04:32,430 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 11:04:32,433 [INFO]  * Restarting with stat
+2025-06-30 11:04:33,728 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:04:33,733 [INFO] 定时任务调度器已启动
+2025-06-30 11:04:33,734 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:04:33,736 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'FleshRecord/1.0'}
+2025-06-30 11:04:33,736 [DEBUG] [Dify调试] 请求Body: {'inputs': {'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。'}}
+2025-06-30 11:04:33,736 [INFO] 定时报告服务已启动
+2025-06-30 11:04:33,758 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:04:33,815 [WARNING]  * Debugger is active!
+2025-06-30 11:04:33,870 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:04:33,894 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 82
+2025-06-30 11:04:33,896 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:04:33,901 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:04:33,904 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:04:34,599 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:04:34,600 [INFO] 消息发送成功
+2025-06-30 11:04:34,600 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:04:34,602 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:05:38,848 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:05:38,852 [INFO] 定时任务调度器已启动
+2025-06-30 11:05:38,852 [INFO] 定时报告服务已启动
+2025-06-30 11:05:40,165 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 11:05:40,165 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 11:05:40,168 [INFO]  * Restarting with stat
+2025-06-30 11:05:41,378 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:05:41,381 [INFO] 定时任务调度器已启动
+2025-06-30 11:05:41,382 [INFO] 定时报告服务已启动
+2025-06-30 11:05:41,424 [WARNING]  * Debugger is active!
+2025-06-30 11:05:41,431 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:06:38,858 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:06:38,859 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'FleshRecord/1.0'}
+2025-06-30 11:06:38,859 [DEBUG] [Dify调试] 请求Body: {'inputs': {'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。'}}
+2025-06-30 11:06:38,864 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:06:38,978 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 82
+2025-06-30 11:06:38,979 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:06:38,979 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:06:38,980 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:06:39,681 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:06:39,681 [INFO] 消息发送成功
+2025-06-30 11:06:39,682 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:06:39,683 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:06:41,386 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:06:41,386 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'FleshRecord/1.0'}
+2025-06-30 11:06:41,387 [DEBUG] [Dify调试] 请求Body: {'inputs': {'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。'}}
+2025-06-30 11:06:41,393 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:06:41,509 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 82
+2025-06-30 11:06:41,509 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:06:41,510 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:06:41,511 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:06:42,071 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:06:42,071 [INFO] 消息发送成功
+2025-06-30 11:06:42,072 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:06:42,074 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:16:28,519 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:16:28,524 [INFO] 定时任务调度器已启动
+2025-06-30 11:16:28,524 [INFO] 定时报告服务已启动
+2025-06-30 11:16:29,843 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 11:16:29,844 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 11:16:29,848 [INFO]  * Restarting with stat
+2025-06-30 11:16:30,788 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:16:30,792 [INFO] 定时任务调度器已启动
+2025-06-30 11:16:30,792 [INFO] 定时报告服务已启动
+2025-06-30 11:16:30,825 [WARNING]  * Debugger is active!
+2025-06-30 11:16:30,831 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:16:46,289 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:16:46,293 [INFO] 定时任务调度器已启动
+2025-06-30 11:16:46,294 [INFO] 定时报告服务已启动
+2025-06-30 11:16:47,606 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 11:16:47,606 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 11:16:47,609 [INFO]  * Restarting with stat
+2025-06-30 11:16:48,573 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:16:48,576 [INFO] 定时任务调度器已启动
+2025-06-30 11:16:48,577 [INFO] 定时报告服务已启动
+2025-06-30 11:16:48,594 [WARNING]  * Debugger is active!
+2025-06-30 11:16:48,605 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:17:46,297 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:17:46,298 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'FleshRecord/1.0'}
+2025-06-30 11:17:46,298 [DEBUG] [Dify调试] 请求Body: {'inputs': {'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。'}}
+2025-06-30 11:17:46,303 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:17:46,403 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 82
+2025-06-30 11:17:46,406 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:17:46,407 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:17:46,408 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:17:46,940 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:17:46,941 [INFO] 消息发送成功
+2025-06-30 11:17:46,941 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:17:46,943 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:17:48,581 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:17:48,582 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'FleshRecord/1.0'}
+2025-06-30 11:17:48,585 [DEBUG] [Dify调试] 请求Body: {'inputs': {'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。'}}
+2025-06-30 11:17:48,590 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:17:48,688 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 82
+2025-06-30 11:17:48,689 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:17:48,690 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:17:48,691 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:17:49,223 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:17:49,223 [INFO] 消息发送成功
+2025-06-30 11:17:49,224 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:17:49,225 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:32:11,263 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\dify_service.py', reloading
+2025-06-30 11:32:11,299 [INFO]  * Restarting with stat
+2025-06-30 11:32:12,325 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:32:12,329 [INFO] 定时任务调度器已启动
+2025-06-30 11:32:12,329 [INFO] 定时报告服务已启动
+2025-06-30 11:32:12,345 [WARNING]  * Debugger is active!
+2025-06-30 11:32:12,351 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:32:22,117 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\dify_service.py', reloading
+2025-06-30 11:32:22,183 [INFO]  * Restarting with stat
+2025-06-30 11:32:23,126 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:32:23,130 [INFO] 定时任务调度器已启动
+2025-06-30 11:32:23,130 [INFO] 定时报告服务已启动
+2025-06-30 11:32:23,148 [WARNING]  * Debugger is active!
+2025-06-30 11:32:23,155 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:32:38,948 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:32:38,951 [INFO] 定时任务调度器已启动
+2025-06-30 11:32:38,952 [INFO] 定时报告服务已启动
+2025-06-30 11:32:40,268 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 11:32:40,268 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 11:32:40,271 [INFO]  * Restarting with stat
+2025-06-30 11:32:41,211 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:32:41,215 [INFO] 定时任务调度器已启动
+2025-06-30 11:32:41,215 [INFO] 定时报告服务已启动
+2025-06-30 11:32:41,234 [WARNING]  * Debugger is active!
+2025-06-30 11:32:41,240 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:33:38,956 [ERROR] 调用 Dify API 生成报告失败: DifyService.generate_financial_report() missing 1 required positional argument: 'user_id'
+2025-06-30 11:33:38,956 [WARNING] 生成 daily 报告失败，用户: metalhouse
+2025-06-30 11:33:41,218 [ERROR] 调用 Dify API 生成报告失败: DifyService.generate_financial_report() missing 1 required positional argument: 'user_id'
+2025-06-30 11:33:41,218 [WARNING] 生成 daily 报告失败，用户: metalhouse
+2025-06-30 11:34:38,959 [ERROR] 调用 Dify API 生成报告失败: DifyService.generate_financial_report() missing 1 required positional argument: 'user_id'
+2025-06-30 11:34:38,959 [WARNING] 生成 daily 报告失败，用户: metalhouse
+2025-06-30 11:34:41,221 [ERROR] 调用 Dify API 生成报告失败: DifyService.generate_financial_report() missing 1 required positional argument: 'user_id'
+2025-06-30 11:34:41,221 [WARNING] 生成 daily 报告失败，用户: metalhouse
+2025-06-30 11:35:38,961 [ERROR] 调用 Dify API 生成报告失败: DifyService.generate_financial_report() missing 1 required positional argument: 'user_id'
+2025-06-30 11:35:38,962 [WARNING] 生成 daily 报告失败，用户: metalhouse
+2025-06-30 11:35:41,224 [ERROR] 调用 Dify API 生成报告失败: DifyService.generate_financial_report() missing 1 required positional argument: 'user_id'
+2025-06-30 11:35:41,224 [WARNING] 生成 daily 报告失败，用户: metalhouse
+2025-06-30 11:36:02,339 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\report_service.py', reloading
+2025-06-30 11:36:02,390 [INFO]  * Restarting with stat
+2025-06-30 11:36:03,341 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:36:03,344 [INFO] 定时任务调度器已启动
+2025-06-30 11:36:03,345 [INFO] 定时报告服务已启动
+2025-06-30 11:36:03,361 [WARNING]  * Debugger is active!
+2025-06-30 11:36:03,367 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:39:17,732 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\report_service.py', reloading
+2025-06-30 11:39:17,871 [INFO]  * Restarting with stat
+2025-06-30 11:39:18,975 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:39:18,980 [INFO] 定时任务调度器已启动
+2025-06-30 11:39:18,980 [INFO] 定时报告服务已启动
+2025-06-30 11:39:19,003 [WARNING]  * Debugger is active!
+2025-06-30 11:39:19,019 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:39:41,747 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:39:41,751 [INFO] 定时任务调度器已启动
+2025-06-30 11:39:41,751 [INFO] 定时报告服务已启动
+2025-06-30 11:39:43,064 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 11:39:43,064 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 11:39:43,067 [INFO]  * Restarting with stat
+2025-06-30 11:39:43,997 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:39:44,001 [INFO] 定时任务调度器已启动
+2025-06-30 11:39:44,001 [INFO] 定时报告服务已启动
+2025-06-30 11:39:44,017 [WARNING]  * Debugger is active!
+2025-06-30 11:39:44,023 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:40:41,757 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:40:41,758 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'FleshRecord/1.0'}
+2025-06-30 11:40:41,758 [DEBUG] [Dify调试] 请求Body: {'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'user': 'metalhouse'}
+2025-06-30 11:40:41,766 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:40:41,935 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 104
+2025-06-30 11:40:41,935 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:40:41,935 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:40:41,937 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:40:42,502 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:40:42,502 [INFO] 消息发送成功
+2025-06-30 11:40:42,502 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:40:42,504 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:40:44,006 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:40:44,007 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'FleshRecord/1.0'}
+2025-06-30 11:40:44,007 [DEBUG] [Dify调试] 请求Body: {'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'user': 'metalhouse'}
+2025-06-30 11:40:44,012 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:40:44,115 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 104
+2025-06-30 11:40:44,117 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:40:44,119 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:40:44,126 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:40:44,662 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:40:44,663 [INFO] 消息发送成功
+2025-06-30 11:40:44,663 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:40:44,665 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:44:52,995 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\dify_service.py', reloading
+2025-06-30 11:44:53,069 [INFO]  * Restarting with stat
+2025-06-30 11:44:54,331 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:44:54,335 [INFO] 定时任务调度器已启动
+2025-06-30 11:44:54,335 [INFO] 定时报告服务已启动
+2025-06-30 11:44:54,351 [WARNING]  * Debugger is active!
+2025-06-30 11:44:54,357 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:45:07,357 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\dify_service.py', reloading
+2025-06-30 11:45:07,435 [INFO]  * Restarting with stat
+2025-06-30 11:45:08,384 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:45:08,387 [INFO] 定时任务调度器已启动
+2025-06-30 11:45:08,388 [INFO] 定时报告服务已启动
+2025-06-30 11:45:08,404 [WARNING]  * Debugger is active!
+2025-06-30 11:45:08,411 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:45:21,942 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:45:21,945 [INFO] 定时任务调度器已启动
+2025-06-30 11:45:21,946 [INFO] 定时报告服务已启动
+2025-06-30 11:45:23,490 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 11:45:23,490 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 11:45:23,493 [INFO]  * Restarting with stat
+2025-06-30 11:45:24,557 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:45:24,561 [INFO] 定时任务调度器已启动
+2025-06-30 11:45:24,561 [INFO] 定时报告服务已启动
+2025-06-30 11:45:24,592 [WARNING]  * Debugger is active!
+2025-06-30 11:45:24,605 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:46:21,949 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:46:21,949 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8'}
+2025-06-30 11:46:21,949 [DEBUG] [Dify调试] 请求Body: {'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'user': 'metalhouse'}
+2025-06-30 11:46:21,954 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:46:22,110 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 104
+2025-06-30 11:46:22,111 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:46:22,111 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:46:22,113 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:46:22,647 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:46:22,649 [INFO] 消息发送成功
+2025-06-30 11:46:22,649 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:46:22,651 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:46:24,567 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:46:24,568 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8'}
+2025-06-30 11:46:24,568 [DEBUG] [Dify调试] 请求Body: {'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'user': 'metalhouse'}
+2025-06-30 11:46:24,574 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:46:24,682 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 104
+2025-06-30 11:46:24,683 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:46:24,685 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:46:24,687 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:46:25,203 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:46:25,204 [INFO] 消息发送成功
+2025-06-30 11:46:25,204 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:46:25,206 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:51:54,321 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:51:54,324 [INFO] 定时任务调度器已启动
+2025-06-30 11:51:54,324 [INFO] 定时报告服务已启动
+2025-06-30 11:51:55,629 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 11:51:55,629 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 11:51:55,632 [INFO]  * Restarting with stat
+2025-06-30 11:51:56,526 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:51:56,529 [INFO] 定时任务调度器已启动
+2025-06-30 11:51:56,529 [INFO] 定时报告服务已启动
+2025-06-30 11:51:56,569 [WARNING]  * Debugger is active!
+2025-06-30 11:51:56,575 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:52:54,329 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:52:54,329 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8'}
+2025-06-30 11:52:54,329 [DEBUG] [Dify调试] 请求Body: {'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'user': 'metalhouse'}
+2025-06-30 11:52:54,335 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:52:54,447 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 104
+2025-06-30 11:52:54,448 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:52:54,448 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:52:54,451 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:52:54,998 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:52:54,999 [INFO] 消息发送成功
+2025-06-30 11:52:55,000 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:52:55,001 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:52:56,533 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:52:56,533 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8'}
+2025-06-30 11:52:56,533 [DEBUG] [Dify调试] 请求Body: {'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'user': 'metalhouse'}
+2025-06-30 11:52:56,539 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:52:56,654 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 104
+2025-06-30 11:52:56,655 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:52:56,656 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:52:56,658 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:52:57,209 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:52:57,209 [INFO] 消息发送成功
+2025-06-30 11:52:57,210 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:52:57,211 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:54:38,055 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\dify_service.py', reloading
+2025-06-30 11:54:38,125 [INFO]  * Restarting with stat
+2025-06-30 11:54:39,120 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:54:39,124 [INFO] 定时任务调度器已启动
+2025-06-30 11:54:39,124 [INFO] 定时报告服务已启动
+2025-06-30 11:54:39,127 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:54:39,127 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8'}
+2025-06-30 11:54:39,127 [DEBUG] [Dify调试] 请求Body: {'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'user': 'metalhouse'}
+2025-06-30 11:54:39,137 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:54:39,166 [WARNING]  * Debugger is active!
+2025-06-30 11:54:39,173 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:54:39,259 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 104
+2025-06-30 11:54:39,260 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:54:39,263 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:54:39,267 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:54:39,817 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:54:39,818 [INFO] 消息发送成功
+2025-06-30 11:54:39,818 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:54:39,820 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:55:01,827 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:55:01,831 [INFO] 定时任务调度器已启动
+2025-06-30 11:55:01,832 [INFO] 定时报告服务已启动
+2025-06-30 11:55:01,833 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:55:01,834 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8'}
+2025-06-30 11:55:01,834 [DEBUG] [Dify调试] 请求Body: {'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'user': 'metalhouse'}
+2025-06-30 11:55:01,840 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:55:01,925 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 104
+2025-06-30 11:55:01,926 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:55:01,927 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:55:01,928 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:55:02,490 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:55:02,490 [INFO] 消息发送成功
+2025-06-30 11:55:02,491 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:55:02,492 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:55:03,141 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 11:55:03,141 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 11:55:03,144 [INFO]  * Restarting with stat
+2025-06-30 11:55:04,080 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:55:04,082 [INFO] 定时任务调度器已启动
+2025-06-30 11:55:04,083 [INFO] 定时报告服务已启动
+2025-06-30 11:55:04,085 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:55:04,086 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8'}
+2025-06-30 11:55:04,086 [DEBUG] [Dify调试] 请求Body: {'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'user': 'metalhouse'}
+2025-06-30 11:55:04,095 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:55:04,114 [WARNING]  * Debugger is active!
+2025-06-30 11:55:04,128 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:55:04,178 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 104
+2025-06-30 11:55:04,180 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:55:04,189 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:55:04,192 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:55:04,731 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:55:04,732 [INFO] 消息发送成功
+2025-06-30 11:55:04,732 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:55:04,734 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:55:17,835 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:55:17,838 [INFO] 定时任务调度器已启动
+2025-06-30 11:55:17,838 [INFO] 定时报告服务已启动
+2025-06-30 11:55:17,840 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:55:17,841 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8'}
+2025-06-30 11:55:17,841 [DEBUG] [Dify调试] 请求Body: {'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'user': 'metalhouse'}
+2025-06-30 11:55:17,847 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:55:17,941 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 400 104
+2025-06-30 11:55:17,943 [ERROR] Dify API 请求失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:55:17,944 [ERROR] 生成 daily 报告失败: 400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:55:17,947 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:55:18,536 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:55:18,536 [INFO] 消息发送成功
+2025-06-30 11:55:18,536 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': False, 'error': '400 Client Error: BAD REQUEST for url: http://192.168.1.68/v1/c...
+2025-06-30 11:55:18,538 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:55:19,170 [INFO] 正在停止应用...
+2025-06-30 11:56:47,917 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:56:47,922 [INFO] 定时任务调度器已启动
+2025-06-30 11:56:47,922 [INFO] 定时报告服务已启动
+2025-06-30 11:56:49,249 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 11:56:49,250 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 11:56:49,253 [INFO]  * Restarting with stat
+2025-06-30 11:56:50,245 [INFO] Starting Flask application v0.2.0
+2025-06-30 11:56:50,248 [INFO] 定时任务调度器已启动
+2025-06-30 11:56:50,249 [INFO] 定时报告服务已启动
+2025-06-30 11:56:50,269 [WARNING]  * Debugger is active!
+2025-06-30 11:56:50,278 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 11:57:47,926 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:57:47,926 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8'}
+2025-06-30 11:57:47,926 [DEBUG] [Dify调试] 请求Body: {'inputs': {}, 'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'conversation_id': '', 'user': 'metalhouse'}
+2025-06-30 11:57:47,932 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:57:50,252 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 11:57:50,253 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8'}
+2025-06-30 11:57:50,253 [DEBUG] [Dify调试] 请求Body: {'inputs': {}, 'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'conversation_id': '', 'user': 'metalhouse'}
+2025-06-30 11:57:50,259 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 11:58:20,025 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 200 4033
+2025-06-30 11:58:20,027 [INFO] Dify 工作流执行成功，工作流ID: 0396ea7b-9133-4236-9c0f-6c1eeba82e98
+2025-06-30 11:58:20,027 [DEBUG] [Dify调试] 响应内容: {'event': 'message', 'task_id': 'dcbc2e8e-fca5-411b-a0cb-b1007fea2a93', 'id': '1b1df6bf-fd1c-4cd2-b966-6e0d080c83dc', 'message_id': '1b1df6bf-fd1c-4cd2-b966-6e0d080c83dc', 'conversation_id': 'b035eb3b-b0f5-43fa-9191-ce5fc8944168', 'mode': 'advanced-chat', 'answer': '### 财务日报（2025年6月30日）\n\n---\n\n#### **一、收支汇总情况**\n| 项目                | 金额（CNY）   | 说明                     |\n|---------------------|--------------|--------------------------|\n| **当前余额**        | -¥7,935.00   | 累计净支出               |\n| **今日总支出**      | -¥7,935.00   | 无收入                   |\n| **今日总收入**      | ¥0.00        | 无收入记录               |\n| **周期性账单支付**  | ¥0.00        | 无周期性账单支付         |\n| **净资产负债**      | -¥363,392.01 | 当前总资产状况           |\n\n---\n\n#### **二、支出明细**\n1. **餐饮消费**  \n   - **金额**: ¥35.00  \n   - **账户**: 工资账户 → 餐饮账户  \n   - **备注**: 午餐  \n\n2. **教育支出**  \n   - **金额**: ¥7,880.00  \n   - **账户**: 信用卡（交通银行） → 现金账户  \n   - **分类**: 生活爱好（标签：教育）  \n   - **备注**: 篮球课程费用  \n\n3. **医疗护理**  \n   - **金额**: ¥20.00  \n   - **账户**: 工资账户 → 现金账户  \n   - **分类**: 医药护理（标签：医疗）  \n   - **备注**: 牙科费用  \n\n---\n\n#### **三、预算执行情况**\n| 预算名称   | 预算总额（CNY） | 已支出（CNY） | 剩余额度（CNY） | 执行状态       |\n|------------|----------------|---------------|----------------|----------------|\n| **周预算** | ¥10,000.00     | ¥12,134.23    | ¥0.00          | **超支 21.34%** |\n\n**分析**:  \n- 本周预算已严重超支（超支金额 ¥2,134.23），主要因大额教育支出（篮球课程费用）导致。  \n- 建议后续严格控制非必要开支，或调整预算分配。\n\n---\n\n#### **四、财务健康提示**  \n1. **紧急预警**: 当前净资产负债为 **-¥363,392.01**，需关注长期财务稳定性。  \n2. **行动建议**:  \n   - 优先偿还高息债务（如信用卡）。  \n   - 设立专项储蓄计划以改善净资产状况。  \n\n如需进一步分析或调整预算，请随时联系财务顾问。  \n\n---  \n**生成时间**: 2025-06-30 11:57', 'metadata': {'annotation_reply': None, 'retriever_resources': [], 'usage': {'prompt_tokens': 4598, 'prompt_unit_price': '2', 'prompt_price_unit': '0.000001', 'prompt_price': '0.0074781', 'completion_tokens': 680, 'completion_unit_price': '8', 'completion_price_unit': '0.000001', 'completion_price': '0.0045925', 'total_tokens': 5278, 'total_price': '0.0120706', 'currency': 'RMB', 'latency': 25.812015991017688}}, 'created_at': 1751255870}
+2025-06-30 11:58:20,028 [INFO] 成功生成 daily 报告
+2025-06-30 11:58:20,030 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:58:20,096 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 200 4115
+2025-06-30 11:58:20,101 [INFO] Dify 工作流执行成功，工作流ID: 0396ea7b-9133-4236-9c0f-6c1eeba82e98
+2025-06-30 11:58:20,104 [DEBUG] [Dify调试] 响应内容: {'event': 'message', 'task_id': '49c87f41-bde6-42ab-ac53-b4c6de7896ff', 'id': 'ba05d0ca-0658-4ff3-8c6b-7b206f120ff8', 'message_id': 'ba05d0ca-0658-4ff3-8c6b-7b206f120ff8', 'conversation_id': '93e28b4b-de44-41c0-9c7f-92e5a38879a4', 'mode': 'advanced-chat', 'answer': '### 财务日报（2025年6月30日）\n\n---\n\n#### **一、收支汇总情况**\n| 项目                | 金额（CNY）   | 说明                     |\n|---------------------|--------------|--------------------------|\n| **当前余额**         | -¥7,935.00   | 净流出状态               |\n| **总支出**           | -¥7,935.00   | 含今日所有支出           |\n| **总收入**           | ¥0.00        | 无收入记录               |\n| **周期性账单（已付）** | ¥0.00        | 无周期性账单支付         |\n| **周期性账单（未付）** | ¥0.00        | 无待付账单               |\n| **净资产负债**       | -¥363,392.01 | 需关注长期财务健康       |\n\n---\n\n#### **二、支出明细**\n1. **今日支出（6月30日）**\n   - **¥35.00**：午餐（来源：工资账户 → 餐饮账户）  \n   \n2. **昨日支出（6月29日）**\n   - **¥7,880.00**：篮球课费用（来源：交通银行信用卡 → 现金账户，分类：生活爱好，标签：教育）  \n   - **¥20.00**：牙科护理（来源：工资账户 → 现金账户，分类：医疗护理，标签：医疗）  \n\n---\n\n#### **三、预算执行情况**\n| 预算名称   | 预算总额（CNY） | 已支出（CNY） | 剩余额度（CNY） | 执行状态       |\n|------------|----------------|---------------|----------------|----------------|\n| **周预算** | ¥10,000.00     | ¥12,134.23    | ¥0.00          | **超支21.34%** |\n\n**分析**：  \n- 本周预算已严重超支（超¥2,134.23），主要因大额篮球课费用（¥7,880.00）导致。  \n- 建议后续减少非必要支出，或调整预算分配。\n\n---\n\n#### **四、财务建议**\n1. **控制支出**：短期内避免大额消费，优先偿还负债（当前净资产为负）。  \n2. **收入优化**：探索增收渠道（如兼职、理财），改善现金流。  \n3. **预算调整**：根据实际支出重新分配周预算，或设置专项预算（如教育、医疗）。\n\n---  \n**数据截止**：2025-06-30 11:57:51  \n**生成工具**：财务自动化系统', 'metadata': {'annotation_reply': None, 'retriever_resources': [], 'usage': {'prompt_tokens': 4598, 'prompt_unit_price': '2', 'prompt_price_unit': '0.000001', 'prompt_price': '0.0074781', 'completion_tokens': 678, 'completion_unit_price': '8', 'completion_price_unit': '0.000001', 'completion_price': '0.0045344', 'total_tokens': 5276, 'total_price': '0.0120125', 'currency': 'RMB', 'latency': 25.417643236985896}}, 'created_at': 1751255868}
+2025-06-30 11:58:20,105 [INFO] 成功生成 daily 报告
+2025-06-30 11:58:20,110 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 11:58:20,681 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:58:20,682 [INFO] 消息发送成功
+2025-06-30 11:58:20,682 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': True, 'data': {'event': 'message', 'task_id': 'dcbc2e8e-fca5-411b-a0cb-b1007fea2...
+2025-06-30 11:58:20,684 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 11:58:20,734 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 11:58:20,734 [INFO] 消息发送成功
+2025-06-30 11:58:20,735 [DEBUG] 发送的消息内容: 📊 财务日报
+
+{'success': True, 'data': {'event': 'message', 'task_id': '49c87f41-bde6-42ab-ac53-b4c6de789...
+2025-06-30 11:58:20,737 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 12:03:30,124 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\scheduler_service.py', reloading
+2025-06-30 12:03:30,203 [INFO]  * Restarting with stat
+2025-06-30 12:03:31,233 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:03:31,237 [INFO] 定时任务调度器已启动
+2025-06-30 12:03:31,237 [INFO] 定时报告服务已启动
+2025-06-30 12:03:31,274 [WARNING]  * Debugger is active!
+2025-06-30 12:03:31,290 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 12:03:40,081 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\scheduler_service.py', reloading
+2025-06-30 12:03:40,142 [INFO]  * Restarting with stat
+2025-06-30 12:03:41,847 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:03:41,851 [INFO] 定时任务调度器已启动
+2025-06-30 12:03:41,851 [INFO] 定时报告服务已启动
+2025-06-30 12:03:41,869 [WARNING]  * Debugger is active!
+2025-06-30 12:03:41,877 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 12:03:57,871 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:03:57,875 [INFO] 定时任务调度器已启动
+2025-06-30 12:03:57,875 [INFO] 定时报告服务已启动
+2025-06-30 12:03:59,198 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 12:03:59,198 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 12:03:59,201 [INFO]  * Restarting with stat
+2025-06-30 12:04:00,105 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:04:00,109 [INFO] 定时任务调度器已启动
+2025-06-30 12:04:00,110 [INFO] 定时报告服务已启动
+2025-06-30 12:04:00,112 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 12:04:00,112 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8'}
+2025-06-30 12:04:00,113 [DEBUG] [Dify调试] 请求Body: {'inputs': {}, 'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'conversation_id': '', 'user': 'metalhouse'}
+2025-06-30 12:04:00,119 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 12:04:00,152 [WARNING]  * Debugger is active!
+2025-06-30 12:04:00,159 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 12:04:29,354 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 200 3466
+2025-06-30 12:04:29,355 [INFO] Dify 工作流执行成功，工作流ID: 0396ea7b-9133-4236-9c0f-6c1eeba82e98
+2025-06-30 12:04:29,356 [DEBUG] [Dify调试] 响应内容: {'event': 'message', 'task_id': '5f0dca79-420b-446a-9c12-ddaf8dc356e0', 'id': 'ee632402-eb75-4de2-aaf9-087c353222c0', 'message_id': 'ee632402-eb75-4de2-aaf9-087c353222c0', 'conversation_id': '03f500ed-b611-42bc-82e9-7c1e437f1019', 'mode': 'advanced-chat', 'answer': '### 2025年6月30日财务日报  \n\n#### **一、收支汇总情况**  \n1. **余额**：¥-7,935.00  \n2. **总支出**：¥-7,935.00  \n   - 今日支出：¥35.00（午餐）  \n   - 昨日支出：¥7,900.00（篮球课费用 ¥7,880.00 + 洗牙费 ¥20.00）  \n3. **总收入**：¥0.00  \n4. **预算执行情况**：  \n   - **周预算**：总额 ¥10,000.00，已支出 ¥12,134.23，超支 ¥2,134.23  \n   - **剩余预算**：¥0.00（已耗尽）  \n\n---\n\n#### **二、支出明细**  \n1. **2025-06-30**  \n   - **午餐**：¥35.00（来源：工资账户 → 餐饮账户）  \n2. **2025-06-29**  \n   - **篮球课费用**：¥7,880.00（来源：信用卡 → 现金账户，分类：生活爱好，标签：教育）  \n   - **洗牙费**：¥20.00（来源：工资账户 → 现金账户，分类：医药护理，标签：医疗）  \n\n---\n\n#### **三、预算执行分析**  \n1. **超支原因**：  \n   - 篮球课费用（¥7,880.00）占周预算的78.8%，是主要超支项。  \n   - 建议：未来类似大额支出需提前规划或调整预算分配。  \n2. **净资产状况**：  \n   - 当前净资产：¥-363,392.01（需关注长期负债管理）。  \n\n---\n\n#### **四、今日财务建议**  \n1. **控制支出**：本周预算已耗尽，建议暂停非必要消费。  \n2. **收入规划**：本月无收入记录，需检查是否有遗漏或延迟入账。  \n3. **预算调整**：下周建议增加预算或细化分类（如教育专项）。  \n\n如需进一步分析或调整预算，请随时沟通！  \n\n---  \n**数据截止**：2025-06-30 12:04:08', 'metadata': {'annotation_reply': None, 'retriever_resources': [], 'usage': {'prompt_tokens': 4598, 'prompt_unit_price': '2', 'prompt_price_unit': '0.000001', 'prompt_price': '0.0074781', 'completion_tokens': 605, 'completion_unit_price': '8', 'completion_price_unit': '0.000001', 'completion_price': '0.0039723', 'total_tokens': 5203, 'total_price': '0.0114504', 'currency': 'RMB', 'latency': 25.40004014899023}}, 'created_at': 1751256240}
+2025-06-30 12:04:29,357 [INFO] 成功生成 daily 报告
+2025-06-30 12:04:29,358 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 12:04:29,972 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 12:04:29,973 [INFO] 消息发送成功
+2025-06-30 12:04:29,973 [DEBUG] 发送的消息内容: 📊 财务日报
+
+### 2025年6月30日财务日报  
+
+#### **一、收支汇总情况**  
+1. **余额**：¥-7,935.00  
+2. **总支出**：¥-7,935.00  
+   ...
+2025-06-30 12:04:29,975 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 12:04:57,879 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 12:04:57,879 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8'}
+2025-06-30 12:04:57,880 [DEBUG] [Dify调试] 请求Body: {'inputs': {}, 'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'conversation_id': '', 'user': 'metalhouse'}
+2025-06-30 12:04:57,884 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 12:05:20,480 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 200 2569
+2025-06-30 12:05:20,481 [INFO] Dify 工作流执行成功，工作流ID: 0396ea7b-9133-4236-9c0f-6c1eeba82e98
+2025-06-30 12:05:20,481 [DEBUG] [Dify调试] 响应内容: {'event': 'message', 'task_id': '6f908bda-9f46-42df-96b1-328cf9ce4d1e', 'id': '0401787c-4346-48ae-a922-99def5bbb018', 'message_id': '0401787c-4346-48ae-a922-99def5bbb018', 'conversation_id': '728d0c98-0a3a-42a8-8262-2d7955a0a525', 'mode': 'advanced-chat', 'answer': '### 2025年6月30日财务日报  \n\n#### **一、收支汇总情况**  \n1. **当前余额**：¥-7,935.00  \n2. **今日支出**：¥-7,935.00  \n   - 明细：  \n     - ¥35.00（午餐）  \n     - ¥7,880.00（篮球课费用）  \n     - ¥20.00（洗牙费）  \n3. **今日收入**：¥0.00  \n4. **净资产负债**：¥-363,392.01  \n\n---\n\n#### **二、预算执行情况**  \n1. **周预算**：  \n   - 预算总额：¥10,000.00  \n   - 已支出：¥12,134.23  \n   - 剩余预算：¥0.00（已超支 ¥2,134.23）  \n\n2. **超支分析**：  \n   - 主要因篮球课费用（¥7,880.00）超出常规支出计划，建议后续调整预算分配或优化大额支出安排。  \n\n---\n\n#### **三、财务健康提示**  \n- **紧急提醒**：当前净资产负债较高（¥-36.3万），需关注长期偿债能力。  \n- **建议**：  \n  1. 优先控制非必要支出（如餐饮、娱乐类）。  \n  2. 检查周期性账单（如信用卡还款）避免逾期。  \n\n如需进一步分析或调整预算，请随时沟通。  \n\n（数据截止：2025-06-30 12:05）', 'metadata': {'annotation_reply': None, 'retriever_resources': [], 'usage': {'prompt_tokens': 4598, 'prompt_unit_price': '2', 'prompt_price_unit': '0.000001', 'prompt_price': '0.0074781', 'completion_tokens': 455, 'completion_unit_price': '8', 'completion_price_unit': '0.000001', 'completion_price': '0.0027706', 'total_tokens': 5053, 'total_price': '0.0102487', 'currency': 'RMB', 'latency': 19.141431357973488}}, 'created_at': 1751256298}
+2025-06-30 12:05:20,482 [INFO] 成功生成 daily 报告
+2025-06-30 12:05:20,484 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 12:05:20,988 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 12:05:20,989 [INFO] 消息发送成功
+2025-06-30 12:05:20,989 [DEBUG] 发送的消息内容: 📊 财务日报
+
+### 2025年6月30日财务日报  
+
+#### **一、收支汇总情况**  
+1. **当前余额**：¥-7,935.00  
+2. **今日支出**：¥-7,935.00  
+...
+2025-06-30 12:05:20,991 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 12:07:49,097 [INFO]  * Detected change in 'D:\\fleshrecord\\app.py', reloading
+2025-06-30 12:07:49,152 [INFO]  * Restarting with stat
+2025-06-30 12:07:50,246 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:07:50,250 [INFO] 定时任务调度器已启动
+2025-06-30 12:07:50,250 [INFO] 定时报告服务已启动
+2025-06-30 12:07:50,267 [WARNING]  * Debugger is active!
+2025-06-30 12:07:50,276 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 12:07:57,941 [INFO]  * Detected change in 'D:\\fleshrecord\\app.py', reloading
+2025-06-30 12:07:57,997 [INFO]  * Restarting with stat
+2025-06-30 12:08:00,144 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:08:00,149 [INFO] 定时任务调度器已启动
+2025-06-30 12:08:00,150 [INFO] 定时报告服务已启动
+2025-06-30 12:08:00,187 [WARNING]  * Debugger is active!
+2025-06-30 12:08:00,193 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 12:08:22,080 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:08:22,084 [INFO] 定时任务调度器已启动
+2025-06-30 12:08:22,085 [INFO] 定时报告服务已启动
+2025-06-30 12:08:23,406 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 12:08:23,406 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 12:08:23,410 [INFO]  * Restarting with stat
+2025-06-30 12:08:24,331 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:08:24,334 [INFO] 定时任务调度器已启动
+2025-06-30 12:08:24,334 [INFO] 定时报告服务已启动
+2025-06-30 12:08:24,349 [WARNING]  * Debugger is active!
+2025-06-30 12:08:24,357 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 12:09:22,088 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 12:09:22,088 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8'}
+2025-06-30 12:09:22,088 [DEBUG] [Dify调试] 请求Body: {'inputs': {}, 'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'conversation_id': '', 'user': 'metalhouse'}
+2025-06-30 12:09:22,093 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 12:09:24,338 [DEBUG] [Dify调试] 请求URL: http://192.168.1.68/v1/chat-messages
+2025-06-30 12:09:24,339 [DEBUG] [Dify调试] 请求Headers: {'Authorization': 'Bearer app-wpqEbSpSCR5FPmVsDJuhg3yU', 'Content-Type': 'application/json; charset=utf-8'}
+2025-06-30 12:09:24,339 [DEBUG] [Dify调试] 请求Body: {'inputs': {}, 'query': '请生成今日财务日报，包括支出收入情况和预算执行情况。', 'response_mode': 'blocking', 'conversation_id': '', 'user': 'metalhouse'}
+2025-06-30 12:09:24,345 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 12:09:47,677 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 200 3502
+2025-06-30 12:09:47,678 [INFO] Dify 工作流执行成功，工作流ID: 0396ea7b-9133-4236-9c0f-6c1eeba82e98
+2025-06-30 12:09:47,679 [DEBUG] [Dify调试] 响应内容: {'event': 'message', 'task_id': '97143f31-3e94-48d0-9f7c-2777c4dd5ee8', 'id': 'feb079ec-15b4-4e4f-9191-508e16b9633e', 'message_id': 'feb079ec-15b4-4e4f-9191-508e16b9633e', 'conversation_id': '9f75a721-0f0b-4a00-9ca8-a74269d73cd1', 'mode': 'advanced-chat', 'answer': '### 财务日报（2025年6月30日）\n\n---\n\n#### **一、收支汇总情况**\n| 项目                | 金额（¥）       |\n|---------------------|----------------|\n| **当前余额**        | -7,935.00      |\n| **今日支出**        | -7,935.00      |\n| **今日收入**        | 0.00           |\n| **周期性账单已支付** | 0.00           |\n| **周期性账单未支付** | 0.00           |\n| **净支出**          | -7,935.00      |\n| **净资产**          | -363,392.01    |\n\n---\n\n#### **二、支出明细**\n1. **餐饮**  \n   - **金额**：¥35.00  \n   - **账户**：工资账户 → 餐饮账户  \n   - **备注**：午餐  \n\n2. **教育爱好**  \n   - **金额**：¥7,880.00  \n   - **账户**：交通银行信用卡 → 现金账户  \n   - **备注**：篮球课程费用（标签：教育）  \n\n3. **医疗护理**  \n   - **金额**：¥20.00  \n   - **账户**：工资账户 → 现金账户  \n   - **备注**：洗牙费用（标签：医疗）  \n\n---\n\n#### **三、预算执行情况**\n| 预算名称   | 预算总额（¥） | 已支出（¥） | 剩余（¥） |\n|------------|---------------|-------------|----------|\n| **周预算** | 10,000.00     | 12,134.23   | 0.00     |\n\n**分析**：  \n- 周预算已超支 **¥2,134.23**（主要因篮球课程费用一次性支出较高）。  \n- 建议调整后续支出计划或补充预算额度。\n\n---\n\n#### **四、财务健康提示**\n1. **净资产为负**：需关注长期负债管理，建议制定还款或增收计划。  \n2. **预算超支**：本周支出集中在教育类目，建议下月提前规划大额支出。  \n\n如需进一步分析或调整预算，请随时联系财务团队。  \n\n---  \n**生成时间**：2025-06-30 12:09:25', 'metadata': {'annotation_reply': None, 'retriever_resources': [], 'usage': {'prompt_tokens': 4598, 'prompt_unit_price': '2', 'prompt_price_unit': '0.000001', 'prompt_price': '0.0074781', 'completion_tokens': 606, 'completion_unit_price': '8', 'completion_price_unit': '0.000001', 'completion_price': '0.0040005', 'total_tokens': 5204, 'total_price': '0.0114786', 'currency': 'RMB', 'latency': 21.08561137301149}}, 'created_at': 1751256562}
+2025-06-30 12:09:47,680 [INFO] 成功生成 daily 报告
+2025-06-30 12:09:47,683 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 12:09:48,272 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 12:09:48,273 [INFO] 消息发送成功
+2025-06-30 12:09:48,273 [DEBUG] 发送的消息内容: 📊 财务日报
+
+### 财务日报（2025年6月30日）
+
+---
+
+#### **一、收支汇总情况**
+| 项目                | 金额（¥）       |
+|----------...
+2025-06-30 12:09:48,275 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 12:09:53,674 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 200 4081
+2025-06-30 12:09:53,675 [INFO] Dify 工作流执行成功，工作流ID: 0396ea7b-9133-4236-9c0f-6c1eeba82e98
+2025-06-30 12:09:53,675 [DEBUG] [Dify调试] 响应内容: {'event': 'message', 'task_id': 'd33ec757-107e-471e-b40d-61ae14481945', 'id': 'ca8037c8-3514-4374-8ef8-8a1e9400a911', 'message_id': 'ca8037c8-3514-4374-8ef8-8a1e9400a911', 'conversation_id': 'f762276a-da58-480b-a1a1-fd728732e37d', 'mode': 'advanced-chat', 'answer': '### 财务日报（2025年6月30日）\n\n#### **一、收支汇总情况**\n| 项目                | 金额 (¥)       |\n|---------------------|---------------|\n| **当前余额**        | -7,935.00     |\n| **总支出**          | -7,935.00     |\n| **总收入**          | 0.00          |\n| **周期性账单已支付** | 0.00          |\n| **周期性账单未支付** | 0.00          |\n| **净支出**          | -7,935.00     |\n| **净资产**          | -363,392.01   |\n\n---\n\n#### **二、支出明细**\n1. **餐饮消费**  \n   - **金额**：¥35.00  \n   - **时间**：2025-06-30 12:34  \n   - **描述**：午餐  \n   - **来源账户**：工资账户 → **餐饮**  \n\n2. **教育支出**  \n   - **金额**：¥7,880.00  \n   - **时间**：2025-06-29 21:19  \n   - **描述**：篮球课费用（标签：教育）  \n   - **来源账户**：信用卡（交通银行） → **现金账户**  \n   - **分类**：生活爱好  \n\n3. **医疗护理**  \n   - **金额**：¥20.00  \n   - **时间**：2025-06-29 21:17  \n   - **描述**：洗牙费（标签：医疗）  \n   - **来源账户**：工资账户 → **现金账户**  \n   - **分类**：医药护理  \n\n---\n\n#### **三、预算执行情况**\n| 预算名称   | 预算总额 (¥) | 已支出 (¥) | 剩余额度 (¥) | 执行状态       |\n|------------|--------------|------------|--------------|----------------|\n| **周预算** | 10,000.00    | 12,134.23  | 0.00         | **超支 21.34%** |\n\n**分析**：  \n- 本周预算已严重超支（超支金额：¥2,134.23），主要因大额教育支出（篮球课费用）导致。  \n- 建议后续严格控制非必要支出，优先保障基本生活开销。\n\n---\n\n#### **四、财务健康提示**\n1. **赤字预警**：当前净负债达 **¥363,392.01**，需关注长期偿债能力。  \n2. **预算调整**：建议重新评估周预算额度或优化支出结构。  \n3. **收入补充**：本月无收入记录，可考虑开源措施（如兼职、理财等）。\n\n如需进一步分析或定制化建议，请提供更多财务目标信息。  \n数据截止：2025-06-30 12:09:29', 'metadata': {'annotation_reply': None, 'retriever_resources': [], 'usage': {'prompt_tokens': 4598, 'prompt_unit_price': '2', 'prompt_price_unit': '0.000001', 'prompt_price': '0.0074781', 'completion_tokens': 735, 'completion_unit_price': '8', 'completion_price_unit': '0.000001', 'completion_price': '0.0050045', 'total_tokens': 5333, 'total_price': '0.0124826', 'currency': 'RMB', 'latency': 27.392695617018035}}, 'created_at': 1751256564}
+2025-06-30 12:09:53,675 [INFO] 成功生成 daily 报告
+2025-06-30 12:09:53,677 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 12:09:54,222 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 12:09:54,222 [INFO] 消息发送成功
+2025-06-30 12:09:54,222 [DEBUG] 发送的消息内容: 📊 财务日报
+
+### 财务日报（2025年6月30日）
+
+#### **一、收支汇总情况**
+| 项目                | 金额 (¥)       |
+|--------------...
+2025-06-30 12:09:54,224 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 12:10:42,363 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\dify_service.py', reloading
+2025-06-30 12:10:42,430 [INFO]  * Restarting with stat
+2025-06-30 12:10:43,474 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:10:43,477 [INFO] 定时任务调度器已启动
+2025-06-30 12:10:43,478 [INFO] 定时报告服务已启动
+2025-06-30 12:10:43,488 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 12:10:43,528 [WARNING]  * Debugger is active!
+2025-06-30 12:10:43,534 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 12:11:04,127 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\dify_service.py', reloading
+2025-06-30 12:11:04,215 [INFO]  * Restarting with stat
+2025-06-30 12:11:05,225 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:11:05,228 [INFO] 定时任务调度器已启动
+2025-06-30 12:11:05,229 [INFO] 定时报告服务已启动
+2025-06-30 12:11:05,238 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 12:11:05,340 [WARNING]  * Debugger is active!
+2025-06-30 12:11:05,348 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 12:11:08,776 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\dify_service.py', reloading
+2025-06-30 12:11:08,833 [INFO]  * Restarting with stat
+2025-06-30 12:11:09,922 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:11:09,926 [INFO] 定时任务调度器已启动
+2025-06-30 12:11:09,926 [INFO] 定时报告服务已启动
+2025-06-30 12:11:09,936 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 12:11:09,956 [WARNING]  * Debugger is active!
+2025-06-30 12:11:09,974 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 12:11:33,138 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 200 3121
+2025-06-30 12:11:33,139 [INFO] Dify 工作流执行成功，工作流ID: 0396ea7b-9133-4236-9c0f-6c1eeba82e98
+2025-06-30 12:11:33,140 [INFO] 成功生成 daily 报告
+2025-06-30 12:11:33,141 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 12:11:33,693 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 12:11:33,693 [INFO] 消息发送成功
+2025-06-30 12:11:33,694 [DEBUG] 发送的消息内容: 📊 财务日报
+
+**2025年6月30日财务日报**
+
+---
+
+### **一、收支汇总情况**
+1. **当前余额**：¥-7,935.00  
+2. **今日支出**：¥-7,935.00  
+...
+2025-06-30 12:11:33,694 [INFO] 成功发送 daily 报告给用户 metalhouse
+2025-06-30 12:13:07,711 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\scheduler_service.py', reloading
+2025-06-30 12:13:07,777 [INFO]  * Restarting with stat
+2025-06-30 12:13:08,702 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:13:08,706 [INFO] 定时任务调度器已启动
+2025-06-30 12:13:08,707 [INFO] 定时报告服务已启动
+2025-06-30 12:13:08,735 [WARNING]  * Debugger is active!
+2025-06-30 12:13:08,758 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 12:13:22,818 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\scheduler_service.py', reloading
+2025-06-30 12:13:22,906 [INFO]  * Restarting with stat
+2025-06-30 12:13:23,851 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:13:23,857 [INFO] 定时任务调度器已启动
+2025-06-30 12:13:23,857 [INFO] 定时报告服务已启动
+2025-06-30 12:13:23,898 [WARNING]  * Debugger is active!
+2025-06-30 12:13:23,908 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 12:13:49,855 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:13:49,859 [INFO] 定时任务调度器已启动
+2025-06-30 12:13:49,860 [INFO] 定时报告服务已启动
+2025-06-30 12:13:51,176 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 12:13:51,177 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 12:13:51,181 [INFO]  * Restarting with stat
+2025-06-30 12:13:52,116 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:13:52,120 [INFO] 定时任务调度器已启动
+2025-06-30 12:13:52,121 [INFO] 定时报告服务已启动
+2025-06-30 12:13:52,138 [WARNING]  * Debugger is active!
+2025-06-30 12:13:52,144 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 12:14:49,868 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 12:14:52,129 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 12:15:16,621 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 200 3186
+2025-06-30 12:15:16,622 [INFO] Dify 工作流执行成功，工作流ID: 0396ea7b-9133-4236-9c0f-6c1eeba82e98
+2025-06-30 12:15:16,622 [INFO] 成功生成 weekly 报告
+2025-06-30 12:15:16,624 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 12:15:17,136 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 12:15:17,136 [INFO] 消息发送成功
+2025-06-30 12:15:17,137 [DEBUG] 发送的消息内容: 📈 财务周报
+
+### 本周财务报告（2025年6月30日）
+
+#### 一、收支汇总情况
+1. **总预算**：10,000.00 CNY  
+2. **实际支出**：12,134.23 CNY  ...
+2025-06-30 12:15:17,138 [INFO] 成功发送 weekly 报告给用户 metalhouse
+2025-06-30 12:15:17,766 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 200 3613
+2025-06-30 12:15:17,768 [INFO] Dify 工作流执行成功，工作流ID: 0396ea7b-9133-4236-9c0f-6c1eeba82e98
+2025-06-30 12:15:17,768 [INFO] 成功生成 weekly 报告
+2025-06-30 12:15:17,769 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 12:15:18,272 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 12:15:18,272 [INFO] 消息发送成功
+2025-06-30 12:15:18,273 [DEBUG] 发送的消息内容: 📈 财务周报
+
+### 本周财务报告（2025年6月23日-6月30日）
+
+---
+
+#### **一、收支汇总情况**
+1. **总支出**：12,134.23 CNY  
+2. **总预算**：1...
+2025-06-30 12:15:18,275 [INFO] 成功发送 weekly 报告给用户 metalhouse
+2025-06-30 12:55:08,690 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\scheduler_service.py', reloading
+2025-06-30 12:55:08,749 [INFO]  * Restarting with stat
+2025-06-30 12:55:09,763 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:55:09,766 [INFO] 定时任务调度器已启动
+2025-06-30 12:55:09,766 [INFO] 定时报告服务已启动
+2025-06-30 12:55:09,796 [WARNING]  * Debugger is active!
+2025-06-30 12:55:09,809 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 12:55:14,296 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\scheduler_service.py', reloading
+2025-06-30 12:55:14,358 [INFO]  * Restarting with stat
+2025-06-30 12:55:15,326 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:55:15,329 [INFO] 定时任务调度器已启动
+2025-06-30 12:55:15,329 [INFO] 定时报告服务已启动
+2025-06-30 12:55:15,346 [WARNING]  * Debugger is active!
+2025-06-30 12:55:15,359 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 12:55:42,192 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:55:42,195 [INFO] 定时任务调度器已启动
+2025-06-30 12:55:42,195 [INFO] 定时报告服务已启动
+2025-06-30 12:55:43,737 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 12:55:43,737 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 12:55:43,740 [INFO]  * Restarting with stat
+2025-06-30 12:55:44,664 [INFO] Starting Flask application v0.2.0
+2025-06-30 12:55:44,667 [INFO] 定时任务调度器已启动
+2025-06-30 12:55:44,668 [INFO] 定时报告服务已启动
+2025-06-30 12:55:44,689 [WARNING]  * Debugger is active!
+2025-06-30 12:55:44,701 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 13:01:22,049 [INFO] Starting Flask application v0.2.0
+2025-06-30 13:01:22,052 [INFO] 定时任务调度器已启动
+2025-06-30 13:01:22,052 [INFO] 定时报告服务已启动
+2025-06-30 13:01:23,380 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 13:01:23,381 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 13:01:23,383 [INFO]  * Restarting with stat
+2025-06-30 13:01:24,397 [INFO] Starting Flask application v0.2.0
+2025-06-30 13:01:24,401 [INFO] 定时任务调度器已启动
+2025-06-30 13:01:24,401 [INFO] 定时报告服务已启动
+2025-06-30 13:01:24,437 [WARNING]  * Debugger is active!
+2025-06-30 13:01:24,443 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 13:03:22,064 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 13:03:24,413 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 13:03:53,367 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 200 3778
+2025-06-30 13:03:53,367 [INFO] Dify 工作流执行成功，工作流ID: 0396ea7b-9133-4236-9c0f-6c1eeba82e98
+2025-06-30 13:03:53,368 [INFO] 成功生成 weekly 报告
+2025-06-30 13:03:53,370 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 13:03:53,911 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 13:03:53,912 [INFO] 消息发送成功
+2025-06-30 13:03:53,912 [DEBUG] 发送的消息内容: 📈 财务周报
+
+根据提供的财务数据，我将为您生成相应的财务报告分析：
+
+### 本周财务日报（2025年6月30日）
+**支出情况**：
+- 餐饮支出：¥35.00（午餐）
+
+**预算执行情况**：
+...
+2025-06-30 13:03:53,914 [INFO] 成功发送 weekly 报告给用户 metalhouse
+2025-06-30 13:04:22,102 [ERROR] Dify API 请求失败: HTTPConnectionPool(host='127.0.0.1', port=2080): Read timed out. (read timeout=60)
+2025-06-30 13:04:22,103 [ERROR] 生成 weekly 报告失败: HTTPConnectionPool(host='127.0.0.1', port=2080): Read timed out. (read timeout=60)
+2025-06-30 13:04:22,105 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 13:04:22,621 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 13:04:22,621 [INFO] 消息发送成功
+2025-06-30 13:04:22,622 [DEBUG] 发送的消息内容: 📈 财务周报
+
+调用 Dify API 时发生网络错误
+2025-06-30 13:04:22,623 [INFO] 成功发送 weekly 报告给用户 metalhouse
+2025-06-30 13:04:41,256 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\scheduler_service.py', reloading
+2025-06-30 13:04:41,323 [INFO]  * Restarting with stat
+2025-06-30 13:04:42,305 [INFO] Starting Flask application v0.2.0
+2025-06-30 13:04:42,309 [INFO] 定时任务调度器已启动
+2025-06-30 13:04:42,309 [INFO] 定时报告服务已启动
+2025-06-30 13:04:42,330 [WARNING]  * Debugger is active!
+2025-06-30 13:04:42,344 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 13:05:01,757 [INFO]  * Detected change in 'D:\\fleshrecord\\services\\scheduler_service.py', reloading
+2025-06-30 13:05:01,813 [INFO]  * Restarting with stat
+2025-06-30 13:05:02,788 [INFO] Starting Flask application v0.2.0
+2025-06-30 13:05:02,792 [INFO] 定时任务调度器已启动
+2025-06-30 13:05:02,792 [INFO] 定时报告服务已启动
+2025-06-30 13:05:02,830 [WARNING]  * Debugger is active!
+2025-06-30 13:05:02,836 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 13:17:14,511 [INFO] Starting Flask application v0.2.0
+2025-06-30 13:17:14,515 [INFO] 定时任务调度器已启动
+2025-06-30 13:17:14,516 [INFO] 定时报告服务已启动
+2025-06-30 13:17:15,832 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9012
+ * Running on http://172.19.0.1:9012
+2025-06-30 13:17:15,832 [INFO] [33mPress CTRL+C to quit[0m
+2025-06-30 13:17:15,835 [INFO]  * Restarting with stat
+2025-06-30 13:17:16,756 [INFO] Starting Flask application v0.2.0
+2025-06-30 13:17:16,760 [INFO] 定时任务调度器已启动
+2025-06-30 13:17:16,761 [INFO] 定时报告服务已启动
+2025-06-30 13:17:16,780 [WARNING]  * Debugger is active!
+2025-06-30 13:17:16,796 [INFO]  * Debugger PIN: 122-422-975
+2025-06-30 13:18:14,524 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 13:18:16,771 [DEBUG] Starting new HTTP connection (1): 127.0.0.1:2080
+2025-06-30 13:18:55,520 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 200 4982
+2025-06-30 13:18:55,521 [INFO] Dify 工作流执行成功，工作流ID: 0396ea7b-9133-4236-9c0f-6c1eeba82e98
+2025-06-30 13:18:55,521 [INFO] 成功生成 weekly 报告
+2025-06-30 13:18:55,523 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 13:18:56,062 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 13:18:56,063 [INFO] 消息发送成功
+2025-06-30 13:18:56,063 [DEBUG] 发送的消息内容: 📈 财务周报
+
+### 本周财务报告（2025年6月24日-6月30日）
+
+---
+
+#### **一、财务概览**
+| **指标**       | **金额 (¥)**   | **说明**   ...
+2025-06-30 13:18:56,065 [INFO] 成功发送 weekly 报告给用户 metalhouse
+2025-06-30 13:19:02,636 [DEBUG] http://127.0.0.1:2080 "POST http://192.168.1.68/v1/chat-messages HTTP/1.1" 200 5401
+2025-06-30 13:19:02,638 [INFO] Dify 工作流执行成功，工作流ID: 0396ea7b-9133-4236-9c0f-6c1eeba82e98
+2025-06-30 13:19:02,638 [INFO] 成功生成 weekly 报告
+2025-06-30 13:19:02,640 [DEBUG] Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+2025-06-30 13:19:03,212 [DEBUG] https://qyapi.weixin.qq.com:443 "POST /cgi-bin/webhook/send?key=f4ccac27-c240-448a-8eda-2d6cf884723c HTTP/1.1" 200 27
+2025-06-30 13:19:03,213 [INFO] 消息发送成功
+2025-06-30 13:19:03,213 [DEBUG] 发送的消息内容: 📈 财务周报
+
+### 本周财务报告（2025年6月24日-6月30日）
+
+---
+
+#### **一、财务概览**
+| **指标**         | **金额 (¥)**   | **说明** ...
+2025-06-30 13:19:03,215 [INFO] 成功发送 weekly 报告给用户 metalhouse

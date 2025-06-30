@@ -139,37 +139,31 @@ class SchedulerService:
     def _should_execute_task(self, task_key: str, current_time: datetime, target_time: tuple, report_type: str) -> bool:
         """判断是否应该执行任务"""
         target_hour, target_minute = target_time
-        
-        # 检查当前时间是否匹配目标时间 (允许1分钟误差)
+
+        # 只要求小时和分钟完全匹配
         time_matches = (
-            current_time.hour == target_hour and 
-            abs(current_time.minute - target_minute) <= 1
+            current_time.hour == target_hour and
+            current_time.minute == target_minute
         )
-        
         if not time_matches:
             return False
-        
+
         # 检查是否已经执行过
         last_execution = self.last_check_time.get(task_key)
         if last_execution:
             if report_type == 'daily':
-                # 日报：同一天不重复执行
                 if last_execution.date() == current_time.date():
                     return False
             elif report_type == 'weekly':
-                # 周报：同一周不重复执行
                 if self._same_week(last_execution, current_time):
                     return False
             elif report_type == 'monthly':
-                # 月报：同一月不重复执行
-                if (last_execution.year == current_time.year and 
-                    last_execution.month == current_time.month):
+                if (last_execution.year == current_time.year and last_execution.month == current_time.month):
                     return False
             elif report_type == 'yearly':
-                # 年报：同一年不重复执行
                 if last_execution.year == current_time.year:
                     return False
-        
+
         return True
     
     def _same_week(self, date1: datetime, date2: datetime) -> bool:
@@ -208,21 +202,34 @@ class SchedulerService:
             
             # 发送报告
             if report_content:
+                # 只提取 message 字段内容，去除多余内容
+                if isinstance(report_content, dict) and 'message' in report_content:
+                    clean_content = report_content['message']
+                else:
+                    clean_content = str(report_content)
+                # 处理 \n 为换行
+                clean_content = clean_content.replace('\\n', '\n')
                 report_title = {
                     'daily': '📊 财务日报',
                     'weekly': '📈 财务周报', 
                     'monthly': '📋 财务月报',
                     'yearly': '📊 财务年报'
                 }.get(report_type, f'{report_type.title()} 报告')
-                
-                message = f"{report_title}\n\n{report_content}"
-                
+                message = f"{report_title}\n\n{clean_content}"
+
+                # 幂等锁：一分钟内不重复推送
+                task_key = f"{user_config.user_id}_{report_type}"
+                now = datetime.now()
+                last_time = self.last_check_time.get(task_key)
+                if last_time and (now - last_time).total_seconds() < 60:
+                    logger.warning(f"{report_type} 报告一分钟内已推送过，跳过本次，用户: {user_config.user_id}")
+                    return
+
                 success = notification_handler.send_webhook_message(message)
                 if success:
                     logger.info(f"成功发送 {report_type} 报告给用户 {user_config.user_id}")
                     # 记录执行时间
-                    task_key = f"{user_config.user_id}_{report_type}"
-                    self.last_check_time[task_key] = datetime.now()
+                    self.last_check_time[task_key] = now
                 else:
                     logger.error(f"发送 {report_type} 报告失败，用户: {user_config.user_id}")
             else:

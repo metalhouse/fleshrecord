@@ -88,8 +88,13 @@ class UserConfigManager:
                 config_data = json.load(f)
             # 添加user_id到配置数据
             config_data['user_id'] = user_id
+            # 修正dify_config和report_config为对象
+            if 'dify_config' in config_data and isinstance(config_data['dify_config'], dict):
+                config_data['dify_config'] = DifyConfig(**config_data['dify_config'])
+            if 'report_config' in config_data and isinstance(config_data['report_config'], dict):
+                config_data['report_config'] = ReportConfig(**config_data['report_config'])
             return UserConfig(**config_data)
-        except (json.JSONDecodeError, ValidationError, KeyError) as e:
+        except (json.JSONDecodeError, ValidationError, KeyError, TypeError) as e:
             logger.error(f"加载用户配置失败 (user_id={user_id}): {str(e)}")
             return None
 

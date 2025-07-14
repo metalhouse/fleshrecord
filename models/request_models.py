@@ -36,12 +36,11 @@ class BudgetQueryParams(BaseModel):
                 raise ValueError('日期格式应为 YYYY-MM-DD')
         return v
 
-
 class TransactionRequest(BaseModel):
     """交易请求模型"""
     amount: float
     description: str
-    date: str
+    date: str  # ISO 8601 string, may include time
     source_account: str
     destination_account: Optional[str] = None
     category: Optional[str] = None
@@ -56,15 +55,14 @@ class TransactionRequest(BaseModel):
     
     @field_validator('date')
     def validate_date(cls, v):
-        # 支持带时间的日期格式，如'2025-06-26T20:00:00+08:00'
+        # 支持带时间的日期格式，如 '2025-06-26T20:00:00+08:00'
         try:
-            # 尝试解析带时间的格式
-            parsed_date = datetime.fromisoformat(v)
-            return parsed_date.strftime('%Y-%m-%d')
+            # 尝试解析 ISO-8601 格式
+            datetime.fromisoformat(v)
         except ValueError:
             try:
-                # 尝试解析不带时间的格式
+                # 尝试解析不带时间的日期格式
                 datetime.strptime(v, '%Y-%m-%d')
             except ValueError:
-                raise ValueError('日期格式应为 YYYY-MM-DD 或包含时间的ISO格式')
+                raise ValueError('日期格式应为 YYYY-MM-DD 或 ISO 8601 格式 (YYYY-MM-DDThh:mm:ss+TZ)')
         return v

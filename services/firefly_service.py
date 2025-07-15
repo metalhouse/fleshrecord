@@ -331,7 +331,8 @@ class FireflyService:
                                 tags_filter_list = [str(tag) for tag in tags_filter_list]
                                 if any(tag in tags for tag in tags_filter_list):
                                     has_tag = True
-                        if ((not category_filter or has_category) and (not tags_filter or has_tag)):
+                        # 恢复为“或”关系
+                        if (category_filter and has_category) or (tags_filter and has_tag):
                             filtered_transactions.append(transaction)
                 filtered_data = filtered_transactions
                 #self.logger.info(f"类目过滤后剩余 {len(filtered_data)} 条交易记录（类目: {category_filter}）")

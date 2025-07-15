@@ -123,7 +123,7 @@ class FireflyService:
                         amount_str = split.get('amount', '0')
                         try:
                             amount = float(amount_str)
-                            total_amount += abs(amount)  # 使用绝对值计算总金额
+                            total_amount += abs(amount) # 使用绝对值计算总金额
                         except (ValueError, TypeError):
                             continue
                         
@@ -294,33 +294,42 @@ class FireflyService:
             transactions_data = all_transactions
             self.logger.info(f"成功查询到 {len(transactions_data)} 条交易记录，API总共 {total_records} 条")
             
-            # 如果有category参数，进行客户端过滤
+            # 如果有category或tags参数，进行客户端过滤
             filtered_data = transactions_data
             category_filter = (query_params or {}).get('category')
-            if category_filter:
+            tags_filter = (query_params or {}).get('tags')
+            if category_filter or tags_filter:
                 filtered_transactions = []
-                self.logger.info(f"开始类目过滤，目标类目: {category_filter}")
+                self.logger.info(f"开始过滤，目标类目: {category_filter}，目标标签: {tags_filter}")
                 for idx, transaction in enumerate(transactions_data):
                     if isinstance(transaction, dict) and 'attributes' in transaction:
                         has_category = False
+                        has_tag = False
                         transaction_info = []
                         for split in transaction['attributes'].get('transactions', []):
                             date = split.get('date', 'NO_DATE')
                             description = split.get('description', 'NO_DESC')
                             amount = split.get('amount', 'NO_AMOUNT')
                             category = split.get('category_name', 'NO_CATEGORY')
-                            transaction_info.append(f"日期:{date}, 描述:{description}, 金额:{amount}, 类目:{category}")
-                            
-                            if category == category_filter:
+                            tags = split.get('tags', []) or transaction['attributes'].get('tags', [])
+                            if isinstance(tags, str):
+                                tags = [tags]
+                            elif not isinstance(tags, list):
+                                tags = list(tags) if tags else []
+                            tags = [str(tag) for tag in tags]
+                            transaction_info.append(f"日期:{date}, 描述:{description}, 金额:{amount}, 类目:{category}, 标签:{tags}")
+                            if category_filter and category == category_filter:
                                 has_category = True
-                                
-                        # 记录每笔交易的详细信息用于调试
-                        if idx < 10:  # 只记录前10笔交易避免日志过长
-                            self.logger.info(f"交易 {idx+1}: {'; '.join(transaction_info)}")
-                            
-                        if has_category:
+                            if tags_filter:
+                                if isinstance(tags_filter, str):
+                                    tags_filter_list = [tags_filter]
+                                else:
+                                    tags_filter_list = list(tags_filter)
+                                tags_filter_list = [str(tag) for tag in tags_filter_list]
+                                if any(tag in tags for tag in tags_filter_list):
+                                    has_tag = True
+                        if ((not category_filter or has_category) and (not tags_filter or has_tag)):
                             filtered_transactions.append(transaction)
-                
                 filtered_data = filtered_transactions
                 #self.logger.info(f"类目过滤后剩余 {len(filtered_data)} 条交易记录（类目: {category_filter}）")
             

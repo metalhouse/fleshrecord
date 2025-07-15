@@ -120,16 +120,15 @@ class DifyHandler:
             query_params = self._parse_query_string(query)
             
             # 调用Firefly服务获取交易数据
-            transactions = self.firefly_service.get_transactions(query_params)
-            
-            if transactions:
-                app.logger.info(f"成功获取 {len(transactions)} 条交易记录")
-                formatted_result = self._format_transactions_response(transactions)
+            transactions_result = self.firefly_service.get_transactions(query_params)
+            if transactions_result and transactions_result.get('success'):
+                filtered_data = transactions_result.get('data', [])
+                app.logger.info(f"成功获取 {len(filtered_data)} 条交易记录")
+                formatted_result = self._format_transactions_response(filtered_data)
                 return formatted_result, 200
             else:
                 app.logger.info("未找到匹配的交易记录")
                 return "未找到匹配的交易记录", 404
-                
         except Exception as e:
             app.logger.error(f"查询交易记录失败: {e}", exc_info=True)
             return "查询交易记录失败", 500
@@ -221,42 +220,19 @@ class DifyHandler:
         Format transactions response to a simplified structure.
         """
         formatted_transactions = []
-        
-        if isinstance(transactions, dict):
-            # Handle Firefly III API response structure
-            if 'data' in transactions and isinstance(transactions['data'], dict):
-                # Extract from nested data structure
-                data_items = transactions['data'].get('data', [])
-                for item in data_items:
-                    for tx in item['attributes']['transactions']:
-                        formatted_transactions.append({
-                            'amount': float(tx['amount']),
-                            'date': tx['date'],
-                            'description': tx['description']
-                        })
-            else:
-                # Handle direct transaction list in dict format
-                for item in transactions.get('data', []):
-                    if isinstance(item, dict) and 'attributes' in item:
-                        for tx in item['attributes']['transactions']:
-                            formatted_transactions.append({
-                                'amount': float(tx['amount']),
-                                'date': tx['date'],
-                                'description': tx['description']
-                            })
-        elif isinstance(transactions, list):
-            # Handle direct list of transactions
-            for tx in transactions:
-                if isinstance(tx, dict):
+        # 只处理过滤后的 data
+        data_items = transactions if isinstance(transactions, list) else []
+        for item in data_items:
+            if isinstance(item, dict) and 'attributes' in item:
+                for tx in item['attributes'].get('transactions', []):
                     formatted_transactions.append({
                         'amount': float(tx.get('amount', 0)),
                         'date': tx.get('date', ''),
                         'description': tx.get('description', '')
                     })
-        
         return {
             'data': {
-                'summary': f"共找到 {len(formatted_transactions)} 条交易记录",
+                'summary': f"共找到 {len(data_items)} 条交易记录",  # summary与实际过滤后主交易数量一致
                 'transactions': formatted_transactions
             },
             'message': "交易记录查询成功",

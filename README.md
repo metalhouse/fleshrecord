@@ -163,6 +163,38 @@ curl http://localhost:9012/budgets
 - 提供预算和交易信息的智能响应
 - Webhook签名验证确保请求安全
 
+### Dify Webhook 交易多条件过滤与统计（2025-07-15 更新）
+
+- 支持通过 Dify Webhook 进行多条件（如分类、标签等）交易查询过滤。
+- 仅支持 POST + JSON body 传参，所有查询参数需放在 `query_parameters` 字段内。
+- `tags` 支持字符串、列表、None 等多种格式，系统会自动转为字符串列表后进行精确比对。
+- 多条件过滤采用“与”关系，只有同时满足所有条件的交易才会被保留。
+- summary 统计数量与实际过滤结果严格一致，日志与 API 返回完全同步。
+- 修复了 tags 过滤无效、summary 数量不符等问题。
+- 过滤和统计逻辑已通过日志与 Postman 验证。
+
+**用法示例：**
+
+```json
+POST /dify_webhook
+Headers: { "X-User-ID": "your_user_id" }
+Body:
+{
+  "query_parameters": {
+    "category": "餐饮",
+    "tags": ["外卖", "工作餐"]
+  }
+}
+```
+- `category`、`tags` 可单独或组合使用，均为“与”关系。
+- `tags` 可为字符串（单标签）、数组（多标签）、或 None。
+- 返回结果中的 `summary` 字段数量与实际 data 数组长度一致。
+
+**注意事项：**
+- 仅支持 POST + JSON body 方式，URL query 参数不生效。
+- 过滤条件不满足时返回空数组，summary 为 0。
+- 详见 `handlers/dify_handler.py` 和 `services/firefly_service.py` 实现。
+
 ## 测试
 
 ```bash

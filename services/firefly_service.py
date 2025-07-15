@@ -298,6 +298,9 @@ class FireflyService:
             filtered_data = transactions_data
             category_filter = (query_params or {}).get('category')
             tags_filter = (query_params or {}).get('tags')
+            # 修复：支持tags为逗号分隔字符串
+            if isinstance(tags_filter, str) and ',' in tags_filter:
+                tags_filter = [t.strip() for t in tags_filter.split(',') if t.strip()]
             if category_filter or tags_filter:
                 filtered_transactions = []
                 self.logger.info(f"开始过滤，目标类目: {category_filter}，目标标签: {tags_filter}")

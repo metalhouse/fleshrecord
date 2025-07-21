@@ -36,6 +36,35 @@ class BudgetQueryParams(BaseModel):
                 raise ValueError('日期格式应为 YYYY-MM-DD')
         return v
 
+class TransactionQueryParams(BaseModel):
+    """交易查询参数模型"""
+    start: Optional[str] = None
+    end: Optional[str] = None
+    type: Optional[str] = "withdrawal,deposit"  # 默认排除转账
+    category: Optional[str] = None
+    tags: Optional[str] = None
+    page: Optional[int] = 1
+    limit: Optional[int] = 200
+    
+    @field_validator('start', 'end')
+    def validate_date_format(cls, v):
+        if v:
+            try:
+                datetime.strptime(v, '%Y-%m-%d')
+            except ValueError:
+                raise ValueError('日期格式应为 YYYY-MM-DD')
+        return v
+    
+    @field_validator('type')
+    def validate_type(cls, v):
+        if v:
+            valid_types = {'withdrawal', 'deposit', 'transfer'}
+            types = [t.strip() for t in v.split(',')]
+            for t in types:
+                if t not in valid_types:
+                    raise ValueError(f'无效的交易类型: {t}. 可选值: {", ".join(valid_types)}')
+        return v
+
 class TransactionRequest(BaseModel):
     """交易请求模型"""
     amount: float

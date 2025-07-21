@@ -8,7 +8,7 @@ from typing import Union, Dict, Any, Tuple
 from utils.response_builder import APIResponseBuilder
 from utils.metrics import track_performance
 from services.firefly_service import FireflyService
-from models.request_models import DifyWebhookRequest, BudgetQueryParams
+from models.request_models import DifyWebhookRequest, BudgetQueryParams, TransactionQueryParams
 
 
 class DifyHandler:
@@ -119,6 +119,12 @@ class DifyHandler:
             # 解析查询参数
             query_params = self._parse_query_string(query)
             
+            # 默认排除转账交易，除非明确指定包含
+            if 'type' not in query_params:
+                # 只包含支出和收入交易，排除转账
+                query_params['type'] = 'withdrawal,deposit'
+                app.logger.info("自动添加type参数排除转账交易: withdrawal,deposit")
+            
             # 调用Firefly服务获取交易数据
             transactions_result = self.firefly_service.get_transactions(query_params)
             if transactions_result and transactions_result.get('success'):
@@ -195,6 +201,15 @@ class DifyHandler:
             
         Returns:
             dict: 解析后的参数字典
+            
+        Note:
+            支持的交易查询参数包括：
+            - type: 交易类型，可选值: withdrawal, deposit, transfer 或它们的组合(逗号分隔)
+            - start: 开始日期 (YYYY-MM-DD)
+            - end: 结束日期 (YYYY-MM-DD)
+            - category: 分类名称
+            - tags: 标签(逗号分隔)
+            - 其他Firefly III API支持的参数
         """
         if isinstance(query, dict):
             return query

@@ -51,6 +51,8 @@ class UserConfig(BaseModel):
     webhook_url: str
     webhook_secret: str
     webhook_secret_update: str
+    # API访问token，用于验证交易API请求
+    api_token: Optional[str] = None
     # 可选的用户特定配置
     firefly_api_url: Optional[str] = None  # 默认为全局配置
     notification_enabled: bool = True

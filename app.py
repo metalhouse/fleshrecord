@@ -24,6 +24,7 @@ from handlers.dify_handler import DifyHandler
 from services.scheduler_service import scheduler_service
 from utils.retry_decorator import track_performance
 from utils.response_builder import APIResponseBuilder
+from security.token_validator import require_api_token_with_user_id, TokenValidator
 
 from version import __version__
 app = Flask(__name__)
@@ -342,20 +343,19 @@ def get_budgets() -> Tuple[Dict[str, Any], int]:
     return user_budget_handler.get_budgets_endpoint()
 
 @app.route('/add_transaction', methods=['POST'])
+@require_api_token_with_user_id
 @track_performance('add_transaction')
-def add_transaction() -> Tuple[Dict[str, Any], int]:
+def add_transaction(user_id: str) -> Tuple[Dict[str, Any], int]:
     """
     添加交易API endpoint
+    需要API token验证
     
+    Args:
+        user_id: 用户ID（由token验证装饰器注入）
+        
     Returns:
         Tuple[Dict[str, Any], int]: (响应内容, 状态码)
     """
-    # 从请求头获取用户ID
-    user_id = request.headers.get('X-User-ID')
-    if not user_id:
-        app.logger.warning("缺少X-User-ID请求头")
-        return jsonify(APIResponseBuilder.error_response("X-User-ID header is required", 400)), 400
-    
     # 获取用户特定服务
     _, _, _, transaction_handler = get_user_services(user_id)
     if not transaction_handler:

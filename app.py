@@ -251,11 +251,32 @@ def webhook() -> Tuple[Union[str, Dict[str, Any]], int]:
         # 处理FireflyIII webhook请求（已经验证过签名）
         return webhook_handler.process_webhook_event(skip_signature=True)
     
-    # 非签名验证请求，使用X-User-ID验证
+    # 非签名验证请求，使用X-User-ID和API token验证
     user_id = request.headers.get('X-User-ID')
     if not user_id:
         app.logger.warning("缺少X-User-ID请求头")
         return jsonify(APIResponseBuilder.error_response("X-User-ID header is required", 400)), 400
+    
+    # 验证API token
+    auth_header = request.headers.get('Authorization')
+    if not auth_header:
+        app.logger.warning(f"用户 {user_id} 的webhook请求缺少Authorization header")
+        return jsonify(APIResponseBuilder.error_response("Authorization header is required", 401)), 401
+    
+    # 提取Bearer token
+    token = TokenValidator.extract_bearer_token(auth_header)
+    if not token:
+        app.logger.warning(f"用户 {user_id} 的Authorization header格式错误")
+        return jsonify(APIResponseBuilder.error_response(
+            "Invalid Authorization header format. Expected: Bearer <token>", 401
+        )), 401
+    
+    # 验证token
+    if not TokenValidator.validate_api_token(user_id, token):
+        app.logger.warning(f"用户 {user_id} 的API token验证失败")
+        return jsonify(APIResponseBuilder.error_response("Invalid API token", 403)), 403
+    
+    app.logger.info(f"用户 {user_id} webhook API token验证通过")
     
     # 获取用户特定服务
     _, _, webhook_handler, _ = get_user_services(user_id)
@@ -312,20 +333,19 @@ def firefly_webhook() -> Tuple[Union[str, Dict[str, Any]], int]:
 # Note: call_curl and get_firefly_budgets functions have been moved to their respective handler classes
 
 @app.route('/budgets', methods=['GET'])
+@require_api_token_with_user_id
 @track_performance('budgets')
-def get_budgets() -> Tuple[Dict[str, Any], int]:
+def get_budgets(user_id: str) -> Tuple[Dict[str, Any], int]:
     """
     获取预算信息API endpoint
+    需要API token验证
     
+    Args:
+        user_id: 用户ID（由token验证装饰器注入）
+        
     Returns:
         Tuple[Dict[str, Any], int]: (响应内容, 状态码)
     """
-    # 从请求头获取用户ID
-    user_id = request.headers.get('X-User-ID')
-    if not user_id:
-        app.logger.warning("缺少X-User-ID请求头")
-        return jsonify(APIResponseBuilder.error_response("X-User-ID header is required", 400)), 400
-    
     # 获取用户配置
     user_config = user_config_manager.get_user_config(user_id)
     if not user_config:
@@ -365,21 +385,20 @@ def add_transaction(user_id: str) -> Tuple[Dict[str, Any], int]:
     return transaction_handler.add_transaction_endpoint()
 
 @app.route("/dify_webhook", methods=["POST"])
+@require_api_token_with_user_id
 @limiter.limit(config.RATE_LIMIT_WEBHOOK)
 @track_performance("dify_webhook")
-def dify_webhook() -> Tuple[Dict[str, Any], int]:
+def dify_webhook(user_id: str) -> Tuple[Dict[str, Any], int]:
     """
     处理来自Dify智能助手的webhook请求
+    需要API token验证
     
+    Args:
+        user_id: 用户ID（由token验证装饰器注入）
+        
     Returns:
         Tuple[Dict[str, Any], int]: (响应内容, 状态码)
     """
-    # 从请求头获取用户ID
-    user_id = request.headers.get('X-User-ID')
-    if not user_id:
-        app.logger.warning("缺少X-User-ID请求头")
-        return jsonify(APIResponseBuilder.error_response("X-User-ID header is required", 400)), 400
-    
     # 获取用户配置
     user_config = user_config_manager.get_user_config(user_id)
     if not user_config:

@@ -3,7 +3,7 @@
   "webhook_url": "https://your_webhook_url_here",
   "webhook_secret": "your_webhook_secret_here",
   "webhook_secret_update": "your_webhook_secret_update_here",
-  "api_token": "9edb4e2f85d2b7d54cb7700bee499905b025ec69a2985d0cf546ac383adfe215",
+  "api_token": "yor token",
   "firefly_api_url": "http://localhost/api/v1",
   "notification_enabled": true,
   "language": "zh",

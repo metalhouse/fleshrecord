@@ -2,7 +2,16 @@
 
 ## 重要变更
 
-为了提高系统安全性，`/add_transaction` API端点现在需要**双重认证**：
+为了提高系统安全性，以下API端点现在需要**双重认证**：
+
+### 🔐 需要Token验证的API端点
+
+1. `POST /add_transaction` - 添加交易
+2. `GET /budgets` - 查询预算信息  
+3. `POST /dify_webhook` - Dify智能助手webhook
+4. `POST /webhook` - 第三方服务webhook（非签名验证部分）
+
+### 📋 认证要求
 
 1. **用户身份**: `X-User-ID` header
 2. **API Token**: `Authorization: Bearer <token>` header
@@ -23,12 +32,18 @@ python batch_token_manager.py batch-generate
 
 **之前的调用方式**（不安全）：
 ```bash
+# 添加交易
 curl -X POST http://192.168.1.90:9012/add_transaction?Authorization=Bearer <some-token> \
+  -H 'X-User-ID: metalhouse'
+
+# 查询预算
+curl -X GET http://192.168.1.90:9012/budgets \
   -H 'X-User-ID: metalhouse'
 ```
 
 **现在的调用方式**（安全）：
 ```bash
+# 添加交易
 curl -X POST http://192.168.1.90:9012/add_transaction \
   -H 'X-User-ID: metalhouse' \
   -H 'Authorization: Bearer 44b9da2e7db4dd60dbe6ffe556acca7721c5b392d85e67e1bd90436b1c01fd3f' \
@@ -40,6 +55,25 @@ curl -X POST http://192.168.1.90:9012/add_transaction \
     "source_account": "现金账户",
     "destination_account": "餐饮"
   }'
+
+# 查询预算
+curl -X GET http://192.168.1.90:9012/budgets \
+  -H 'X-User-ID: metalhouse' \
+  -H 'Authorization: Bearer 44b9da2e7db4dd60dbe6ffe556acca7721c5b392d85e67e1bd90436b1c01fd3f'
+
+# Dify webhook
+curl -X POST http://192.168.1.90:9012/dify_webhook \
+  -H 'X-User-ID: metalhouse' \
+  -H 'Authorization: Bearer 44b9da2e7db4dd60dbe6ffe556acca7721c5b392d85e67e1bd90436b1c01fd3f' \
+  -H 'Content-Type: application/json' \
+  -d '{"query": "本月预算执行情况如何？"}'
+
+# 第三方webhook（非签名验证）
+curl -X POST http://192.168.1.90:9012/webhook \
+  -H 'X-User-ID: metalhouse' \
+  -H 'Authorization: Bearer 44b9da2e7db4dd60dbe6ffe556acca7721c5b392d85e67e1bd90436b1c01fd3f' \
+  -H 'Content-Type: application/json' \
+  -d '{"trigger": "STORE_TRANSACTION", "content": {...}}'
 ```
 
 ### 3. 验证配置

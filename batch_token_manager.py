@@ -99,7 +99,9 @@ def generate_curl_examples():
         user_config = user_config_manager.get_user_config(user_id)
         if user_config and user_config.api_token:
             example = f"""
-# 用户: {user_id}
+# ===== 用户: {user_id} =====
+
+# 1. 添加交易 (POST /add_transaction)
 curl -X POST http://192.168.1.90:9012/add_transaction \\
   -H 'X-User-ID: {user_id}' \\
   -H 'Authorization: Bearer {user_config.api_token}' \\
@@ -107,10 +109,42 @@ curl -X POST http://192.168.1.90:9012/add_transaction \\
   -d '{{
     "amount": 10.50,
     "description": "测试交易",
-    "date": "2025-09-08",
+    "date": "2025-09-27",
     "source_account": "现金账户",
     "destination_account": "餐饮",
     "category": "餐饮"
+  }}'
+
+# 2. 查询预算 (GET /budgets)
+curl -X GET http://192.168.1.90:9012/budgets \\
+  -H 'X-User-ID: {user_id}' \\
+  -H 'Authorization: Bearer {user_config.api_token}'
+
+# 3. Dify智能助手 (POST /dify_webhook)
+curl -X POST http://192.168.1.90:9012/dify_webhook \\
+  -H 'X-User-ID: {user_id}' \\
+  -H 'Authorization: Bearer {user_config.api_token}' \\
+  -H 'Content-Type: application/json' \\
+  -d '{{
+    "query": "本月预算执行情况如何？",
+    "user": "{user_id}"
+  }}'
+
+# 4. 第三方Webhook (POST /webhook) - 非签名验证部分
+curl -X POST http://192.168.1.90:9012/webhook \\
+  -H 'X-User-ID: {user_id}' \\
+  -H 'Authorization: Bearer {user_config.api_token}' \\
+  -H 'Content-Type: application/json' \\
+  -d '{{
+    "trigger": "STORE_TRANSACTION",
+    "content": {{
+      "transactions": [{{
+        "amount": 15.00,
+        "description": "webhook测试交易",
+        "category_name": "测试分类",
+        "budget_name": "测试预算"
+      }}]
+    }}
   }}'
 """
             examples.append(example)
